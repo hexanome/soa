@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.1.5)  6 MAR 2012 09:02
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.1.5)  6 MAR 2012 09:09
 entering extended mode
  %&-line parsing enabled.
 **compte-rendu-final.tex
@@ -368,7 +368,7 @@ File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box26
 )
-(./compte-rendu-final.aux)
+No file compte-rendu-final.aux.
 \openout1 = `compte-rendu-final.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -384,7 +384,7 @@ LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 20.
- (/usr/share/texmf/tex/latex/lm/t1lmr.fd
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 *geometry auto-detecting driver*
@@ -473,26 +473,28 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 41.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./compte-rendu-final.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+No file compte-rendu-final.toc.
 \tf@toc=\write3
 \openout3 = `compte-rendu-final.toc'.
 
- [1] (./compte-rendu.tex) [2]
-(./compte-rendu-final.aux) ) 
+[1] (./conception-ensemble.tex) (./conception-detaillee.tex)
+(./architecture.tex) [2] (./compte-rendu-final.aux) ) 
 Here is how much of TeX's memory you used:
- 2561 strings out of 495061
- 33018 string characters out of 1182622
+ 2563 strings out of 495061
+ 33067 string characters out of 1182622
  86128 words of memory out of 3000000
  5704 multiletter control sequences out of 15000+50000
  33205 words of font info for 31 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  25i,6n,24p,215b,161s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</us
-r/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb>
-Output written on compte-rendu-final.pdf (3 pages, 153880 bytes).
+{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/l
+mr17.pfb>
+Output written on compte-rendu-final.pdf (3 pages, 155617 bytes).
 PDF statistics:
  37 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
