@@ -1,2 +1,5 @@
 \select@language {french}
 \contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}R\IeC {\'e}partition des t\IeC {\^a}ches}{2}
+\contentsline {section}{\numberline {3}Evaluation des charges}{2}
+\contentsline {section}{\numberline {4}Diagramme de Gantt}{2}
