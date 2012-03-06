@@ -17,6 +17,24 @@
 % Utilisation du symbole EURO
 \usepackage{eurosym}
 
+% Page header and footer
+\usepackage{fancyhdr}
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}
+ 
+\fancyhf{}
+\lhead{H4111}
+\lfoot{H4111}
+\chead{Compte Rendu} %% <------- CHANGE ICI!!
+\cfoot{Compte Rendu} %% <------- CHANGE ICI!!
+\rhead{Mars 2012}
+\rfoot{Page \thepage} % le wild page
+ 
+\fancypagestyle{plain}{ %
+\fancyhf{} % remove everything
+\renewcommand{\headrulewidth}{0pt} % remove lines as well
+\renewcommand{\footrulewidth}{0pt}}
+
 \begin{document}
 
 %------------------------------------- Page de titre
@@ -25,7 +43,7 @@
 \vfill
 	\begin{center}
 		\begin{Huge}
-		Projet Système d'Information Urbanisé \& SOA : Compte Rendu\\
+		Projet Système d'Information Urbanisé \& SOA : Compte Rendu\\ %% <------- CHANGE ICI!!
 		\end{Huge} 
 \vfill
 		\textbf{Hexanome 4111 :} 
