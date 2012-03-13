@@ -37,20 +37,36 @@ Ce projet se déroulera en 3 phases :
 \item Notre RedMine sera interfacé avec l'outil de gestion de révision \textbf{Git} pour le suivi de l'évolution des documents et son environnement de travail collaboratif distribué.
 \end{itemize}
 
-\subsection{Objectifs en termes de produits finis}
+\section{Objectifs en termes de produits finis}
 
 \begin{itemize}
-\item Document d'Initialisation
-\item Compte-Rendu du projet :
+\item \textbf{Document d'Initialisation} : Le présent document vise à définir l'organisation et la répartition des tâches du projet avec une estimation initiale des charges pour dimensionner le projet et démarrer les activités.
+\item \textbf{Compte-Rendu du projet}, composé de :
 
 \begin{itemize}
-\item Conception d'ensemble
-\item Conception détaillée
-\item Architecture de l'application
+\item \textbf{Conception d'ensemble} : Elle permet d'identifier les évolutions de l'architecture applicative, nécessaires pour satisfaire les besoins des utilisateurs. Elle comportera :
+
+\begin{itemize}
+\item Les modèles conceptuels de données du domaine étudié,
+\item Le découpage des cas d'utilisation représentatifs en sénarios élémentaires, à l'aide de diagrammes d'activité et diagrammes de séquence système,
+\item La définition générale des blocs du noyau applicatif à l'aide de modèles de données découpés en blocs,
+\item L'identification des cycles de vie complexe des objets métiers à l'aide d'un diagramme d'état d'objet métier (pour l'objet Contact),
+\item La dynamique de l'architecture, à savoir l'identification des principaux flux d'information échangés entre les utilisateurs et les blocs de l'architecture logique (diagrammes de séquence) et des principaux flux multi blocs, avec synthèse et validation de l'architecture de services (diagramme de collaboration),
+\item Le choix de l'environnement technique retenu.
 \end{itemize}
 
-\item Présentation orale
-\item Bilan du projet
+\item \textbf{Conception détaillée} : Elle permet d'identifier et de spécifier les composants nécessaires pour automatiser tout ou partie des outils à utiliser dans le cadre des cas d'utilisation identifiés. Elle comportera :
+
+\begin{itemize}
+\item Les composants de l'IHM, avec liste des dialogues/EdF, la description des fenêtres de dialogue et la liste des services invoqués,
+\item Les composants du noyaux applicatif, avec la spécification des services métiers et des services objets métiers.
+\end{itemize}
+
+\item \textbf{Architecture de l'application} : La répartition des composants du noyau applicatif sur une architecture n-tiers.
+\end{itemize}
+
+\item \textbf{Présentation finale} : Une copie des supports de présentation sera fournie.
+\item \textbf{Bilan du projet} : Une synthèse retrospective sur le déroulement du projet.
 \end{itemize}
 
 \section{Organisation des tâches}
@@ -73,7 +89,7 @@ Ce projet se déroulera en 3 phases :
 \item Identifier les cycles de vie des objets métiers
 
 \begin{itemize}
-\item Etablissement du diagramme d'état d'objet métier, objet Contact UNIQUEMENT (assigné à \textbf{Jan Keromnes})
+\item Etablissement du diagramme d'état d'objet métier pour l'objet Contact (assigné à \textbf{Jan Keromnes})
 \end{itemize}
 
 \item Détermination des flux de l'architecture
@@ -122,30 +138,30 @@ Ce projet se déroulera en 3 phases :
 \item Conception d'ensemble du système
 
 \begin{itemize}
-\item Analyse des modèles conceptuels proposés (temps estimé \textbf{2h00})
-\item Etablissement des diagrammes d'activités (temps estimé \textbf{3h00})
-\item Etablissement des diagrammes de séquences systèmes (temps estimé \textbf{2h00})
+\item Analyse des modèles conceptuels proposés (temps estimé \textbf{3h00})
+\item Etablissement des diagrammes d'activités (temps estimé \textbf{4h00})
+\item Etablissement des diagrammes de séquences systèmes (temps estimé \textbf{3h00})
 
 \item Identifier et définir les blocs applicatifs
 
 \begin{itemize}
-\item Etablissement du modèle de données découpés en blocs (temps estimé \textbf{2h00})
+\item Etablissement du modèle de données découpés en blocs (temps estimé \textbf{3h00})
 \end{itemize}
 
 \item Identifier les cycles de vie des objets métiers
 
 \begin{itemize}
-\item Etablissement du diagramme d'état d'objet métier, objet Contact UNIQUEMENT (temps estimé \textbf{1h00})
+\item Etablissement du diagramme d'état d'objet métier pour l'objet Contact (temps estimé \textbf{2h00})
 \end{itemize}
 
 \item Détermination des flux de l'architecture
 
 \begin{itemize}
-\item Etablissement d'un diagramme de séquence (temps estimé \textbf{2h00})
-\item Etablissement d'un diagramme de collaboration(temps estimé \textbf{2h00})
+\item Etablissement d'un diagramme de séquence (temps estimé \textbf{3h00})
+\item Etablissement d'un diagramme de collaboration(temps estimé \textbf{3h00})
 \end{itemize}
 
-\item Choix de l'environnement technique (temps estimé \textbf{2h00})
+\item Choix de l'environnement technique (temps estimé \textbf{3h00})
 
 \end{itemize}
 
@@ -155,16 +171,16 @@ Ce projet se déroulera en 3 phases :
 \item Interface utilisateur
 
 \begin{itemize}
-\item Diagrammes EdF (temps estimé \textbf{4h00})
-\item Description des fenêtres (temps estimé \textbf{4h00})
-\item Services IHM (temps estimé \textbf{1h00})
+\item Diagrammes EdF (temps estimé \textbf{5h00})
+\item Description des fenêtres (temps estimé \textbf{5h00})
+\item Services IHM (temps estimé \textbf{2h00})
 \end{itemize}
 
 \item Couche noyau
 
 \begin{itemize}
-\item Spécification des SM (temps estimé \textbf{3h00})
-\item Spécification des SOM (temps estimé \textbf{3h00})
+\item Spécification des SM (temps estimé \textbf{4h00})
+\item Spécification des SOM (temps estimé \textbf{4h00})
 \end{itemize}
 
 \end{itemize}
@@ -172,13 +188,14 @@ Ce projet se déroulera en 3 phases :
 \item Architecture technique et répartition du SI
 
 \begin{itemize}
-\item Choix architecture Centralisée/Réparties (temps estimé \textbf{3h00})
-\item Choix de la répartition des composants applicatifs (temps estimé \textbf{3h00})
-\item Détermination des principaux flux au sein de l'application, CRUD (temps estimé \textbf{3h00})
+\item Choix architecture Centralisée/Réparties (temps estimé \textbf{4h00})
+\item Choix de la répartition des composants applicatifs (temps estimé \textbf{4h00})
+\item Détermination des principaux flux au sein de l'application, CRUD (temps estimé \textbf{4h00})
 \end{itemize}
 
 \end{itemize}
 
+\paragraph{Estimation totale} La charge totale estimée pour ce projet est de \textbf{66 heure/hommes}, calculé avec des marges opérationnelles de 15\%.
 
 \section{Diagramme de Gantt}
 
