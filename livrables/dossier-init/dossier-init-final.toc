@@ -6,6 +6,9 @@
 \contentsline {section}{\numberline {2}Objectifs en termes de produits finis}{2}
 \contentsline {subsection}{\numberline {2.1}Document d'Initialisation}{2}
 \contentsline {subsection}{\numberline {2.2}Compte-Rendu du projet}{2}
+\contentsline {subsubsection}{\numberline {2.2.1}Conception d'ensemble}{2}
+\contentsline {subsubsection}{\numberline {2.2.2}Conception d\IeC {\'e}taill\IeC {\'e}e}{2}
+\contentsline {subsubsection}{\numberline {2.2.3}Architecture de l'application}{3}
 \contentsline {subsection}{\numberline {2.3}Pr\IeC {\'e}sentation finale}{3}
 \contentsline {subsection}{\numberline {2.4}Bilan du projet}{3}
 \contentsline {section}{\numberline {3}Organisation des t\IeC {\^a}ches}{3}
