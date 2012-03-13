@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.1.5)  6 MAR 2012 10:02
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.1.5)  13 MAR 2012 11:52
 entering extended mode
  %&-line parsing enabled.
 **compte-rendu-final.tex
@@ -488,25 +488,29 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `compte-rendu-final.toc'.
 
- [1] (./conception-ensemble.tex)
-(./conception-detaillee.tex) (./architecture.tex) [2] (./compte-rendu-final.aux
-) ) 
+ [1] (./conception-ensemble.tex
+<diagramme-etat-objet-contact.png, id=14, 777.90625pt x 228.855pt>
+File: diagramme-etat-objet-contact.png Graphic file (type png)
+
+<use diagramme-etat-objet-contact.png>) (./conception-detaillee.tex)
+(./architecture.tex) [2 <./diagramme-etat-objet-contact.png>]
+(./compte-rendu-final.aux) ) 
 Here is how much of TeX's memory you used:
- 2694 strings out of 495061
- 34489 string characters out of 1182622
+ 2702 strings out of 495061
+ 34699 string characters out of 1182622
  88107 words of memory out of 3000000
- 5827 multiletter control sequences out of 15000+50000
- 33205 words of font info for 31 fonts, out of 3000000 for 9000
+ 5833 multiletter control sequences out of 15000+50000
+ 39202 words of font info for 33 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  25i,10n,43p,215b,210s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1
-/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmr17.pfb>
-Output written on compte-rendu-final.pdf (3 pages, 160935 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</us
+r/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb>
+Output written on compte-rendu-final.pdf (3 pages, 170824 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
+ 40 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

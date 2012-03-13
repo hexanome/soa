@@ -1,4 +1,5 @@
 \select@language {french}
 \contentsline {section}{\numberline {1}Conception d'ensemble de l'architecture applicative}{2}
+\contentsline {subsection}{\numberline {1.1}Cycles de vie des objets m\IeC {\'e}tiers}{2}
 \contentsline {section}{\numberline {2}Conception d\IeC {\'e}taill\IeC {\'e}e des applications}{2}
 \contentsline {section}{\numberline {3}R\IeC {\'e}partition des composants sur l'architecture n-tiers}{2}
