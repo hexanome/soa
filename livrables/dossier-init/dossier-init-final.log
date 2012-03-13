@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.1.5)  6 MAR 2012 12:11
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.1.5)  13 MAR 2012 09:24
 entering extended mode
  %&-line parsing enabled.
 **dossier-init-final.tex
@@ -488,24 +488,27 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `dossier-init-final.toc'.
 
- [1] (./dossier-init.tex) [2]
-(./dossier-init-final.aux) ) 
+ [1] (./dossier-init.tex [2]
+<gantt.png, id=17, 729.72626pt x 591.20876pt>
+File: gantt.png Graphic file (type png)
+ <use gantt.png> [3]) [4 <./gantt.png>] (./dossier-init-final.aux) ) 
 Here is how much of TeX's memory you used:
- 2688 strings out of 495061
- 34348 string characters out of 1182622
- 92155 words of memory out of 3000000
- 5827 multiletter control sequences out of 15000+50000
- 33205 words of font info for 31 fonts, out of 3000000 for 9000
+ 2696 strings out of 495061
+ 34443 string characters out of 1182622
+ 94155 words of memory out of 3000000
+ 5833 multiletter control sequences out of 15000+50000
+ 39202 words of font info for 33 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 25i,10n,43p,215b,210s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</us
-r/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb>
-Output written on dossier-init-final.pdf (3 pages, 168763 bytes).
+ 25i,10n,43p,259b,374s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmb
+x10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmr17.pfb>
+Output written on dossier-init-final.pdf (5 pages, 244021 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
+ 46 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,5 +1,10 @@
 \select@language {french}
-\contentsline {section}{\numberline {1}Introduction}{2}
-\contentsline {section}{\numberline {2}R\IeC {\'e}partition des t\IeC {\^a}ches}{2}
-\contentsline {section}{\numberline {3}Evaluation des charges}{2}
-\contentsline {section}{\numberline {4}Diagramme de Gantt}{2}
+\contentsline {section}{\numberline {1}Cadre du projet}{2}
+\contentsline {subsection}{\numberline {1.1}Th\IeC {\`e}me du projet}{2}
+\contentsline {subsection}{\numberline {1.2}Phases du projet}{2}
+\contentsline {subsection}{\numberline {1.3}Outils de suivi}{2}
+\contentsline {subsection}{\numberline {1.4}Objectifs en termes de produits finis}{2}
+\contentsline {section}{\numberline {2}Organisation des t\IeC {\^a}ches}{2}
+\contentsline {subsection}{\numberline {2.1}R\IeC {\'e}partition des t\IeC {\^a}ches}{2}
+\contentsline {subsection}{\numberline {2.2}Evaluation des charges}{3}
+\contentsline {section}{\numberline {3}Diagramme de Gantt}{4}
