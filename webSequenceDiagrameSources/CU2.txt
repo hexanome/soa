@@ -1,0 +1,17 @@
+title CU2 Répartition des contacts commerciaux
+
+IHM->SM: Récupération des contacts (voir CU4)
+IHM->SM : getAllAgent(agence)
+activate SM
+SM->Agences : getAllAgent(agence)
+activate Agences
+Agences-->SM: agents
+SM-->IHM: agents
+IHM->SM:affecterContactAgent(unAgent,unContact)
+activate SM
+SM->Agences:affecterContactAgent(unAgent,unContact)
+activate Agences
+Agences-->SM : code retour
+deactivate Agences
+SM-->IHM : code retour
+deactivate SM
