@@ -1,6 +1,7 @@
 title CU10
 
 opt si aucun client selectionné
+ Agent->IHM:listerClient()
  IHM->SM: getAllClient()
  activate SM
  SM->Client: getAll()
@@ -9,6 +10,7 @@ opt si aucun client selectionné
  deactivate Client
  SM-->IHM:clients
  deactivate SM
+ Agent->IHM:choixClient(client)
 end
  IHM->SM:afficherInfo(clientSelectionne)
  activate SM
@@ -19,10 +21,11 @@ end
  SM-->IHM: info client
  deactivate SM
 loop tant que l'utilisateur veut continuer
- IHM->IHM:choixTheme(theme)
+ Agent->IHM:choixTheme(theme)
 end 
 
 opt Si modification
+    Agent->IHM:sauver()
     IHM->SM:updateClient(Client)
     activate SM
     SM->Client:update(client)
