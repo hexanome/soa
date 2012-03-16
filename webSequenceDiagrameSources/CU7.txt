@@ -1,68 +1,83 @@
 title CU7
 
+Agent->IHM:changerVue(vue)
 alt si vue agence
-    IHM->ServiceMetier: getAllAgents(agence)
-    activate ServiceMetier
-    ServiceMetier->databaseAgent: getAll(agence)
-    activate databaseAgent
-    databaseAgent-->ServiceMetier: Agents
-    deactivate databaseAgent
-    ServiceMetier-->IHM: Agents
-    deactivate ServiceMetier
-    IHM->ServiceMetier: getSemaineParAgent(semaine,agent)
-    activate ServiceMetier
-    ServiceMetier->databaseAgenda: getSemaineParAgent(semaine,agent)
-    activate databaseAgenda
-    databaseAgenda-->ServiceMetier: semaine
-    deactivate databaseAgenda
-    ServiceMetier-->IHM: semaine
-    deactivate ServiceMetier
-else si vue agent
-    IHM->ServiceMetier: getJourAgence(date)
-    activate ServiceMetier
-    ServiceMetier->databaseAgenda: getJourAgence(date)
-    activate databaseAgenda
-    databaseAgenda-->ServiceMetier: jour
-    deactivate databaseAgenda
-    ServiceMetier-->IHM: jour
-    deactivate ServiceMetier
-end
-alt action = créer RDV
-    IHM->ServiceMetier: creerRDV(info RDV)
-    activate ServiceMetier
-    ServiceMetier->Agenda: new(info RDV)
+    IHM->SM: getAllAgents(agence)
+    activate SM
+    SM->Agences: getAll(agence)
+    activate Agences
+    Agences-->SM: Agents
+    deactivate Agences
+    SM-->IHM: Agents
+    deactivate SM
+    Agent->IHM:choixAgent(idAgent)
+    Agent->IHM:choixSemaine(date)
+    IHM->SM: getSemaineParAgent(semaine,agent)
+    activate SM
+    SM->Agenda: getSemaineParAgent(semaine,agent)
     activate Agenda
-    Agenda-->ServiceMetier: rdv
+    Agenda-->SM: semaine
     deactivate Agenda
-    ServiceMetier->databaseAgenda: insertRDV(rdv)
-    ServiceMetier-->IHM: code erreur
-    deactivate ServiceMetier
-else action = modifier RDV
-    IHM->ServiceMetier: updateRDV(rdv)
-    activate ServiceMetier
-    ServiceMetier->databaseAgenda: updateRDV(rdv)
-    ServiceMetier-->IHM: code erreur
-    deactivate ServiceMetier
-else action = annuler RDV
-    IHM->ServiceMetier: deleteRDV(rdv)
-activate ServiceMetier
-    ServiceMetier->databaseAgenda: deleteRDV(rdv)
-    ServiceMetier-->IHM: code erreur
-    deactivate ServiceMetier
-else action = réaffecter RDV
-    IHM->ServiceMetier: getAllAgents(agence)
-    activate ServiceMetier
-    ServiceMetier->databaseAgent: getAll(agence)
-    activate databaseAgent
-    databaseAgent-->ServiceMetier: Agents
-    deactivate databaseAgent
-    ServiceMetier-->IHM: agents
-    deactivate ServiceMetier
-    IHM->ServiceMetier: transferRDV(rdv,agent)
-    activate ServiceMetier
-    ServiceMetier->Agenda: setAgent(agent)
-   ServiceMetier->databaseAgenda:updateRDV(rdv)
-    ServiceMetier-->IHM: code erreur
-    deactivate ServiceMetier
+    SM-->IHM: semaine
+    deactivate SM
+else si vue agent
+    Agent->IHM:choixJour(date)
+    IHM->SM: getJourAgence(date)
+    activate SM
+    SM->Agenda: getJourAgence(date)
+    activate Agenda
+    Agenda-->SM: jour
+    deactivate Agenda
+    SM-->IHM: jour
+    deactivate SM
 end
-    
+Agent->IHM:selectionCellule()
+activate IHM
+IHM->SM:getPlageHoraire(Agent,Date)
+activate SM
+SM->Agenda:getPlageHoraire(Agent,Date)
+activate Agenda
+Agenda-->SM:plageHoraire
+deactivate Agenda
+SM->IHM:plageHoraire
+deactivate SM
+deactivate IHM
+Agent->IHM:choix Action
+alt action = créer RDV
+    IHM->SM: creerRDV(info RDV)
+    activate SM
+    SM->Agenda: new(info RDV)
+    activate Agenda
+    Agenda-->SM: rdv
+    deactivate Agenda
+    SM->Agenda: insertRDV(rdv)
+    SM-->IHM: code erreur
+    deactivate SM
+else action = modifier RDV
+    IHM->SM: updateRDV(rdv)
+    activate SM
+    SM->Agenda: updateRDV(rdv)
+    SM-->IHM: code erreur
+    deactivate SM
+else action = annuler RDV
+    IHM->SM: deleteRDV(rdv)
+activate SM
+    SM->Agenda: deleteRDV(rdv)
+    SM-->IHM: code erreur
+    deactivate SM
+else action = réaffecter RDV
+    IHM->SM: getAllAgents(agence)
+    activate SM
+    SM->Agences: getAll(agence)
+    activate Agences
+    Agences-->SM: Agents
+    deactivate Agences
+    SM-->IHM: agents
+    deactivate SM
+    IHM->SM: transferRDV(rdv,agent)
+    activate SM
+    SM->Agenda: setAgent(agent)
+   SM->Agenda:updateRDV(rdv)
+    SM-->IHM: code erreur
+    deactivate SM
+end

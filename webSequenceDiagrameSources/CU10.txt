@@ -16,9 +16,9 @@ end
  activate SM
  SM->Client:getInfo(client)
  activate Client
- Client-->SM: info client
+ Client-->SM: client
  deactivate Client
- SM-->IHM: info client
+ SM-->IHM: client
  deactivate SM
 loop tant que l'utilisateur veut continuer
  Agent->IHM:choixTheme(theme)
