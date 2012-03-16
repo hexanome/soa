@@ -1,0 +1,68 @@
+title CU7
+
+alt si vue agence
+    IHM->ServiceMetier: getAllAgents(agence)
+    activate ServiceMetier
+    ServiceMetier->databaseAgent: getAll(agence)
+    activate databaseAgent
+    databaseAgent-->ServiceMetier: Agents
+    deactivate databaseAgent
+    ServiceMetier-->IHM: Agents
+    deactivate ServiceMetier
+    IHM->ServiceMetier: getSemaineParAgent(semaine,agent)
+    activate ServiceMetier
+    ServiceMetier->databaseAgenda: getSemaineParAgent(semaine,agent)
+    activate databaseAgenda
+    databaseAgenda-->ServiceMetier: semaine
+    deactivate databaseAgenda
+    ServiceMetier-->IHM: semaine
+    deactivate ServiceMetier
+else si vue agent
+    IHM->ServiceMetier: getJourAgence(date)
+    activate ServiceMetier
+    ServiceMetier->databaseAgenda: getJourAgence(date)
+    activate databaseAgenda
+    databaseAgenda-->ServiceMetier: jour
+    deactivate databaseAgenda
+    ServiceMetier-->IHM: jour
+    deactivate ServiceMetier
+end
+alt action = créer RDV
+    IHM->ServiceMetier: creerRDV(info RDV)
+    activate ServiceMetier
+    ServiceMetier->Agenda: new(info RDV)
+    activate Agenda
+    Agenda-->ServiceMetier: rdv
+    deactivate Agenda
+    ServiceMetier->databaseAgenda: insertRDV(rdv)
+    ServiceMetier-->IHM: code erreur
+    deactivate ServiceMetier
+else action = modifier RDV
+    IHM->ServiceMetier: updateRDV(rdv)
+    activate ServiceMetier
+    ServiceMetier->databaseAgenda: updateRDV(rdv)
+    ServiceMetier-->IHM: code erreur
+    deactivate ServiceMetier
+else action = annuler RDV
+    IHM->ServiceMetier: deleteRDV(rdv)
+activate ServiceMetier
+    ServiceMetier->databaseAgenda: deleteRDV(rdv)
+    ServiceMetier-->IHM: code erreur
+    deactivate ServiceMetier
+else action = réaffecter RDV
+    IHM->ServiceMetier: getAllAgents(agence)
+    activate ServiceMetier
+    ServiceMetier->databaseAgent: getAll(agence)
+    activate databaseAgent
+    databaseAgent-->ServiceMetier: Agents
+    deactivate databaseAgent
+    ServiceMetier-->IHM: agents
+    deactivate ServiceMetier
+    IHM->ServiceMetier: transferRDV(rdv,agent)
+    activate ServiceMetier
+    ServiceMetier->Agenda: setAgent(agent)
+   ServiceMetier->databaseAgenda:updateRDV(rdv)
+    ServiceMetier-->IHM: code erreur
+    deactivate ServiceMetier
+end
+    

@@ -1,0 +1,8 @@
+title CU1 Génération de contact
+
+IHM->SM: GenererContactsPotentiels( )
+
+
+
+SM->Contact: GenererMotifsContact( )
+SM->Contact: GenererContactPrevu( )
