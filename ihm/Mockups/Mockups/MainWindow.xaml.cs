@@ -12,21 +12,22 @@ using System.Windows.Shapes;
 
 namespace Mockups
 {
-	/// <summary>
-	/// Interaction logic for MainWindow.xaml
-	/// </summary>
-	public partial class MainWindow : Window
-	{
-		public MainWindow()
-		{
-			this.InitializeComponent();
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            this.InitializeComponent();
 
-			// Insert code required on object creation below this point.
-		}
+            // Insert code required on object creation below this point.
+        }
 
-		private void BtPrendreRdv_Click(object sender, System.Windows.RoutedEventArgs e)
-		{
-			// TODO: Add event handler implementation here.
-		}
-	}
+        private void BtPrendreRdv_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            var priseRdv = new PriseRDV();
+            priseRdv.ShowDialog();
+        }
+    }
 }
