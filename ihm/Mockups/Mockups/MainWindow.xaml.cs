@@ -29,5 +29,11 @@ namespace Mockups
             var priseRdv = new PriseRDV();
             priseRdv.ShowDialog();
         }
+
+        private void BtAnnulation_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            var annulationContact = new AnnulationContact();
+            annulationContact.ShowDialog();
+        }
     }
 }

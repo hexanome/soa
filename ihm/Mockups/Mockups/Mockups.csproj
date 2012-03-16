@@ -64,6 +64,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Controls\ContactConfig.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\RdvConfig.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dialogues\AnnulationContact.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Dialogues\PriseRDV.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -81,6 +93,15 @@
     </Compile>
     <Compile Include="Controls\CalendarHorizontal.xaml.cs">
       <DependentUpon>CalendarHorizontal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ContactConfig.xaml.cs">
+      <DependentUpon>ContactConfig.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RdvConfig.xaml.cs">
+      <DependentUpon>RdvConfig.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\AnnulationContact.xaml.cs">
+      <DependentUpon>AnnulationContact.xaml</DependentUpon>
     </Compile>
     <Compile Include="Dialogues\PriseRDV.xaml.cs">
       <DependentUpon>PriseRDV.xaml</DependentUpon>
