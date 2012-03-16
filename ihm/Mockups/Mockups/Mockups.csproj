@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ExpressionBlendVersion>4.0.30816.0</ExpressionBlendVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{51c21fdc-abc3-4f95-b4a2-a0e507f1e53e}</ProjectGuid>
+    <ProjectGuid>{51C21FDC-ABC3-4F95-B4A2-A0E507F1E53E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <DefaultClrNameSpace>Mockups</DefaultClrNameSpace>
@@ -56,7 +56,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Calendar.xaml">
+    <Page Include="Controls\Calendar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CalendarHorizontal.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ContactConfig.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\RdvConfig.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dialogues\AnnulationContact.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -72,8 +88,20 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Calendar.xaml.cs">
+    <Compile Include="Controls\Calendar.xaml.cs">
       <DependentUpon>Calendar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CalendarHorizontal.xaml.cs">
+      <DependentUpon>CalendarHorizontal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ContactConfig.xaml.cs">
+      <DependentUpon>ContactConfig.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RdvConfig.xaml.cs">
+      <DependentUpon>RdvConfig.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\AnnulationContact.xaml.cs">
+      <DependentUpon>AnnulationContact.xaml</DependentUpon>
     </Compile>
     <Compile Include="Dialogues\PriseRDV.xaml.cs">
       <DependentUpon>PriseRDV.xaml</DependentUpon>
@@ -96,6 +124,7 @@
       <Visible>false</Visible>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath32)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 	     Other similar extension points exist, see Microsoft.Common.targets.

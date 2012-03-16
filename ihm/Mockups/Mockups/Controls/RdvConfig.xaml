@@ -1,0 +1,48 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:local="clr-namespace:Mockups"
+	mc:Ignorable="d"
+	x:Class="Mockups.RdvConfig"
+	x:Name="UserControl"
+	d:DesignWidth="640" d:DesignHeight="480">
+	<Grid x:Name="LayoutRoot">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<Grid Height="50" Margin="50,10,40,10" VerticalAlignment="Top">
+			<Grid.RowDefinitions>
+				<RowDefinition/>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+			<TextBlock Margin="0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Center"/>
+			<TextBox Margin="0,0,20,0" Grid.Row="1" TextWrapping="Wrap" Text="03/05/2012" VerticalAlignment="Center"/>
+			<TextBlock Margin="0" TextWrapping="Wrap" Text="Début" VerticalAlignment="Center" Grid.Column="1"/>
+			<ComboBox Grid.Column="1" Margin="0,0,20,0" Grid.Row="1" VerticalAlignment="Center" SelectedIndex="0">
+				<ComboBoxItem Content="08:00"/>
+			</ComboBox>
+			<TextBlock Margin="0" TextWrapping="Wrap" Text="Fin" VerticalAlignment="Center" Grid.Column="2"/>
+			<ComboBox Grid.Column="2" Margin="0,0,20,0" Grid.Row="1" VerticalAlignment="Center" SelectedIndex="0">
+				<ComboBoxItem Content="09:00"/>
+			</ComboBox>
+		</Grid>
+		<ScrollViewer Margin="20" Grid.Row="2" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Visible">
+			<local:CalendarHorizontal Height="Auto" Width="1400"/>
+		</ScrollViewer>
+		<Grid Margin="20,0" Grid.Row="1" VerticalAlignment="Top">
+			<StackPanel Margin="30,8,0,8" Orientation="Vertical" d:LayoutOverrides="Height" VerticalAlignment="Top">
+				<RadioButton Content="Activité client" GroupName="Activite" IsChecked="True"/>
+				<RadioButton Content="Activité commerciale" Margin="0,5,0,0" GroupName="Activite"/>
+			</StackPanel>
+		</Grid>
+	</Grid>
+</UserControl>

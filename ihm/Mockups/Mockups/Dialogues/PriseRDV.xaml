@@ -1,39 +1,23 @@
 ﻿<Window
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:Mockups" mc:Ignorable="d"
 	x:Class="Mockups.PriseRDV"
 	x:Name="Window"
-	Title="PriseRDV"
-	Width="500" Height="300" ResizeMode="NoResize">
+	Title="Prise de RDV"
+	Width="500" Height="340" ResizeMode="NoResize">
 
 	<Grid x:Name="LayoutRoot">
-		<Grid Height="50" Margin="50,10,40,0" VerticalAlignment="Top">
-			<Grid.RowDefinitions>
-				<RowDefinition/>
-				<RowDefinition/>
-			</Grid.RowDefinitions>
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition/>
-				<ColumnDefinition/>
-				<ColumnDefinition/>
-			</Grid.ColumnDefinitions>
-			<TextBlock Margin="0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Center"/>
-			<TextBox Margin="0,0,20,0" Grid.Row="1" TextWrapping="Wrap" Text="03/05/2012" VerticalAlignment="Center"/>
-			<TextBlock Margin="0" TextWrapping="Wrap" Text="Début" VerticalAlignment="Center" Grid.Column="1"/>
-			<ComboBox Grid.Column="1" Margin="0,0,20,0" Grid.Row="1" VerticalAlignment="Center" SelectedIndex="0">
-				<ComboBoxItem Content="11:30"/>
-			</ComboBox>
-			<TextBlock Margin="0" TextWrapping="Wrap" Text="Fin" VerticalAlignment="Center" Grid.Column="2"/>
-			<ComboBox Grid.Column="2" Margin="0,0,20,0" Grid.Row="1" VerticalAlignment="Center" SelectedIndex="0">
-				<ComboBoxItem Content="14:15"/>
-			</ComboBox>
-		</Grid>
-		<Grid Height="50" Margin="0" VerticalAlignment="Bottom" Background="#FFDADADA">
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<Grid Height="50" Margin="0" VerticalAlignment="Bottom" Background="#FFDADADA" Grid.Row="1">
 			<StackPanel HorizontalAlignment="Right" Margin="0,13,16,13" Orientation="Horizontal" d:LayoutOverrides="Height">
 				<Button Content="Ok" Height="24" VerticalAlignment="Center" Width="70" Margin="0,0,10,0"/>
 				<Button Content="Annuler" Height="24" VerticalAlignment="Center" Width="70"/>
 			</StackPanel>
 		</Grid>
+		<local:RdvConfig Margin="0"/>
 	</Grid>
 </Window>
