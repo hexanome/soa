@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mockups", "Mockups\Mockups.csproj", "{51c21fdc-abc3-4f95-b4a2-a0e507f1e53e}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51C21FDC-ABC3-4F95-B4A2-A0E507F1E53E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51C21FDC-ABC3-4F95-B4A2-A0E507F1E53E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51C21FDC-ABC3-4F95-B4A2-A0E507F1E53E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51C21FDC-ABC3-4F95-B4A2-A0E507F1E53E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

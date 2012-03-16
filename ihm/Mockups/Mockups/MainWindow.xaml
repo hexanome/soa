@@ -1,0 +1,150 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:Mockups" mc:Ignorable="d"
+	x:Class="Mockups.MainWindow"
+	x:Name="Window"
+	Title="SOA"
+	Width="800" Height="600" MinWidth="640" MinHeight="480">
+
+	<Grid x:Name="LayoutRoot">
+		<TabControl Margin="8">
+			<TabItem Header="Contacts">
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition/>
+						<ColumnDefinition Width="Auto"/>
+					</Grid.ColumnDefinitions>
+					<ListView Margin="8">
+						<ListView.View>
+							<GridView>
+								<GridViewColumn Header="Client"/>
+								<GridViewColumn Header="Motif"/>
+								<GridViewColumn Header="Date"/>
+							</GridView>
+						</ListView.View>
+					</ListView>
+					<Border Grid.Column="1" HorizontalAlignment="Right" Margin="0,8,8,8" Width="200" BorderBrush="#FF828790" CornerRadius="1" BorderThickness="1">
+						<Grid>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="Auto"/>
+								<RowDefinition/>
+								<RowDefinition Height="Auto"/>
+							</Grid.RowDefinitions>
+							<TextBlock Margin="10,10,10,0" TextWrapping="Wrap" Text="Détails Contact" FontSize="21.333" VerticalAlignment="Top"/>
+							<StackPanel Margin="0" VerticalAlignment="Top" Background="#FFDADADA" Grid.Row="2">
+								<Button Content="Prendre RDV" Margin="20,10" Height="24" Click="BtPrendreRdv_Click"/>
+								<Button Content="Annuler Contact" Margin="20,0,20,10" Height="24"/>
+							</StackPanel>
+							<Grid Margin="10,20,10,0" Grid.Row="1" VerticalAlignment="Top">
+								<Grid.RowDefinitions>
+									<RowDefinition/>
+									<RowDefinition/>
+									<RowDefinition/>
+								</Grid.RowDefinitions>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="Auto"/>
+									<ColumnDefinition/>
+								</Grid.ColumnDefinitions>
+								<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Client :" Foreground="#FF545454"/>
+								<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="Nom Client 1" Grid.Column="1"/>
+								<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Motif :" Grid.Row="1" Foreground="#FF545454"/>
+								<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="Prêt" Grid.Column="1" Grid.Row="1"/>
+								<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Date création :" Grid.Row="2" Foreground="#FF545454"/>
+								<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="01/02/2012" Grid.Column="1" Grid.Row="2"/>
+							</Grid>
+						</Grid>
+					</Border>
+				</Grid>
+			</TabItem>
+			<TabItem Header="Agenda">
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition/>
+						<ColumnDefinition Width="Auto"/>
+					</Grid.ColumnDefinitions>
+					<Border Grid.Column="1" HorizontalAlignment="Right" Margin="0,8,8,8" Width="200" BorderBrush="#FF828790" CornerRadius="1" BorderThickness="1">
+						<Grid>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="Auto"/>
+								<RowDefinition/>
+								<RowDefinition Height="Auto"/>
+							</Grid.RowDefinitions>
+							<TextBlock Margin="10,10,10,0" TextWrapping="Wrap" Text="Détails RDV" FontSize="21.333" VerticalAlignment="Top"/>
+							<StackPanel Margin="10,20,10,0" Orientation="Vertical" Grid.Row="1" VerticalAlignment="Top">
+								<Grid>
+									<Grid.RowDefinitions>
+										<RowDefinition/>
+										<RowDefinition/>
+									</Grid.RowDefinitions>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="Auto"/>
+										<ColumnDefinition/>
+									</Grid.ColumnDefinitions>
+									<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Client :" Foreground="#FF545454"/>
+									<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="Nom Client 1" Grid.Column="1"/>
+									<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Motif :" Grid.Row="1" Foreground="#FF545454"/>
+									<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="Prêt" Grid.Column="1" Grid.Row="1"/>
+								</Grid>
+								<Rectangle Fill="#FF828790" Height="1" Margin="0,10,0,0"/>
+								<Grid Margin="0,10,0,0">
+									<Grid.RowDefinitions>
+										<RowDefinition/>
+										<RowDefinition/>
+										<RowDefinition/>
+									</Grid.RowDefinitions>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="Auto"/>
+										<ColumnDefinition/>
+									</Grid.ColumnDefinitions>
+									<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Date :" Foreground="#FF545454"/>
+									<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="03/05/2012" Grid.Column="1"/>
+									<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Début :" Grid.Row="1" Foreground="#FF545454"/>
+									<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="11:45" Grid.Column="1" Grid.Row="1"/>
+									<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Fin :" Grid.Row="2" Foreground="#FF545454"/>
+									<TextBlock HorizontalAlignment="Left" Margin="4.999,0,0,0" TextWrapping="Wrap" Text="13:00" Grid.Column="1" Grid.Row="2"/>
+								</Grid>
+							</StackPanel>
+							<StackPanel Margin="0" VerticalAlignment="Top" Background="#FFDADADA" Grid.Row="2">
+								<Button Content="Préparer RDV" Margin="20,10" Height="24"/>
+								<Button Content="Rapport Commercial" Margin="20,0,20,10" Height="24"/>
+								<Button Content="Annuler RDV" Margin="20,0,20,10" Height="24"/>
+							</StackPanel>
+						</Grid>
+					</Border>
+					<Border Margin="8" CornerRadius="1" BorderThickness="1" BorderBrush="#FF828790">
+						<Grid>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="Auto"/>
+								<RowDefinition/>
+							</Grid.RowDefinitions>
+							<TextBlock Margin="10,10,10,0" TextWrapping="Wrap" Text="Calendrier" FontSize="21.333" VerticalAlignment="Top"/>
+							<Grid Margin="10,10,18,0" Grid.Row="1">
+								<Grid.RowDefinitions>
+									<RowDefinition Height="Auto"/>
+									<RowDefinition/>
+								</Grid.RowDefinitions>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="40"/>
+									<ColumnDefinition/>
+									<ColumnDefinition/>
+									<ColumnDefinition/>
+									<ColumnDefinition/>
+									<ColumnDefinition/>
+								</Grid.ColumnDefinitions>
+								<TextBlock Grid.Column="1" Margin="0" TextWrapping="Wrap" Text="Lundi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+								<TextBlock Grid.Column="2" Margin="0" TextWrapping="Wrap" Text="Mardi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+								<TextBlock Grid.Column="3" Margin="0" TextWrapping="Wrap" Text="Mercredi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+								<TextBlock Grid.Column="4" Margin="0" TextWrapping="Wrap" Text="Jeudi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+								<TextBlock Grid.Column="5" Margin="0" TextWrapping="Wrap" Text="Vendredi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+								<ScrollViewer Grid.ColumnSpan="6" Margin="0,0,-18,0" Grid.Row="1">
+									<local:Calendar Height="1400" Width="Auto" VerticalAlignment="Top"/>
+								</ScrollViewer>
+							</Grid>
+						</Grid>
+					</Border>
+				</Grid>
+			</TabItem>
+		</TabControl>
+	</Grid>
+</Window>
