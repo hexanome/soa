@@ -5,8 +5,7 @@ Agent->IHM: consulterAgenda (CU7)
 activate IHM
 deactivate IHM
 
-
-alt Preparation faite
+alt [Contact staus = prepare]
     Agent->IHM: consulterPreparation(idContact)
 activate IHM
 IHM->SM: consulterPreparation(idContact)
@@ -24,13 +23,9 @@ deactivate Contact
 deactivate Produit
 end
 
-Agent->IHM: consulterClient(idClient)
+Agent->IHM: consulterClient(idClient)(CU10)
 activate IHM
-IHM->SM: dossierClient(idClient)(CU10)
-activate SM
-SM-->IHM: dossier
 deactivate IHM
-deactivate SM
 
 Agent->IHM: soumettreProposition(idContact,idOffre)
 activate IHM
@@ -51,4 +46,3 @@ activate Contact
 deactivate Contact
 deactivate SM
 deactivate IHM
-

@@ -1,0 +1,46 @@
+title CU8 - Preparation de l'entretien par un agent - Diagramme de séquence
+
+
+Agent->IHM: consulterAgenda (CU7)
+activate IHM
+deactivate IHM
+
+
+
+
+Agent->IHM: consulterClient(idClient)(CU10)
+activate IHM
+deactivate IHM
+
+Agent->IHM: consulterCatalogue(segment,produit)
+activate IHM
+IHM->SM: consulterCatalogue(segment,produit)
+activate SM
+SM-->IHM: offres
+deactivate IHM
+SM->Produit: consulterCatalogue(segment,produit)
+Produit-->SM: offres
+activate Produit
+deactivate Produit
+deactivate SM
+
+
+Agent->IHM: soumettreProposition(idContact,idOffre)
+activate IHM
+IHM->SM: soumettreProposition(idContact,idOffre)
+activate SM
+SM->Contact: enregistrerProposition(idContact,idOffre)
+activate Contact
+deactivate Contact
+deactivate SM
+deactivate IHM
+
+Agent->IHM: preparerContact(idContact)
+activate IHM
+IHM->SM: preparerContact(idContact)
+activate SM
+SM->Contact: setContactStatus(idContact, "prepare")
+activate Contact
+deactivate Contact
+deactivate SM
+deactivate IHM
