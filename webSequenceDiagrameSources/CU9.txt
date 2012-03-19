@@ -1,0 +1,54 @@
+title CU9 - Conduite de l'entretien par l'agent - Diagramme de séquence
+
+
+Agent->IHM: consulterAgenda (CU7)
+activate IHM
+deactivate IHM
+
+
+alt Preparation faite
+    Agent->IHM: consulterPreparation(idContact)
+activate IHM
+IHM->SM: consulterPreparation(idContact)
+activate SM
+SM-->IHM: propositions
+deactivate IHM
+SM->Contact: consulterPreparation(idContact)
+activate Contact
+Contact-->SM: propositions
+deactivate SM
+Contact->Produit: getOffres
+activate Produit
+Produit-->Contact: offres
+deactivate Contact
+deactivate Produit
+end
+
+Agent->IHM: consulterClient(idClient)
+activate IHM
+IHM->SM: dossierClient(idClient)(CU10)
+activate SM
+SM-->IHM: dossier
+deactivate IHM
+deactivate SM
+
+Agent->IHM: soumettreProposition(idContact,idOffre)
+activate IHM
+IHM->SM: soumettreProposition(idContact,idOffre)
+activate SM
+SM->Contact: enregistrerProposition(idContact,idOffre)
+activate Contact
+deactivate Contact
+deactivate SM
+deactivate IHM
+
+Agent->IHM: realiserContact(idContact)
+activate IHM
+IHM->SM: realiserContact(idContact)
+activate SM
+SM->Contact: setContactStatus(idContact, "realise")
+activate Contact
+deactivate Contact
+deactivate SM
+deactivate IHM
+
