@@ -14,30 +14,6 @@ Agences-->SM: agents\
 deactivate Agences\
 SM-->IHM: agents\
 deactivate SM\
-\
-\
-Chef d'Agence->IHM : S\'e9lectionner un agent suivant une \
-propri\'e9t\'e9\
-Chef d'Agence->IHM : Visualiser contacts affect\'e9s d'un agent\
-IHM->SM : getContactsAgent(unAgent)\
-activate SM\
-SM->Contacts :getContactsAgent(unAgent)\
-activate Contacts\
-Contacts-->SM : contacts\
-SM-->IHM : contacts\
-\
-title CU3 : Suivi de l'action commerciale\
-Chef d'Agence->IHM : Visualiser liste agents \
-IHM->SM : getAllAgent(agence)\
-activate SM\
-SM->Agences : getAllAgent(agence)\
-activate Agences\
-Agences-->SM: agents\
-deactivate Agences\
-SM-->IHM: agents\
-deactivate SM\
-\
-\
 Chef d'Agence->IHM : S\'e9lectionner un agent suivant une \
 propri\'e9t\'e9\
 Chef d'Agence->IHM : Visualiser contacts affect\'e9s d'un agent\
