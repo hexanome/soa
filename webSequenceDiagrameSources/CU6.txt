@@ -1,4 +1,4 @@
-title CU6
+﻿title CU6
 
 Agent->IHM:planificationContact
 activate IHM
@@ -51,7 +51,7 @@ SM->Agenda:creerPlageAgenda(date,type='Contact Spontané',idAgent)
 SM->Contact:new Contact(date,etat=Réalisé,idAgent)
 SM-->IHM:code retour
 deactivate SM
-IHM-->IHM:updateIHM()
+IHM-->IHM:updateVue()
 deactivate IHM
 
 end opt
