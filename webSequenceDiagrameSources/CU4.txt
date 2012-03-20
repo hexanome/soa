@@ -1,4 +1,4 @@
-title CU4
+﻿title CU4
 
 note over Agent,IHM,SM: Consultation de l'agenda CU7
 Agent->IHM: choixVue()
