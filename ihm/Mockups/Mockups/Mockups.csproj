@@ -56,6 +56,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Controls\ActionButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Controls\Calendar.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -68,11 +72,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Controls\DetailsContacts.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Controls\RdvConfig.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Dialogues\AnnulationContact.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dialogues\ContactSpontanne.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -88,6 +100,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Controls\ActionButton.xaml.cs">
+      <DependentUpon>ActionButton.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Calendar.xaml.cs">
       <DependentUpon>Calendar.xaml</DependentUpon>
     </Compile>
@@ -97,11 +112,17 @@
     <Compile Include="Controls\ContactConfig.xaml.cs">
       <DependentUpon>ContactConfig.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\DetailsContacts.xaml.cs">
+      <DependentUpon>DetailsContacts.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\RdvConfig.xaml.cs">
       <DependentUpon>RdvConfig.xaml</DependentUpon>
     </Compile>
     <Compile Include="Dialogues\AnnulationContact.xaml.cs">
       <DependentUpon>AnnulationContact.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\ContactSpontanne.xaml.cs">
+      <DependentUpon>ContactSpontanne.xaml</DependentUpon>
     </Compile>
     <Compile Include="Dialogues\PriseRDV.xaml.cs">
       <DependentUpon>PriseRDV.xaml</DependentUpon>
@@ -124,7 +145,13 @@
       <Visible>false</Visible>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Icons\appbar.calendar.png" />
+    <Resource Include="Icons\appbar.cancel.png" />
+    <Resource Include="Icons\appbar.clipboard.edit.png" />
+    <Resource Include="Icons\appbar.edit.png" />
+    <Resource Include="Icons\appbar.page.check.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath32)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 	     Other similar extension points exist, see Microsoft.Common.targets.

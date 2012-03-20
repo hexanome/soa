@@ -24,16 +24,10 @@ namespace Mockups
             // Insert code required on object creation below this point.
         }
 
-        private void BtPrendreRdv_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void BtContactSpontanne_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            var priseRdv = new PriseRDV();
-            priseRdv.ShowDialog();
-        }
-
-        private void BtAnnulation_Click(object sender, System.Windows.RoutedEventArgs e)
-        {
-            var annulationContact = new AnnulationContact();
-            annulationContact.ShowDialog();
+            var contactSpontanne = new ContactSpontanne();
+            contactSpontanne.ShowDialog();
         }
     }
 }
