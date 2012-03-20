@@ -55,14 +55,16 @@
 							<TextBlock HorizontalAlignment="Left" Margin="4.999,0,0,0" TextWrapping="Wrap" Text="+33 1 45 69 58 63" Grid.Column="3" Grid.Row="3"/>
 						</Grid>
 					</GroupBox>
-					<GroupBox Header="Revenus" Margin="8" Grid.Row="1"/>
+					<GroupBox Header="Revenus" Margin="8" Grid.Row="1">
+						<DataGrid Margin="8" Height="50"/>
+					</GroupBox>
 				</Grid>
 			</TabItem>
 			<TabItem Header="Produits">
 				<Grid Background="#FFE5E5E5"/>
 			</TabItem>
 			<TabItem Header="Historique">
-				<Grid Background="#FFE5E5E5"/>
+				<Grid Background="White"/>
 			</TabItem>
 		</TabControl>
 	</Grid>

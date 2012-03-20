@@ -5,7 +5,7 @@
 	x:Class="Mockups.MainWindow"
 	x:Name="Window"
 	Title="SOA"
-	Width="800" Height="700" MinWidth="640" MinHeight="700">
+	Width="900" Height="760" MinWidth="640" MinHeight="700">
 
 	<Grid x:Name="LayoutRoot">
 		<Grid.RowDefinitions>
@@ -20,8 +20,8 @@
 			<TabItem Header="Contacts">
 				<Grid>
 					<Grid.ColumnDefinitions>
-						<ColumnDefinition/>
-						<ColumnDefinition Width="300" MinWidth="300"/>
+						<ColumnDefinition MinWidth="300"/>
+						<ColumnDefinition MinWidth="400"/>
 					</Grid.ColumnDefinitions>
 					<GridSplitter Background="{x:Null}" BorderBrush="#FF8C8E94" Margin="0,-5" BorderThickness="0,0,1,0"/>
 					<ListView Margin="8">
@@ -33,7 +33,7 @@
 							</GridView>
 						</ListView.View>
 					</ListView>
-					<Border Grid.Column="1" HorizontalAlignment="Right" Margin="8" BorderBrush="#FF828790" CornerRadius="1" BorderThickness="1">
+					<Border Grid.Column="1" Margin="8" BorderBrush="#FF828790" CornerRadius="1" BorderThickness="1">
 						<Grid>
 							<Grid.RowDefinitions>
 								<RowDefinition Height="Auto"/>
@@ -48,8 +48,8 @@
 			<TabItem Header="Agenda">
 				<Grid>
 					<Grid.ColumnDefinitions>
-						<ColumnDefinition/>
-						<ColumnDefinition Width="300" MinWidth="300"/>
+						<ColumnDefinition MinWidth="300"/>
+						<ColumnDefinition MinWidth="400"/>
 					</Grid.ColumnDefinitions>
 					<GridSplitter Margin="0,-5" BorderThickness="0,0,1,0" BorderBrush="#FF8C8E94"/>
 					<Grid Grid.Column="1" Margin="8" d:LayoutOverrides="Height">
@@ -59,7 +59,7 @@
 						</Grid.RowDefinitions>
 						<Button Content="Rencontre spontanée" Margin="0,0,0,11" Height="24" VerticalAlignment="Top" Click="BtContactSpontanne_Click" Width="150" HorizontalAlignment="Left"/>
 						<Border Margin="0" BorderBrush="#FF828790" CornerRadius="1" BorderThickness="1" d:LayoutOverrides="Height" Grid.Row="1">
-							<local:DetailsContacts Margin="0"/>
+							<local:DetailsRdv/>
 						</Border>
 					</Grid>
 					<Border Margin="8" CornerRadius="1" BorderThickness="1" BorderBrush="#FF828790">

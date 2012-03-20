@@ -80,6 +80,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Controls\DetailsRdv.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Controls\RdvConfig.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -122,6 +126,9 @@
     <Compile Include="Controls\DetailsContacts.xaml.cs">
       <DependentUpon>DetailsContacts.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\DetailsRdv.xaml.cs">
+      <DependentUpon>DetailsRdv.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\RdvConfig.xaml.cs">
       <DependentUpon>RdvConfig.xaml</DependentUpon>
     </Compile>
@@ -153,11 +160,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Icons\appbar.book.open.writing.png" />
     <Resource Include="Icons\appbar.calendar.png" />
     <Resource Include="Icons\appbar.cancel.png" />
     <Resource Include="Icons\appbar.clipboard.edit.png" />
     <Resource Include="Icons\appbar.edit.png" />
     <Resource Include="Icons\appbar.page.check.png" />
+    <Resource Include="Icons\appbar.user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath32)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
