@@ -14,6 +14,11 @@ activate IHM
 IHM->SM:changerEtatContact(date,idContact,Etat)
 activate SM
 SM->Contact:updateContact(etat,date,idContact)
+SM->Contact:getAgent(idContact)
+activate Contact
+Contact-->SM:idAgent
+deactivate Contact
+SM->Agenda:setTacheElementaire(date,idContact,idAgent)
 deactivate SM
 deactivate IHM
 else action=Annuler contact
@@ -26,14 +31,13 @@ SM-->IHM:code retour
 deactivate SM
 IHM-->Agent:code retour
 deactivate IHM
-SM->Contact:deleteTacheElementaire(idContact)
 else action=regrouper contacts
 Agent->IHM:regroupeContact(list<Contact>)
 activate IHM
 IHM->SM:regroupeContact(list<Contact>)
 activate SM
-SM->Contact: updateContact(motifContact)
-loop pour chaque contact
+SM->Contact: updateContact(idPremierContact,modifContact)
+loop pour chaque contact sauf premier
 SM->Contact: updateContact(etat=Annule,raison=regroupement)
 alt SI TacheElementaire associée au contact
 SM->Contact:deleteTacheElementaire(idContact)
