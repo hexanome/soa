@@ -16,7 +16,7 @@ ChefAgence->IHM:terminerPlanification()
 activate IHM
 IHM->SM:planificationTermine()
 activate SM
-loop pour toutes les plages Agenda de type Libre
+loop pour toutes les plages Agenda de type Contact commercial
  SM->Agenda:calculContactPotentielAgenda(idAgenda)
 activate Agenda
 Agenda-->SM:nbContactPotentiel
