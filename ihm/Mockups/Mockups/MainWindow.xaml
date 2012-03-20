@@ -97,15 +97,18 @@
 			</TabItem>
 			<TabItem Header="Clients">
 				<Grid Margin="0">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition MinWidth="200" Width="300"/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>
 					<ListView Margin="8">
 						<ListView.View>
 							<GridView>
 								<GridViewColumn Header="Nom"/>
-								<GridViewColumn Header="Motif"/>
-								<GridViewColumn Header="Date"/>
 							</GridView>
 						</ListView.View>
 					</ListView>
+					<local:DetailsClient Grid.Column="1" Margin="8"/>
 				</Grid>
 			</TabItem>
 		</TabControl>

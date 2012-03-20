@@ -72,6 +72,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Controls\DetailsClient.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Controls\DetailsContacts.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -111,6 +115,9 @@
     </Compile>
     <Compile Include="Controls\ContactConfig.xaml.cs">
       <DependentUpon>ContactConfig.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DetailsClient.xaml.cs">
+      <DependentUpon>DetailsClient.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\DetailsContacts.xaml.cs">
       <DependentUpon>DetailsContacts.xaml</DependentUpon>
