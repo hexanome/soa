@@ -1,0 +1,33 @@
+title CU5
+note over ChefAgence,IHM: Consultation Agenda CU7
+note left of ChefAgence:Pour tout le mois
+ChefAgence->IHM:selectionPlageAgenda(date)
+ChefAgence->IHM:planifiePlageAgenda(idAgent,typeActivite,date)
+activateIHM
+IHM->SM:planifiePlageAgenda(idAgent,typeActivite,date)
+activateSM
+SM->Agenda:new plageAgenda(idAgent,typeActivite,date)
+SM-->IHM:code retour
+deactivate SM
+IHM->IHM:udpateVue()
+IHM-->ChefAgence:code retour
+deactivate IHM
+ChefAgence->IHM:terminerPlanification()
+activate IHM
+IHM->SM:planificationTermine()
+activate SM
+loop pour toutes les plages Agenda de type Libre
+ SM->Agenda:calculContactPotentielAgenda(idAgenda)
+activate Agenda
+Agenda-->SM:nbContactPotentiel
+deactivate Agenda
+SM->Agenda:getIdAgent(idAgenda)
+activate Agenda
+Agenda-->SM:idAgent
+deactivate Agenda
+SM->Agent:addNbContactPotentiel(idAgent)
+activate Agent
+Agent-->SM:NbContactPotentielTotal
+deactivate Agent
+end loop
+
