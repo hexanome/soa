@@ -9,18 +9,7 @@ Agent->IHM: selectionContact(idContact)
 alt action=preparer entretien
 note over Agent,IHM,SM:Preparation d'entretien par un agent CU8
 else action=prendre RDV
-Agent->IHM:prendreRDV(date,idContact)
-activate IHM
-IHM->SM:changerEtatContact(date,idContact,Etat)
-activate SM
-SM->Contact:updateContact(etat,date,idContact)
-SM->Contact:getAgent(idContact)
-activate Contact
-Contact-->SM:idAgent
-deactivate Contact
-SM->Agenda:setTacheElementaire(date,idContact,idAgent)
-deactivate SM
-deactivate IHM
+    note over Agent,IHM,SM:Planification des contacts commerciaux CU6
 else action=Annuler contact
 Agent->IHM:annulerContact(idContact,raison)
 activate IHM
