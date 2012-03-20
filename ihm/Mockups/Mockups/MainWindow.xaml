@@ -5,7 +5,7 @@
 	x:Class="Mockups.MainWindow"
 	x:Name="Window"
 	Title="SOA"
-	Width="800" Height="600" MinWidth="640" MinHeight="480">
+	Width="800" Height="700" MinWidth="640" MinHeight="700">
 
 	<Grid x:Name="LayoutRoot">
 		<Grid.RowDefinitions>
@@ -21,8 +21,9 @@
 				<Grid>
 					<Grid.ColumnDefinitions>
 						<ColumnDefinition/>
-						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="300" MinWidth="300"/>
 					</Grid.ColumnDefinitions>
+					<GridSplitter Background="{x:Null}" BorderBrush="#FF8C8E94" Margin="0,-5" BorderThickness="0,0,1,0"/>
 					<ListView Margin="8">
 						<ListView.View>
 							<GridView>
@@ -32,36 +33,14 @@
 							</GridView>
 						</ListView.View>
 					</ListView>
-					<Border Grid.Column="1" HorizontalAlignment="Right" Margin="0,8,8,8" Width="200" BorderBrush="#FF828790" CornerRadius="1" BorderThickness="1">
+					<Border Grid.Column="1" HorizontalAlignment="Right" Margin="8" BorderBrush="#FF828790" CornerRadius="1" BorderThickness="1">
 						<Grid>
 							<Grid.RowDefinitions>
 								<RowDefinition Height="Auto"/>
 								<RowDefinition/>
 								<RowDefinition Height="Auto"/>
 							</Grid.RowDefinitions>
-							<TextBlock Margin="10,10,10,0" TextWrapping="Wrap" Text="Détails Contact" FontSize="21.333" VerticalAlignment="Top"/>
-							<StackPanel Margin="0" VerticalAlignment="Top" Background="#FFDADADA" Grid.Row="2">
-								<Button Content="Prendre RDV" Margin="20,10" Height="24" Click="BtPrendreRdv_Click"/>
-								<Button Content="Grouper" Margin="20,0" Height="24" IsEnabled="False"/>
-								<Button Content="Annuler Contact" Margin="20,10" Height="24" Click="BtAnnulation_Click"/>
-							</StackPanel>
-							<Grid Margin="10,20,10,0" Grid.Row="1" VerticalAlignment="Top">
-								<Grid.RowDefinitions>
-									<RowDefinition/>
-									<RowDefinition/>
-									<RowDefinition/>
-								</Grid.RowDefinitions>
-								<Grid.ColumnDefinitions>
-									<ColumnDefinition Width="Auto"/>
-									<ColumnDefinition/>
-								</Grid.ColumnDefinitions>
-								<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Client :" Foreground="#FF545454"/>
-								<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="Nom Client 1" Grid.Column="1"/>
-								<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Motif :" Grid.Row="1" Foreground="#FF545454"/>
-								<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="Prêt" Grid.Column="1" Grid.Row="1"/>
-								<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Date création :" Grid.Row="2" Foreground="#FF545454"/>
-								<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="01/02/2012" Grid.Column="1" Grid.Row="2"/>
-							</Grid>
+							<local:DetailsContacts Margin="0" Grid.Row="1"/>
 						</Grid>
 					</Border>
 				</Grid>
@@ -70,64 +49,17 @@
 				<Grid>
 					<Grid.ColumnDefinitions>
 						<ColumnDefinition/>
-						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="300" MinWidth="300"/>
 					</Grid.ColumnDefinitions>
-					<Grid Grid.Column="1" Margin="0,8,8,8" d:LayoutOverrides="Height" Width="200">
+					<GridSplitter Margin="0,-5" BorderThickness="0,0,1,0" BorderBrush="#FF8C8E94"/>
+					<Grid Grid.Column="1" Margin="8" d:LayoutOverrides="Height">
 						<Grid.RowDefinitions>
 							<RowDefinition Height="Auto"/>
 							<RowDefinition/>
 						</Grid.RowDefinitions>
-						<Button Content="Rencontre spontanée" Margin="22,0,28,11" Height="24" VerticalAlignment="Top"/>
+						<Button Content="Rencontre spontanée" Margin="0,0,0,11" Height="24" VerticalAlignment="Top" Click="BtContactSpontanne_Click" Width="150" HorizontalAlignment="Left"/>
 						<Border Margin="0" BorderBrush="#FF828790" CornerRadius="1" BorderThickness="1" d:LayoutOverrides="Height" Grid.Row="1">
-							<Grid>
-								<Grid.RowDefinitions>
-									<RowDefinition Height="Auto"/>
-									<RowDefinition/>
-									<RowDefinition Height="Auto"/>
-								</Grid.RowDefinitions>
-								<TextBlock Margin="10,10,10,0" TextWrapping="Wrap" Text="Détails RDV" FontSize="21.333" VerticalAlignment="Top"/>
-								<StackPanel Margin="10,20,10,0" Orientation="Vertical" Grid.Row="1" VerticalAlignment="Top">
-									<Grid>
-										<Grid.RowDefinitions>
-											<RowDefinition/>
-											<RowDefinition/>
-										</Grid.RowDefinitions>
-										<Grid.ColumnDefinitions>
-											<ColumnDefinition Width="Auto"/>
-											<ColumnDefinition/>
-										</Grid.ColumnDefinitions>
-										<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Client :" Foreground="#FF545454"/>
-										<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="Nom Client 1" Grid.Column="1" TextDecorations="Underline" Foreground="#FF0081B8" Cursor="Hand"/>
-										<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Motif :" Grid.Row="1" Foreground="#FF545454"/>
-										<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="Prêt" Grid.Column="1" Grid.Row="1"/>
-									</Grid>
-									<Rectangle Fill="#FF828790" Height="1" Margin="0,10,0,0"/>
-									<Grid Margin="0,10,0,0">
-										<Grid.RowDefinitions>
-											<RowDefinition/>
-											<RowDefinition/>
-											<RowDefinition/>
-										</Grid.RowDefinitions>
-										<Grid.ColumnDefinitions>
-											<ColumnDefinition Width="Auto"/>
-											<ColumnDefinition/>
-										</Grid.ColumnDefinitions>
-										<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Date :" Foreground="#FF545454"/>
-										<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="03/05/2012" Grid.Column="1"/>
-										<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Début :" Grid.Row="1" Foreground="#FF545454"/>
-										<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="11:45" Grid.Column="1" Grid.Row="1"/>
-										<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Fin :" Grid.Row="2" Foreground="#FF545454"/>
-										<TextBlock HorizontalAlignment="Left" Margin="4.999,0,0,0" TextWrapping="Wrap" Text="13:00" Grid.Column="1" Grid.Row="2"/>
-									</Grid>
-								</StackPanel>
-								<StackPanel Margin="0" VerticalAlignment="Top" Background="#FFDADADA" Grid.Row="2">
-									<Button Content="Préparer RDV" Margin="20,10" Height="24"/>
-									<Button Content="Modifier" Margin="20,0,20,10" Height="24"/>
-									<Button Content="Imprimer confirmation" Margin="20,0,20,10" Height="24" IsEnabled="False"/>
-									<Button Content="Rapport Commercial" Margin="20,0,20,10" Height="24"/>
-									<Button Content="Annuler RDV" Margin="20,0,20,10" Height="24"/>
-								</StackPanel>
-							</Grid>
+							<local:DetailsContacts Margin="0"/>
 						</Border>
 					</Grid>
 					<Border Margin="8" CornerRadius="1" BorderThickness="1" BorderBrush="#FF828790">
@@ -161,6 +93,19 @@
 							</Grid>
 						</Grid>
 					</Border>
+				</Grid>
+			</TabItem>
+			<TabItem Header="Clients">
+				<Grid Margin="0">
+					<ListView Margin="8">
+						<ListView.View>
+							<GridView>
+								<GridViewColumn Header="Nom"/>
+								<GridViewColumn Header="Motif"/>
+								<GridViewColumn Header="Date"/>
+							</GridView>
+						</ListView.View>
+					</ListView>
 				</Grid>
 			</TabItem>
 		</TabControl>

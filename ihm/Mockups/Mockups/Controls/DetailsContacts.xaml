@@ -1,0 +1,109 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:local="clr-namespace:Mockups"
+	mc:Ignorable="d"
+	x:Class="Mockups.DetailsContacts"
+	x:Name="UserControl"
+	d:DesignWidth="640" d:DesignHeight="480">
+
+	<Grid x:Name="LayoutRoot">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<Grid Margin="10,10,10,0">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+			<TextBlock TextWrapping="Wrap" Text="Détails contact" FontSize="21.333" VerticalAlignment="Top"/>
+			<StackPanel Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,0,-0.001" Orientation="Horizontal" d:LayoutOverrides="Height">
+				<TextBlock Margin="0" TextWrapping="Wrap" Text="Etat : " d:LayoutOverrides="Width" VerticalAlignment="Center"/>
+				<TextBlock Margin="0" TextWrapping="Wrap" Text="RDV Pris" VerticalAlignment="Center" Foreground="#FF00B403"/>
+			</StackPanel>
+		</Grid>
+		<StackPanel Orientation="Vertical" VerticalAlignment="Top" Margin="10,10,10,0" Grid.Row="1">
+			<TextBlock HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap" Text="Informations personnelles" FontSize="14.667"/>
+			<Grid Margin="10,10,0,0">
+				<Grid.RowDefinitions>
+					<RowDefinition/>
+					<RowDefinition/>
+					<RowDefinition/>
+					<RowDefinition/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Client :" Foreground="#FF545454"/>
+				<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="Nom Client 1" Grid.Column="1" TextDecorations="Underline" Foreground="#FF0081B8" Cursor="Hand"/>
+				<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Motif :" Grid.Row="1" Foreground="#FF545454"/>
+				<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="Prêt" Grid.Column="1" Grid.Row="1"/>
+				<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Assigné à :" Foreground="#FF545454" VerticalAlignment="Top" Grid.Row="2"/>
+				<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="Moi" VerticalAlignment="Top" Grid.Row="2" Grid.Column="1"/>
+				<TextBlock HorizontalAlignment="Right" Margin="0,0,-0.001,0" TextWrapping="Wrap" Text="Date :" Foreground="#FF545454" VerticalAlignment="Top" Grid.Row="3"/>
+				<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="03/05/2012" VerticalAlignment="Top" Grid.Row="3" Grid.Column="1"/>
+			</Grid>
+			<Rectangle Fill="#FF828790" Height="1" Margin="0,10,0,0"/>
+			<Grid Margin="0,10,0,0">
+				<Grid.RowDefinitions>
+					<RowDefinition/>
+					<RowDefinition/>
+					<RowDefinition/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+			</Grid>
+			<TextBlock HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap" Text="RDV" FontSize="14.667"/>
+			<Grid Height="47.88" Margin="10,10,10,0">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<Grid d:LayoutOverrides="Height">
+					<Grid.RowDefinitions>
+						<RowDefinition/>
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>
+					<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Date" Foreground="#FF545454"/>
+					<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="03/05/2012" Height="15.96" VerticalAlignment="Top" Grid.Column="1"/>
+				</Grid>
+				<Grid d:LayoutOverrides="Height" Grid.Column="1">
+					<Grid.RowDefinitions>
+						<RowDefinition/>
+						<RowDefinition/>
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>
+					<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Début :" Foreground="#FF545454"/>
+					<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="08:00" Grid.Column="1"/>
+					<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Fin :" Foreground="#FF545454" Height="15.96" VerticalAlignment="Top" Grid.Row="1"/>
+					<TextBlock HorizontalAlignment="Left" Margin="4.999,0,0,0" TextWrapping="Wrap" Text="09:00" Grid.Column="1" Grid.Row="1"/>
+				</Grid>
+			</Grid>
+			<ScrollViewer Margin="0,10,0,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Visible" Height="100">
+				<local:CalendarHorizontal Height="Auto" Width="1400"/>
+			</ScrollViewer>
+		</StackPanel>
+		<Grid Margin="0" Grid.Row="2" Background="#FFDADADA">
+			<WrapPanel HorizontalAlignment="Center" Margin="0" Orientation="Horizontal" VerticalAlignment="Top">
+				<local:ActionButton Margin="10" Source="/Mockups;component/Icons/appbar.calendar.png" Title="Prendre RDV" Width="70" Opacity="0.6" Click="BtPrendreRdv_Click"/>
+				<local:ActionButton Margin="10" Source="/Mockups;component/Icons/appbar.clipboard.edit.png" Title="Préparer RDV" Width="74" Click="BtPrendreRdv_Click"/>
+				<local:ActionButton Margin="10" Source="/Mockups;component/Icons/appbar.page.check.png" Title="Rapport" Width="70" Click="BtPrendreRdv_Click"/>
+				<local:ActionButton Margin="10" Source="/Mockups;component/Icons/appbar.edit.png" Title="Modifier" Width="70"/>
+				<local:ActionButton Margin="10" Source="/Mockups;component/Icons/appbar.cancel.png" Title="Annuler" Width="70" Click="BtCancel_Click"/>
+			</WrapPanel>
+		</Grid>
+	</Grid>
+</UserControl>

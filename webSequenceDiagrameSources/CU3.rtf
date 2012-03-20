@@ -14,8 +14,6 @@ Agences-->SM: agents\
 deactivate Agences\
 SM-->IHM: agents\
 deactivate SM\
-\
-\
 Chef d'Agence->IHM : S\'e9lectionner un agent suivant une \
 propri\'e9t\'e9\
 Chef d'Agence->IHM : Visualiser contacts affect\'e9s d'un agent\
@@ -24,4 +22,8 @@ activate SM\
 SM->Contacts :getContactsAgent(unAgent)\
 activate Contacts\
 Contacts-->SM : contacts\
-SM-->IHM : contacts}
+SM-->IHM : contacts\
+\
+\
+\
+}

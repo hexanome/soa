@@ -44,27 +44,22 @@ deactivate SM
 deactivate IHM
 Agent->IHM:choix Action
 alt action = créer RDV
-    IHM->SM: creerRDV(info RDV)
-    activate SM
-    SM->Agenda: new(info RDV)
-    activate Agenda
-    Agenda-->SM: rdv
-    deactivate Agenda
-    SM->Agenda: insertRDV(rdv)
-    SM-->IHM: code erreur
-    deactivate SM
+    note over IHM,SM:Planification des contacts commerciaux CU6
 else action = modifier RDV
-    IHM->SM: updateRDV(rdv)
+    IHM->SM: updateContact(idContact)
     activate SM
-    SM->Agenda: updateRDV(rdv)
+    SM->Agenda: updateContact(idContact)
     SM-->IHM: code erreur
     deactivate SM
 else action = annuler RDV
-    IHM->SM: deleteRDV(rdv)
+   
+IHM->SM:annulerContact(idContact,raison)
 activate SM
-    SM->Agenda: deleteRDV(rdv)
-    SM-->IHM: code erreur
-    deactivate SM
+SM->Contact:updateContact(etat,raison)
+
+SM->Contact:deleteTacheElementaire(idContact)
+SM-->IHM:code retour
+deactivate SM
 else action = réaffecter RDV
     IHM->SM: getAllAgents(agence)
     activate SM
@@ -74,10 +69,11 @@ else action = réaffecter RDV
     deactivate Agences
     SM-->IHM: agents
     deactivate SM
-    IHM->SM: transferRDV(rdv,agent)
+    IHM->SM: transfererContact(idContact,agent)
     activate SM
     SM->Agenda: setAgent(agent)
-   SM->Agenda:updateRDV(rdv)
+   SM->Agenda:updateContact(idContact)
     SM-->IHM: code erreur
     deactivate SM
 end
+

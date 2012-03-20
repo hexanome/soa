@@ -1,7 +1,13 @@
 %Corps du document :
 %\setlength{\parindent}{1cm}    
 
-\section{Conception détaillée des applications}
+\section{Conception détaillée}
+
+Attachons nous maintenant à la conception détaille de notre application. Il s'agit
+d'identifier et de spécifier les composants nécessaires pour automatiser tout ou
+partie des outils à utiliser dans le cadre des cas d'utilisation identifiés.
+
+Commençant par spécifier l'enchaînement des fenêtres grâce à un diagramme.
 
 \subsection{Diagramme d'enchaînement des fenêtres}
 
@@ -9,9 +15,44 @@
 \includegraphics[width=\textwidth]{diagramme-edf.png}
 \end {center}
 
-La fenêtre principale présente deux onglets principaux :
+\paragraph{Description}
+
+L'Interface Homme-Machine (IHM) sera composée de trois onglets
+principaux :
 
 \begin{itemize}
-\item La Liste des Contacts : Si l'utilisateur est le chef d'agence, elle montre tous les contacts prévus et permet de les affecter à des agents, sinon elle montre simplement les contacts affectés à un agent et permet de prendre Rendez-Vous avec le client. Suite à la demande d'un client, un agent peut également ajouter un contact manuellement.
-\item L'Agenda : Il permet de situer les Rendez-Vous dans le temps grâce à une vue calendaire paramétrable. Un Rendez-Vous peut être modifié, préparé, et une fois qu'il a été effectué, l'interface permet de rédiger un Rapport d'Activité Commerciale pour cloturer le contact.
+\item \textbf{L'onglet Contacts} : Il présente la liste des Contacts prévus et affectés.
+\item \textbf{L'onglet Agenda} : Il permet de consulter la liste des RDV pris.
+\item \textbf{L'onglet Clients} : Cet onglet permet d'accéder aux dossiers des clients de la banque.
 \end{itemize}
+
+On observera également le volet \textbf{Détails du Contact}, partagé par toutes fenêtres de l'IHM.
+En effet, l'objet métier Contact est central à l'application. Il permet d'effectuer toutes les
+opérations nécessaires sur un Contact (une liste de ces services métiers se trouve plus loin
+dans ce compte rendu).
+
+\subsection{Dessin des fenêtres de l'IHM}
+
+Voici une première représentation graphique de l'IHM que nous contruirons :
+
+TODO @quentez
+
+\subsection{Services Métiers invoqués par l'IHM}
+
+Cette IHM offre différents services métiers. En voici la liste :
+
+\begin{itemize}
+\item Ajout d'un nouveau Contact
+\item Affectation / Réaffectation d'un Contact
+\item Edition d'un Rendez-Vous de Contact
+\item Préparation d'un Rendez-Vous de Contact
+\item Edition Rapport d'Activité Commerciale suite à un Contact 
+\end{itemize}
+
+\subsection{Spécification des Services Métier}
+
+TODO @xsauvagnat
+
+\subsection{Spécification des Services Objets Métier}
+
+TODO @xsauvagnat
