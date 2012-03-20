@@ -12,3 +12,13 @@ Voici le diagramme d'état de l'objet ``Contact'' :
 \begin {center}
 \includegraphics[width=\textwidth]{diagramme-etat-objet-contact.png}
 \end {center}
+Comme prévu, il n'est pas possible de réaffecter un contact à un autre agent. En effet un agent sera toujours responsable du groupe de contacts qu'on lui a affectés. Néanmoins, les rendez-vous pris, eux, pourront être réaffectés à un autre agent que celui en charge du contact. Cela permettra entre autre de palier à l'absence d'un agent le jour du rendez-vous client.
+
+\subsection{Choix de l'environnement technique}
+L'environnement technique sera une architecture C/S 3-tiers : l'architecture du système sera donc séparée en trois couches distinctes, à savoir :
+\begin{itemize}
+\item Couche de données : l'information est stockée ici sur la ou les bases de données. Ces informations seront récuperé par la couche applicative
+\item Couche applicative : représente le coeur de l'architecture. A chaque demande de la couche de présentation, la couche applicative va effectuer un calcul, appliquer les règles de gestion et au besoin récuperer les informations de la base de données.
+\item Couche de présentation : à chaque action de l'utilisateur, cette couche va d'une part transférer l'information créée par l'utilisateur à la couche applicative et d'autre part afficher l'information récupérée et traitée depuis la base de données par les deux couches précédentes.
+\end{itemize}
+Le détail de ces tiers sera présenté dans le chapitre 'Architecture technique', notamment la localisation et la répartition des données.
