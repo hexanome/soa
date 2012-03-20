@@ -1,0 +1,38 @@
+title CU4
+
+note over Agent,IHM,SM: Consultation de l'agenda CU7
+Agent->IHM: choixVue()
+note left of SM
+    Voir DSCU7
+end note
+Agent->IHM: selectionContact(idContact)
+alt action=preparer entretien
+note over Agent,IHM,SM:Preparation d'entretien par un agent CU8
+else action=prendre RDV
+    note over Agent,IHM,SM:Planification des contacts commerciaux CU6
+else action=Annuler contact
+Agent->IHM:annulerContact(idContact,raison)
+activate IHM
+IHM->SM:annulerContact(idContact,raison)
+activate SM
+SM->Contact:updateContact(etat,raison)
+SM-->IHM:code retour
+deactivate SM
+IHM-->Agent:code retour
+deactivate IHM
+else action=regrouper contacts
+Agent->IHM:regroupeContact(list<Contact>)
+activate IHM
+IHM->SM:regroupeContact(list<Contact>)
+activate SM
+SM->Contact: updateContact(idPremierContact,modifContact)
+loop pour chaque contact sauf premier
+SM->Contact: updateContact(etat=Annule,raison=regroupement)
+alt SI TacheElementaire associée au contact
+SM->Contact:deleteTacheElementaire(idContact)
+end loop
+SM-->IHM:code retour
+deactivate SM
+IHM-->Agent:code retour
+deactivate IHM
+end alt

@@ -1,0 +1,57 @@
+﻿title CU6
+
+Agent->IHM:planificationContact
+activate IHM
+IHM->SM:getAgenda(type=contactCommercial)
+activate SM
+SM->Agenda:GetFromType(type=ContactCommercial)
+SM-->IHM:list<Agenda>
+deactivate SM
+IHM->IHM:updateVue()
+deactivate IHM
+
+
+opt afficher informations client
+Agent->IHM:afficherInfoContact()
+note over IHM,SM:Consultation du dossier client CU10
+end opt
+
+opt prendre RDV
+Agent->IHM:prendreRDV(date,idContact)
+activate IHM
+IHM->SM:changerEtatContact(date,idContact,Etat)
+activate SM
+SM->Contact:updateContact(etat,date,idContact)
+SM->Contact:getAgent(idContact)
+activate Contact
+Contact-->SM:idAgent
+deactivate Contact
+SM->Agenda:setTacheElementaire(date,idContact,idAgent)
+deactivate SM
+IHM->IHM:afficherLettreConfirmation()
+deactivate IHM
+Agent->IHM:editerLettreConfirmation()
+activate IHM
+IHM->SM:confirmationContact(lettre)
+activate SM
+SM->Contact:updateContact(idContact,lettre)
+SM-->IHM:code retour
+deactivate SM
+deactivate IHM
+
+end opt
+
+
+opt contact Spontané
+Agent->IHM:creerContactSpontane(date=now,Client)
+activate IHM
+IHM->SM:creerContactSpontane(date=now,Client)
+activate SM
+SM->Agenda:creerPlageAgenda(date,type='Contact Spontané',idAgent)
+SM->Contact:new Contact(date,etat=Réalisé,idAgent)
+SM-->IHM:code retour
+deactivate SM
+IHM-->IHM:updateVue()
+deactivate IHM
+
+end opt
