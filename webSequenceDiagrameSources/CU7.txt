@@ -1,4 +1,4 @@
-title CU7
+﻿title CU7
 
 Agent->IHM:changerVue(vue)
 alt si vue agence
@@ -12,9 +12,9 @@ alt si vue agence
     deactivate SM
     Agent->IHM:choixAgent(idAgent)
     Agent->IHM:choixSemaine(date)
-    IHM->SM: getSemaineParAgent(semaine,agent)
+    IHM->SM: getSemaineParAgent(semaine,idAgent)
     activate SM
-    SM->Agenda: getSemaineParAgent(semaine,agent)
+    SM->Agenda: getSemaineParAgent(semaine,idAgent)
     activate Agenda
     Agenda-->SM: semaine
     deactivate Agenda
@@ -33,9 +33,9 @@ else si vue agent
 end
 Agent->IHM:selectionCellule()
 activate IHM
-IHM->SM:getPlageHoraire(Agent,Date)
+IHM->SM:getPlageHoraire(idAgent,Date)
 activate SM
-SM->Agenda:getPlageHoraire(Agent,Date)
+SM->Agenda:getPlageHoraire(idAgent,Date)
 activate Agenda
 Agenda-->SM:plageHoraire
 deactivate Agenda
@@ -69,9 +69,9 @@ else action = réaffecter RDV
     deactivate Agences
     SM-->IHM: agents
     deactivate SM
-    IHM->SM: transfererContact(idContact,agent)
+    IHM->SM: transfererContact(idContact,idAgent)
     activate SM
-    SM->Agenda: setAgent(agent)
+    SM->Agenda: setAgent(idAgent)
    SM->Agenda:updateContact(idContact)
     SM-->IHM: code erreur
     deactivate SM

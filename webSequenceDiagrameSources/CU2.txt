@@ -1,17 +1,17 @@
-
+﻿
 title CU2 Répartition des contacts commerciaux
 Chef d'agence->IHM:Lister les contacts
 IHM->SM:getAllContacts(idAgence)
 activate SM
-SM->Agences:getAllContacts(idAgence)
-activate Agences
-Agences->Contact:getAllContact(idAgence)
+SM->Client:getAllContacts(idAgence)
+activate Client
+Client->Contact:getAllContact(idAgence)
 activate Contact
-Contact-->Agences:contacts
+Contact-->Client:contacts
 deactivate Contact
-Agences-->SM:contacts
-deactivate Agences
-SM-->IHM:contacts
+Client-->SM:contacts,nameClient
+deactivate Client
+SM-->IHM:contacts,,nameClient
 deactivate SM
 
 Chef d'agence->IHM:Lister les agents
@@ -24,9 +24,9 @@ Agences-->SM: agents (dont potentielAgent)
 deactivate Agences
 SM-->IHM: agents (dont potentielAgent)
 Chef d'agence->IHM:Selectionner un agent
-IHM->SM:affecterContactAgent(unAgent,unContact)
+IHM->SM:affecterContactAgent(idAgent,idContact)
 activate SM
-SM->Agences:affecterContactAgent(unAgent,unContact)
+SM->Agences:affecterContactAgent(idAgent,idContact)
 activate Agences
 Agences-->SM : code retour
 deactivate Agences

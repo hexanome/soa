@@ -1,29 +1,59 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf320
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\fswiss\fprq0\fcharset0 Helvetica{\*\falt Arial};}{\f4\fnil\fprq2\fcharset0 SimSun;}{\f5\fnil\fprq2\fcharset0 Mangal;}{\f6\fnil\fprq0\fcharset128 Mangal;}}
+{\colortbl;\red0\green0\blue0;\red128\green128\blue128;}
+{\stylesheet{\s0\snext0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036 Standard;}
+{\s15\sbasedon0\snext16\sb240\sa120\keepn\hich\af4\dbch\af5\afs28\loch\f2\fs28 Titre;}
+{\s16\sbasedon0\snext16\sb0\sa120 Corps de texte;}
+{\s17\sbasedon16\snext17\sb0\sa120\dbch\af6 Liste;}
+{\s18\sbasedon0\snext18\sb120\sa120\noline\i\dbch\af6\afs24\ai\fs24 L\'e9gende;}
+{\s19\sbasedon0\snext19\noline\dbch\af6 Index;}
+}{\info{\creatim\yr0\mo0\dy0\hr0\min0}{\revtim\yr0\mo0\dy0\hr0\min0}{\printim\yr0\mo0\dy0\hr0\min0}{\comment LibreOffice}{\vern3400}}\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720\deftab720
 
-\f0\fs24 \cf0 title CU3 : Suivi de l'action commerciale\
-Chef d'Agence->IHM : Visualiser liste agents \
-IHM->SM : getAllAgent(agence)\
-activate SM\
-SM->Agences : getAllAgent(agence)\
-activate Agences\
-Agences-->SM: agents\
-deactivate Agences\
-SM-->IHM: agents\
-deactivate SM\
-Chef d'Agence->IHM : S\'e9lectionner un agent suivant une \
-propri\'e9t\'e9\
-Chef d'Agence->IHM : Visualiser contacts affect\'e9s d'un agent\
-IHM->SM : getContactsAgent(unAgent)\
-activate SM\
-SM->Contacts :getContactsAgent(unAgent)\
-activate Contacts\
-Contacts-->SM : contacts\
-SM-->IHM : contacts\
-\
-\
-\
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse195\pgwsxn11900\pghsxn16840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\pgdscnxt0 Standard;}}
+\formshade{\*\pgdscno0}\paperh16840\paperw11900\margl1440\margr1440\margt1440\margb1440\sectd\sbknone\sectunlocked1\pgndec\pgwsxn11900\pghsxn16840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+\pgndec\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
+title CU3 : Suivi de l'action commerciale}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
+Chef d'Agence->IHM : Visualiser liste agents }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
+IHM->SM : getAllAgent(idAgence)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
+activate SM}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
+SM->Agences : getAllAgent(idAgence)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
+activate Agences}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
+Agences-->SM: agents}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
+deactivate Agences}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
+SM-->IHM: agents}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
+deactivate SM}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
+Chef d'Agence->IHM : S\'e9lectionner un agent suivant une }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
+propri\'e9t\'e9}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
+Chef d'Agence->IHM : Visualiser contacts affect\'e9s d'un agent}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
+IHM->SM : getContactsAgent(idAgent)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
+activate SM}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
+SM->Contacts :getContactsAgent(idAgent)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
+activate Contacts}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
+Contacts-->SM : contacts}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
+SM-->IHM : contacts}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
 }
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af3\langfe2052\dbch\af3\afs24\lang1081\loch\f3\fs24\lang1036\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803{\rtlch \ltrch\loch
+}
+\par }

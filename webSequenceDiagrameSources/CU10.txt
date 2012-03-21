@@ -1,8 +1,8 @@
-title CU10
+﻿title CU10
 
 opt si aucun client selectionné
  Agent->IHM:listerClient()
- IHM->SM: getAllClient()
+ IHM->SM: getAllClients()
  activate SM
  SM->Client: getAll()
  activate Client
@@ -12,9 +12,9 @@ opt si aucun client selectionné
  deactivate SM
  Agent->IHM:choixClient(client)
 end
- IHM->SM:afficherInfo(clientSelectionne)
+ IHM->SM:afficherInfos(idClient)
  activate SM
- SM->Client:getInfo(client)
+ SM->Client:getInfo(idClient)
  activate Client
  Client-->SM: client
  deactivate Client
@@ -26,7 +26,7 @@ end
 
 opt Si modification
     Agent->IHM:sauver()
-    IHM->SM:updateClient(Client)
+    IHM->SM:updateClient(idClient)
     activate SM
     SM->Client:update(client)
     SM-->IHM: code erreur

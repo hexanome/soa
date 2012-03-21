@@ -12,13 +12,13 @@ Agent->IHM: consulterClient(idClient)(CU10)
 activate IHM
 deactivate IHM
 
-Agent->IHM: consulterCatalogue(segment,produit)
+Agent->IHM: consulterCatalogue(idSegment,idProduit)
 activate IHM
 IHM->SM: consulterCatalogue(segment,produit)
 activate SM
 SM-->IHM: offres
 deactivate IHM
-SM->Produit: consulterCatalogue(segment,produit)
+SM->Produit: consulterCatalogue(idSegment,idProduit)
 Produit-->SM: offres
 activate Produit
 deactivate Produit

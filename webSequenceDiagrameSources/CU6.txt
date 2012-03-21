@@ -32,7 +32,7 @@ IHM->IHM:afficherLettreConfirmation()
 deactivate IHM
 Agent->IHM:editerLettreConfirmation()
 activate IHM
-IHM->SM:confirmationContact(lettre)
+IHM->SM:confirmerContact(lettre)
 activate SM
 SM->Contact:updateContact(idContact,lettre)
 SM-->IHM:code retour
@@ -43,15 +43,15 @@ end opt
 
 
 opt contact Spontané
-Agent->IHM:creerContactSpontane(date=now,Client)
+Agent->IHM:creerContactSpontane(date=now,idClient)
 activate IHM
-IHM->SM:creerContactSpontane(date=now,Client)
+IHM->SM:creerContactSpontane(date=now,idClient)
 activate SM
 SM->Agenda:creerPlageAgenda(date,type='Contact Spontané',idAgent)
-SM->Contact:new Contact(date,etat=Réalisé,idAgent)
+SM->Contact:créer Contact(date,etat=Réalisé,idAgent)
 SM-->IHM:code retour
 deactivate SM
-IHM-->IHM:updateVue()
+IHM->IHM:updateVue()
 deactivate IHM
 
 end opt

@@ -55,3 +55,19 @@ TODO @xsauvagnat
 \subsection{Spécification des Services Objets Métier}
 
 TODO @xsauvagnat
+
+SOM 1 : getAllContacts
+\begin{itemize}
+\item Entrées : idAgence
+\item Sorties : liste de (contact, nom du client, adresse client)
+\item Entités/Classes : Client - Personne - Adresse - Contact
+\item Permet de recuperer tous les contacts non assignés à un agent. Pour cela, la fonction récupère tous les clients de l'agence et verifie si un contact est prévu. 
+\end{itemize}
+
+SOM 2 : genererContactPrevu
+\begin{itemize}
+\item Entrées : evenement
+\item Sorties : idClient
+\item Entités/Classes : Evenement - Client
+\item La fonction permet de récupérer l'id du client qui est à l'origine de l'évenement.
+\end{itemize}
