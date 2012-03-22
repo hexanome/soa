@@ -2,10 +2,8 @@
 
 note over Agent,IHM,SM: Consultation de l'agenda CU7
 Agent->IHM: choisirVue()
-note left of SM
-    Voir DSCU7
-end note
-Agent->IHM: selectionContact(idContact)
+
+Agent->IHM: selectionnerContact(idContact)
 alt action=preparer entretien
 note over Agent,IHM,SM:Preparation d'entretien par un agent CU8
 else action=prendre RDV
@@ -21,7 +19,7 @@ deactivate IHM
 else action=regrouper contacts
 Agent->IHM:regroupeContact(list<Contact>)
 activate IHM
-IHM->SM:regroupeContact(list<Contact>)
+IHM->SM:regrouperContact(list<Contact>)
 activate SM
 SM->Contact: updateContact(idPremierContact,modifContact)
 loop pour chaque contact sauf premier
