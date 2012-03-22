@@ -42,18 +42,17 @@ Cette IHM utilise différents services métiers. En voici la liste :
 
 \subsubsection{Services Métier Client}
 
+\paragraph{Recherche de Clients}
+
 \begin{itemize}
 \item getAllClients()
-\item afficherInfos(idClient)
-\item updateClient(client)
 \end{itemize}
 
-\subsubsection{Services Métier Agent}
+\paragraph{Dossier Client}
 
 \begin{itemize}
-\item getAllAgents(idAgence)
-\item planifierPlageAgenda(idAgent,typeActivite,date)
-\item terminerPlanification()
+\item afficherInfos(idClient)
+\item updateClient(client)
 \end{itemize}
 
 \subsubsection{Services Métier Agenda}
@@ -63,26 +62,52 @@ Cette IHM utilise différents services métiers. En voici la liste :
 \item getSemaineParAgent(semaine,idAgent)
 \item getJourAgence(date)
 \item getPlageHoraire(idAgent,date)
-\item consulterCatalogue(idSegment,idProduit)
+\item planifierPlageAgenda(idAgent,typeActivite,date)
+\item terminerPlanification()
 \end{itemize}
 
 \subsubsection{Services Métier Contact}
 
+\paragraph{Recherche de Contacts}
+
 \begin{itemize}
 \item getAllContacts(idAgence)
+\end{itemize}
+
+\paragraph{Affectation des Contacts}
+
+\begin{itemize}
+\item getAllAgents(idAgence)
 \item getContactsAgent(idAgent)
 \item affecterContactAgent(idAgent,idContact)
+\item transférerContact(idContact,idAgent)
+\end{itemize}
+
+\paragraph{Gestion d'un Contact}
+
+\begin{itemize}
 \item updateContact(contact)
 \item annulerContact(idContact,raison)
-\item regrouperContacts(liste<Contact>)
 \item changerEtatContact(date,idContact,etat)
 \item confirmerContact(lettre)
+\item réaliserContact(idContact)
+\item regrouperContacts(liste<Contact>)
 \item créerContactSpontané(date,idClient)
-\item soumettreProposition(idContact,idOffre)
+\end{itemize}
+
+\paragraph{Préparation de l'entretien}
+
+\begin{itemize}
+\item consulterCatalogue(idSegment,idProduit)
 \item préparerContact(idContact)
 \item consulterPréparation(idContact)
-\item réaliserContact(idContact)
-\item transférerContact(idContact,idAgent)
+\end{itemize}
+
+\paragraph{Rapport d'activité commerciale}
+
+\begin{itemize}
+\item soumettreProposition(idContact,idOffre)
+\item soumettreRapport{iContact,rapport}
 \end{itemize}
 
 \subsection{Spécification des Services Métier}
@@ -93,7 +118,7 @@ TODO @xsauvagnat
 
 TODO @xsauvagnat
 
-SOM 1 : getAllContacts
+OM Client SOMC1 : getAllContacts
 \begin{itemize}
 \item Entrées : idAgence
 \item Sorties : liste de (contact, nom du client, adresse client)
@@ -101,10 +126,26 @@ SOM 1 : getAllContacts
 \item Permet de recuperer tous les contacts non assignés à un agent. Pour cela, la fonction récupère tous les clients de l'agence et verifie si un contact est prévu. 
 \end{itemize}
 
-SOM 2 : genererContactPrevu
+OM Client SOMC2 : genererContactPrevu
 \begin{itemize}
 \item Entrées : evenement
 \item Sorties : idClient
 \item Entités/Classes : Evenement - Client
 \item La fonction permet de récupérer l'id du client qui est à l'origine de l'évenement.
+\end{itemize}
+
+OM Client SOMC3 : getInfo
+\begin{itemize}
+\item Entrées : idClient
+\item Sorties : NomClient, Adresse, Comptes,...
+\item Entités/Classes : Client, Personne, Adresse, Compte
+\item Permet de récupérer tous les informations d'un client
+\end{itemize}
+
+OM Client SOMC4 : updateInfo
+\begin{itemize}
+\item Entrées : idClient, info
+\item Sorties : null
+\item Entités/Classes : Client, Personne, Adresse, Compte
+\item Permet de mettre à jour des informations sur un client.
 \end{itemize}

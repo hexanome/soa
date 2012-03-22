@@ -16,7 +16,6 @@ activate IHM
 IHM->SM:annulerContact(idContact,raison)
 activate SM
 SM->Contact:updateContact(etat,raison)
-SM-->IHM:code retour
 deactivate SM
 deactivate IHM
 else action=regrouper contacts
@@ -30,7 +29,6 @@ SM->Contact: updateContact(etat=Annule,raison=regroupement)
 alt SI TacheElementaire associée au contact
 SM->Contact:deleteTacheElementaire(idContact)
 end loop
-SM-->IHM:code retour
 deactivate SM
 deactivate IHM
 end alt

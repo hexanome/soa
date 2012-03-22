@@ -1,21 +1,21 @@
-﻿title CU1 Génération de contact
+title CU1 Génération de contact
 
-Tâche Automatique (daily)->SM: GenererContactsPotentiels( )
+Tâche Automatique (daily)->SM: genererContactsPotentiels( )
 
-SM->Contact:GetEvenements()
+SM->Contact:getEvenements()
 activate Contact 
 Contact-->SM:Evenements
 deactivate Contact
 loop Evenements
-SM->Contact:GenererMotifContact(Evenement)
+SM->Contact:genererMotifContact(Evenement)
 activate Contact
 Contact-->SM:MotifContact
 deactivate Contact
-SM->Client: GetClientAvecEvenement(Evenement)
+SM->Client: getClientAvecEvenement(Evenement)
 activate Client
 Client-->SM:idClient
 deactivate Client
-SM->Contact:GenererContactPrévu(idClient, MotifContact)
+SM->Contact:genererContactPrévu(idClient, MotifContact)
 activate Contact 
 deactivate Contact
     

@@ -4,7 +4,7 @@ Agent->IHM:planifierContact()
 activate IHM
 IHM->SM:getAgenda(type=contactCommercial)
 activate SM
-SM->Agenda:GetFromType(type=ContactCommercial)
+SM->Agenda:getAgendaFromType(type=ContactCommercial)
 SM-->IHM:list<Agenda>
 deactivate SM
 IHM->IHM:updateVue()
@@ -46,7 +46,7 @@ Agent->IHM:creerContactSpontane(date=now,idClient)
 activate IHM
 IHM->SM:creerContactSpontane(date=now,idClient)
 activate SM
-SM->Agenda:creerPlageAgenda(date,type=Contact Spontane,idAgent)
+SM->Agenda:creerPlageAgenda(idAgent,type=Contact Spontane,date)
 SM->Contact:creerContact(date,etat=Realise,idAgent)
 deactivate SM
 IHM->IHM:updateVue()
