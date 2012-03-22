@@ -13,11 +13,10 @@ Contact-->SM:MotifContact
 deactivate Contact
 SM->Client: GetClientAvecEvenement(Evenement)
 activate Client
-Client-->SM:Client
+Client-->SM:idClient
 deactivate Client
-SM->Contact:GenererContactPrévu(Client, MotifContact)
+SM->Contact:GenererContactPrévu(idClient, MotifContact)
 activate Contact 
-Contact-->SM:code retour
 deactivate Contact
     
 end
