@@ -5,6 +5,9 @@ activate IHM
 IHM->SM:getAgenda(type=contactCommercial)
 activate SM
 SM->Agenda:getAgendaFromType(type=ContactCommercial)
+activate Agenda
+Agenda-->SM: Agenda
+deactivate Agenda
 SM-->IHM:list<Agenda>
 deactivate SM
 IHM->IHM:updateVue()
