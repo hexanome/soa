@@ -17,7 +17,6 @@ Client-->SM:idClient
 deactivate Client
 SM->Contact:GenererContactPrévu(idClient, MotifContact)
 activate Contact 
-Contact-->SM:code retour
 deactivate Contact
     
 end
