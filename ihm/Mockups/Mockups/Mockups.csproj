@@ -174,6 +174,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Icons\41.png" />
     <Resource Include="Icons\appbar.book.open.writing.png" />
     <Resource Include="Icons\appbar.calendar.png" />
     <Resource Include="Icons\appbar.cancel.png" />

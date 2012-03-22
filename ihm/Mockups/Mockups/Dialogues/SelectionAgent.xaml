@@ -31,7 +31,7 @@
 				<TextBox Margin="0" TextWrapping="Wrap"/>
 				<Button Content="Rechercher" Margin="10,0,0,0" Grid.Column="1"/>
 			</Grid>
-			<ScrollViewer Grid.Row="1" Margin="10,0,10,10"/>
+			<ListBox Margin="10" Grid.Row="1" ScrollViewer.VerticalScrollBarVisibility="Visible"/>
 		</Grid>
 	</Grid>
 </Window>

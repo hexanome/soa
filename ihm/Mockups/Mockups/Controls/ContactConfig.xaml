@@ -24,7 +24,7 @@
 				<ColumnDefinition/>
 				<ColumnDefinition Width="Auto"/>
 			</Grid.ColumnDefinitions>
-			<TextBox TextWrapping="Wrap" Text="Nom Client 1" VerticalAlignment="Center"/>
+			<TextBox TextWrapping="Wrap" Text="Robert Plant" VerticalAlignment="Center"/>
 			<Button Content="..." HorizontalAlignment="Right" Margin="5,0,0,0" Grid.Column="1" Padding="4,1"/>
 		</Grid>
 		<TextBox Margin="0,0,10,0" Grid.Row="1" TextWrapping="Wrap" Text="Prêt" VerticalAlignment="Center" Grid.Column="1"/>

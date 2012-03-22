@@ -5,134 +5,217 @@
 	x:Class="Mockups.MainWindow"
 	x:Name="Window"
 	Title="SOA"
-	Width="900" Height="760" MinWidth="640" MinHeight="700">
+	Width="900" Height="760" MinWidth="640" MinHeight="700" Loaded="Windows_Loaded">
 
 	<Grid x:Name="LayoutRoot">
-		<Grid.RowDefinitions>
-			<RowDefinition Height="Auto"/>
-			<RowDefinition/>
-		</Grid.RowDefinitions>
-		<Grid HorizontalAlignment="Right" Height="50" Margin="0,14,16,0" VerticalAlignment="Top">
-			<TextBlock Margin="0,7,0,0" TextWrapping="Wrap" Text="connecté en tant que" FontSize="10.667" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-			<TextBlock Margin="0,15,0,0" TextWrapping="Wrap" Text="Agent 1" FontSize="24" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-		</Grid>
-		<TabControl Margin="8" Grid.Row="1">
-			<TabItem Header="Contacts">
-				<Grid>
-					<Grid.ColumnDefinitions>
-						<ColumnDefinition MinWidth="300"/>
-						<ColumnDefinition MinWidth="400"/>
-					</Grid.ColumnDefinitions>
-					<GridSplitter Background="{x:Null}" BorderBrush="#FF8C8E94" Margin="0,-5" BorderThickness="0,0,1,0"/>
-					<ListView Margin="8">
-						<ListView.View>
-							<GridView>
-								<GridViewColumn Header="Client"/>
-								<GridViewColumn Header="Motif"/>
-								<GridViewColumn Header="Date"/>
-							</GridView>
-						</ListView.View>
-					</ListView>
-					<Border Grid.Column="1" Margin="8" BorderBrush="#FF828790" CornerRadius="1" BorderThickness="1">
-						<Grid>
+		<Grid x:Name="GridDashboard" Margin="12,14,12,12">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+			<Grid HorizontalAlignment="Right" Height="50" Margin="0,0,4,0" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment">
+				<TextBlock Margin="0,7,0,0" TextWrapping="Wrap" Text="connecté en tant que" FontSize="10.667" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+				<TextBlock Margin="0,15,0,0" TextWrapping="Wrap" Text="Agent 1" FontSize="24" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+			</Grid>
+			<TabControl Margin="0" Grid.Row="1">
+				<TabItem Header="Contacts">
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition MinWidth="300"/>
+							<ColumnDefinition MinWidth="400"/>
+						</Grid.ColumnDefinitions>
+						<GridSplitter Background="{x:Null}" BorderBrush="#FF8C8E94" Margin="0,-5" BorderThickness="0,0,1,0"/>
+						<Grid Margin="8">
 							<Grid.RowDefinitions>
 								<RowDefinition Height="Auto"/>
 								<RowDefinition/>
-								<RowDefinition Height="Auto"/>
 							</Grid.RowDefinitions>
-							<local:DetailsContacts Margin="0" Grid.Row="1"/>
+							<StackPanel x:Name="StackCalendarAgentSelect_Copy" Margin="0,0,0,7" Orientation="Horizontal" HorizontalAlignment="Right" d:LayoutOverrides="Height">
+								<TextBlock TextWrapping="Wrap" Text="Contacts de : " FontSize="13.333" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+								<TextBlock TextWrapping="Wrap" Text="Moi" FontSize="13.333" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0,0,0,-0.001" Foreground="#FF0081B8" TextDecorations="Underline" Cursor="Hand" MouseLeftButtonUp="LinkCalendarSelectAgent"/>
+							</StackPanel>
+							<ListView x:Name="ListContacts" Grid.Row="1">
+								<ListView.View>
+									<GridView>
+										<GridViewColumn Header="Client" DisplayMemberBinding="{Binding Name}"/>
+										<GridViewColumn Header="Motif" DisplayMemberBinding="{Binding Motif}"/>
+										<GridViewColumn Header="Date" DisplayMemberBinding="{Binding Date}"/>
+										<GridViewColumn Header="Assigné" DisplayMemberBinding="{Binding Assigne}"/>
+									</GridView>
+								</ListView.View>
+							</ListView>
 						</Grid>
-					</Border>
-				</Grid>
-			</TabItem>
-			<TabItem Header="Agenda">
-				<Grid>
-					<Grid.ColumnDefinitions>
-						<ColumnDefinition MinWidth="300"/>
-						<ColumnDefinition MinWidth="400"/>
-					</Grid.ColumnDefinitions>
-					<GridSplitter Margin="0,-5" BorderThickness="0,0,1,0" BorderBrush="#FF8C8E94"/>
-					<Grid Grid.Column="1" Margin="8" d:LayoutOverrides="Height">
-						<Grid.RowDefinitions>
-							<RowDefinition Height="Auto"/>
-							<RowDefinition/>
-						</Grid.RowDefinitions>
-						<Button Content="Rencontre spontanée" Margin="0,0,0,11" Height="24" VerticalAlignment="Top" Click="BtContactSpontanne_Click" Width="150" HorizontalAlignment="Left"/>
-						<Border Margin="0" BorderBrush="#FF828790" CornerRadius="1" BorderThickness="1" d:LayoutOverrides="Height" Grid.Row="1">
-							<local:DetailsRdv/>
+						<Border Grid.Column="1" Margin="8" BorderBrush="#FF828790" CornerRadius="1" BorderThickness="1">
+							<Grid>
+								<Grid.RowDefinitions>
+									<RowDefinition Height="Auto"/>
+									<RowDefinition/>
+									<RowDefinition Height="Auto"/>
+								</Grid.RowDefinitions>
+								<local:DetailsContacts Margin="0" Grid.Row="1"/>
+							</Grid>
 						</Border>
 					</Grid>
-					<Grid Margin="8">
-						<Grid.RowDefinitions>
-							<RowDefinition Height="Auto"/>
-							<RowDefinition/>
-						</Grid.RowDefinitions>
-						<TextBlock Margin="0,0,12,10" TextWrapping="Wrap" Text="Calendrier" FontSize="21.333" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-						<TabControl Grid.Row="1">
-							<TabItem Header="Hebdomadaire">
-								<Grid Margin="-4,10,-4,-4">
-									<Grid.RowDefinitions>
-										<RowDefinition Height="Auto"/>
-										<RowDefinition/>
-									</Grid.RowDefinitions>
-									<Grid.ColumnDefinitions>
-										<ColumnDefinition Width="40"/>
-										<ColumnDefinition/>
-										<ColumnDefinition/>
-										<ColumnDefinition/>
-										<ColumnDefinition/>
-										<ColumnDefinition/>
-									</Grid.ColumnDefinitions>
-									<TextBlock Grid.Column="1" Margin="0" TextWrapping="Wrap" Text="Lundi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-									<TextBlock Grid.Column="2" Margin="0" TextWrapping="Wrap" Text="Mardi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-									<TextBlock Grid.Column="3" Margin="0" TextWrapping="Wrap" Text="Mercredi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-									<TextBlock Grid.Column="4" Margin="0" TextWrapping="Wrap" Text="Jeudi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-									<TextBlock Grid.Column="5" Margin="0" TextWrapping="Wrap" Text="Vendredi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-									<ScrollViewer Grid.ColumnSpan="6" Margin="0" Grid.Row="1">
-										<local:Calendar Height="1400" Width="Auto" VerticalAlignment="Top"/>
-									</ScrollViewer>
-								</Grid>
-							</TabItem>
-							<TabItem Header="Quotidien">
-								<Grid Margin="-4,10,-4,-4">
-									<Grid.RowDefinitions>
-										<RowDefinition Height="Auto"/>
-										<RowDefinition/>
-									</Grid.RowDefinitions>
-									<Grid.ColumnDefinitions>
-										<ColumnDefinition Width="40"/>
-										<ColumnDefinition/>
-										<ColumnDefinition/>
-										<ColumnDefinition/>
-									</Grid.ColumnDefinitions>
-									<TextBlock Grid.Column="1" Margin="0" TextWrapping="Wrap" Text="Agent 1" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-									<TextBlock Grid.Column="2" Margin="0" TextWrapping="Wrap" Text="Agent 2" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-									<TextBlock Grid.Column="3" Margin="0" TextWrapping="Wrap" Text="Agent 3" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-									<ScrollViewer Grid.ColumnSpan="4" Margin="0" Grid.Row="1">
-										<local:CalendarDay Height="1400" Width="Auto"/>
-									</ScrollViewer>
-								</Grid>
-							</TabItem>
-						</TabControl>
+				</TabItem>
+				<TabItem Header="Agenda">
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition MinWidth="300"/>
+							<ColumnDefinition MinWidth="400"/>
+						</Grid.ColumnDefinitions>
+						<GridSplitter Margin="0,-5" BorderThickness="0,0,1,0" BorderBrush="#FF8C8E94"/>
+						<Grid Grid.Column="1" Margin="8" d:LayoutOverrides="Height">
+							<Grid.RowDefinitions>
+								<RowDefinition Height="Auto"/>
+								<RowDefinition/>
+							</Grid.RowDefinitions>
+							<Button Content="Rencontre spontanée" Margin="0,0,0,11" Height="24" VerticalAlignment="Top" Click="BtContactSpontanne_Click" Width="150" HorizontalAlignment="Left"/>
+							<Border Margin="0" BorderBrush="#FF828790" CornerRadius="1" BorderThickness="1" d:LayoutOverrides="Height" Grid.Row="1">
+								<local:DetailsRdv/>
+							</Border>
+						</Grid>
+						<Grid Margin="8">
+							<Grid.RowDefinitions>
+								<RowDefinition Height="Auto"/>
+								<RowDefinition/>
+							</Grid.RowDefinitions>
+							<Grid Margin="0,0,0,10">
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="Auto"/>
+									<ColumnDefinition/>
+									<ColumnDefinition Width="Auto"/>
+								</Grid.ColumnDefinitions>
+								<TextBlock TextWrapping="Wrap" Text="Calendrier" FontSize="21.333" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment, Width"/>
+								<StackPanel x:Name="StackCalendarWeek" Grid.Column="1" Margin="0" Orientation="Horizontal" d:LayoutOverrides="Height" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+									<Path Data="M126.54271,11.428044 L121.28945,15.54 126.57975,19.780449 z" Fill="Black" Stretch="Fill" Width="5.915" Height="9.079" Margin="0,0,5,0" Cursor="Hand"/>
+									<TextBlock TextWrapping="Wrap" Text="Semaine 12" FontSize="13.333" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,2"/>
+									<Path Data="M126.54271,11.428044 L121.28945,15.54 126.57975,19.780449 z" Fill="Black" Stretch="Fill" Width="5.915" Height="9.079" Margin="5,0,0,0" RenderTransformOrigin="0.5,0.5" Cursor="Hand">
+										<Path.RenderTransform>
+											<TransformGroup>
+												<ScaleTransform/>
+												<SkewTransform/>
+												<RotateTransform Angle="180"/>
+												<TranslateTransform/>
+											</TransformGroup>
+										</Path.RenderTransform>
+									</Path>
+								</StackPanel>
+								<StackPanel x:Name="StackCalendarDate" Grid.Column="1" Margin="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Visibility="Collapsed">
+									<Path Data="M126.54271,11.428044 L121.28945,15.54 126.57975,19.780449 z" Fill="Black" Stretch="Fill" Width="5.915" Height="9.079" Margin="0,0,5,0" Cursor="Hand"/>
+									<TextBlock TextWrapping="Wrap" Text="24 Octobre 2012" FontSize="13.333" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,2"/>
+									<Path Data="M126.54271,11.428044 L121.28945,15.54 126.57975,19.780449 z" Fill="Black" Stretch="Fill" Width="5.915" Height="9.079" Margin="5,0,0,0" RenderTransformOrigin="0.5,0.5" Cursor="Hand">
+										<Path.RenderTransform>
+											<TransformGroup>
+												<ScaleTransform/>
+												<SkewTransform/>
+												<RotateTransform Angle="180"/>
+												<TranslateTransform/>
+											</TransformGroup>
+										</Path.RenderTransform>
+									</Path>
+								</StackPanel>
+								<StackPanel x:Name="StackCalendarAgentSelect" Grid.Column="2" Margin="0,0,0,2" Orientation="Horizontal" d:LayoutOverrides="Height">
+									<TextBlock TextWrapping="Wrap" Text="Agenda de : " FontSize="13.333" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+									<TextBlock TextWrapping="Wrap" Text="Moi" FontSize="13.333" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="0,0,0,-0.001" Foreground="#FF0081B8" TextDecorations="Underline" Cursor="Hand" MouseLeftButtonUp="LinkCalendarSelectAgent"/>
+								</StackPanel>
+							</Grid>
+							<TabControl x:Name="TcCalendars" Grid.Row="1" SelectionChanged="CalendarTabs_SelectionChanged">
+								<TabItem Header="Hebdomadaire">
+									<Grid Margin="-4,10,13,-4">
+										<Grid.RowDefinitions>
+											<RowDefinition Height="Auto"/>
+											<RowDefinition/>
+										</Grid.RowDefinitions>
+										<Grid.ColumnDefinitions>
+											<ColumnDefinition Width="40"/>
+											<ColumnDefinition/>
+											<ColumnDefinition/>
+											<ColumnDefinition/>
+											<ColumnDefinition/>
+											<ColumnDefinition/>
+										</Grid.ColumnDefinitions>
+										<TextBlock Grid.Column="1" Margin="0" TextWrapping="Wrap" Text="Lundi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+										<TextBlock Grid.Column="2" Margin="0" TextWrapping="Wrap" Text="Mardi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+										<TextBlock Grid.Column="3" Margin="0" TextWrapping="Wrap" Text="Mercredi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+										<TextBlock Grid.Column="4" Margin="0" TextWrapping="Wrap" Text="Jeudi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+										<TextBlock Grid.Column="5" Margin="0" TextWrapping="Wrap" Text="Vendredi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+										<ScrollViewer Grid.ColumnSpan="6" Margin="0,0,-17,0" Grid.Row="1">
+											<local:Calendar Height="1400" Width="Auto" VerticalAlignment="Top"/>
+										</ScrollViewer>
+									</Grid>
+								</TabItem>
+								<TabItem Header="Quotidien">
+									<Grid Margin="-4,10,13,-4">
+										<Grid.RowDefinitions>
+											<RowDefinition Height="Auto"/>
+											<RowDefinition/>
+										</Grid.RowDefinitions>
+										<Grid.ColumnDefinitions>
+											<ColumnDefinition Width="40"/>
+											<ColumnDefinition/>
+											<ColumnDefinition/>
+											<ColumnDefinition/>
+										</Grid.ColumnDefinitions>
+										<TextBlock Grid.Column="1" Margin="0" TextWrapping="Wrap" Text="Agent 1" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+										<TextBlock Grid.Column="2" Margin="0" TextWrapping="Wrap" Text="Agent 2" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+										<TextBlock Grid.Column="3" Margin="0" TextWrapping="Wrap" Text="Agent 3" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+										<ScrollViewer Grid.ColumnSpan="4" Margin="0,0,-17,0" Grid.Row="1">
+											<local:CalendarDay Height="1400" Width="Auto"/>
+										</ScrollViewer>
+									</Grid>
+								</TabItem>
+							</TabControl>
+						</Grid>
 					</Grid>
+				</TabItem>
+				<TabItem Header="Clients">
+					<Grid Margin="0">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition MinWidth="200" Width="300"/>
+							<ColumnDefinition/>
+						</Grid.ColumnDefinitions>
+						<ListView x:Name="ListClients" Margin="8">
+							<ListView.View>
+								<GridView>
+									<GridViewColumn Header="Nom" DisplayMemberBinding="{Binding Name}"/>
+								</GridView>
+							</ListView.View>
+						</ListView>
+						<local:DetailsClient Grid.Column="1" Margin="8"/>
+					</Grid>
+				</TabItem>
+			</TabControl>
+		</Grid>
+		<Border x:Name="BorderLogin" HorizontalAlignment="Center" Height="230" Margin="0" VerticalAlignment="Center" Width="300" CornerRadius="1" BorderThickness="1" BorderBrush="#FF828790" d:IsHidden="True" >
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid Margin="20,10" Grid.Row="1">
+					<Grid.RowDefinitions>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+					</Grid.RowDefinitions>
+					<TextBlock Margin="0" TextWrapping="Wrap" Text="Rôle" VerticalAlignment="Center"/>
+					<ComboBox Margin="0" Grid.Row="1" VerticalAlignment="Top" SelectedIndex="0">
+						<ComboBoxItem Content="Agent 1"/>
+						<ComboBoxItem Content="Agent 2"/>
+						<ComboBoxItem Content="Administrateur"/>
+					</ComboBox>
+					<TextBlock Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="Mot de passe" VerticalAlignment="Center"/>
+					<PasswordBox Margin="0" Grid.Row="3" VerticalAlignment="Top"/>
 				</Grid>
-			</TabItem>
-			<TabItem Header="Clients">
-				<Grid Margin="0">
-					<Grid.ColumnDefinitions>
-						<ColumnDefinition MinWidth="200" Width="300"/>
-						<ColumnDefinition/>
-					</Grid.ColumnDefinitions>
-					<ListView Margin="8">
-						<ListView.View>
-							<GridView>
-								<GridViewColumn Header="Nom"/>
-							</GridView>
-						</ListView.View>
-					</ListView>
-					<local:DetailsClient Grid.Column="1" Margin="8"/>
+				<Grid Height="50" Margin="0" VerticalAlignment="Bottom" Background="#FFDADADA" Grid.Row="2" d:LayoutOverrides="VerticalAlignment">
+					<StackPanel HorizontalAlignment="Center" Margin="0" Orientation="Horizontal" d:LayoutOverrides="Height" VerticalAlignment="Center">
+						<Button Content="Connexion" Height="24" VerticalAlignment="Center" Width="70" Margin="0" Click="BtConnexion_Click"/>
+					</StackPanel>
 				</Grid>
-			</TabItem>
-		</TabControl>
+				<Image HorizontalAlignment="Center" Height="60" Margin="0,10,0,0" VerticalAlignment="Top" Width="60" Source="Icons/41.png"/>
+			</Grid>
+		</Border>
 	</Grid>
 </Window>

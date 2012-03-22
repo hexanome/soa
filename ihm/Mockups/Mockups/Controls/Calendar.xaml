@@ -67,7 +67,7 @@
 		<Border Grid.Column="2" Margin="0" Grid.Row="3" BorderThickness="0,5,0,0" BorderBrush="#FF33B5E5">
 			<Grid Background="#FF0099CC">
 				<StackPanel Margin="8,8,0,0" Orientation="Vertical" d:LayoutOverrides="Height">
-					<TextBlock Text="Nom Client 1" Foreground="White" FontSize="16" VerticalAlignment="Top"/>
+					<TextBlock Text="Robert Plant" Foreground="White" FontSize="16" VerticalAlignment="Top"/>
 					<TextBlock Text="Prêt" Foreground="White" FontSize="16" VerticalAlignment="Top" Opacity="0.6"/>
 				</StackPanel>
 			</Grid>

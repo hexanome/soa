@@ -40,7 +40,7 @@
 					<ColumnDefinition/>
 				</Grid.ColumnDefinitions>
 				<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Client :" Foreground="#FF545454"/>
-				<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="Nom Client 1" Grid.Column="1" TextDecorations="Underline" Foreground="#FF0081B8" Cursor="Hand"/>
+				<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="Robert Plant" Grid.Column="1" TextDecorations="Underline" Foreground="#FF0081B8" Cursor="Hand"/>
 				<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Motif :" Grid.Row="1" Foreground="#FF545454"/>
 				<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="Prêt" Grid.Column="1" Grid.Row="1"/>
 				<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Assigné à :" Foreground="#FF545454" VerticalAlignment="Top" Grid.Row="2"/>

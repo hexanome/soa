@@ -41,7 +41,7 @@
 				<Grid Background="White">
 					<StackPanel Orientation="Vertical" VerticalAlignment="Top" Margin="8,8,8,0">
 						<TextBlock HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap" Text="Informations générales" FontSize="14.667"/>
-						<Grid Margin="10,10,0,0">
+						<Grid Margin="10,10,0,0" Visibility="Collapsed">
 							<Grid.RowDefinitions>
 								<RowDefinition/>
 								<RowDefinition/>
@@ -58,6 +58,29 @@
 							<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="Prêt" Grid.Column="1" Grid.Row="1"/>
 							<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Assigné à :" Foreground="#FF545454" VerticalAlignment="Top" Grid.Row="2"/>
 							<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="Moi" VerticalAlignment="Top" Grid.Row="2" Grid.Column="1"/>
+							<TextBlock HorizontalAlignment="Right" Margin="0,0,-0.001,0" TextWrapping="Wrap" Text="Date de création :" Foreground="#FF545454" VerticalAlignment="Top" Grid.Row="3"/>
+							<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="03/05/2012" VerticalAlignment="Top" Grid.Row="3" Grid.Column="1"/>
+						</Grid>
+						<Grid Margin="10,10,0,0">
+							<Grid.RowDefinitions>
+								<RowDefinition/>
+								<RowDefinition/>
+								<RowDefinition/>
+								<RowDefinition/>
+							</Grid.RowDefinitions>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="Auto"/>
+								<ColumnDefinition/>
+							</Grid.ColumnDefinitions>
+							<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Client :" Foreground="#FF545454"/>
+							<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="Robert Plant" Grid.Column="1" TextDecorations="Underline" Foreground="#FF0081B8" Cursor="Hand"/>
+							<TextBlock HorizontalAlignment="Right" Margin="0,8,0,0" TextWrapping="Wrap" Text="Motif :" Grid.Row="1" Foreground="#FF545454"/>
+							<ComboBox Grid.Column="1" Margin="3,5,0,5" Grid.Row="1" Width="100" HorizontalAlignment="Left" SelectedIndex="0">
+								<ComboBoxItem Content="Prêt"/>
+								<ComboBoxItem Content="Ouverture de compte"/>
+							</ComboBox>
+							<TextBlock HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Assigné à :" Foreground="#FF545454" VerticalAlignment="Top" Grid.Row="2"/>
+							<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="Moi" VerticalAlignment="Top" Grid.Row="2" Grid.Column="1" Foreground="#FF0081B8" TextDecorations="Underline" Cursor="Hand"/>
 							<TextBlock HorizontalAlignment="Right" Margin="0,0,-0.001,0" TextWrapping="Wrap" Text="Date de création :" Foreground="#FF545454" VerticalAlignment="Top" Grid.Row="3"/>
 							<TextBlock HorizontalAlignment="Left" Margin="5,0,0,0" TextWrapping="Wrap" Text="03/05/2012" VerticalAlignment="Top" Grid.Row="3" Grid.Column="1"/>
 						</Grid>
