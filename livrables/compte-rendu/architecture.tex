@@ -9,7 +9,7 @@ Les blocs \textbf{Produits}, \textbf{Client} et \textbf{Agence} seront implémen
 
 Les blocs \textbf{Agence} et \textbf{Client}, en plus d'être répliqués, seront répartis. La base de données de chaque agence contiendra seulement les informations des sous-agences qu'elle gère.
 
-Même si les modifications de \textbf{Client} sont nombreuses, peu de conflict seront générés car peu de modifications seront émises à partir du site central. L'intérêt de cette réplication est la sauvegarde des données du client, et un accès aux données accéléré.
+Même si les modifications de \textbf{Client} sont nombreuses, peu de conflits seront générés car peu de modifications seront émises à partir du site central. L'intérêt de cette réplication est la sauvegarde des données du client, et un accès aux données accéléré.
 
 Les blocs \textbf{Agenda} et \textbf{Contact} seront répartis. Aucune information ne sera sur le site central. Chaque agence principale gèrera ces propres informations.
 
