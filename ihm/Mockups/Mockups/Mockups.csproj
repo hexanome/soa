@@ -64,6 +64,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Controls\CalendarDay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Controls\CalendarHorizontal.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -100,6 +104,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Dialogues\SelectionAgent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -113,6 +121,9 @@
     </Compile>
     <Compile Include="Controls\Calendar.xaml.cs">
       <DependentUpon>Calendar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CalendarDay.xaml.cs">
+      <DependentUpon>CalendarDay.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\CalendarHorizontal.xaml.cs">
       <DependentUpon>CalendarHorizontal.xaml</DependentUpon>
@@ -141,6 +152,9 @@
     <Compile Include="Dialogues\PriseRDV.xaml.cs">
       <DependentUpon>PriseRDV.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Dialogues\SelectionAgent.xaml.cs">
+      <DependentUpon>SelectionAgent.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -166,6 +180,7 @@
     <Resource Include="Icons\appbar.clipboard.edit.png" />
     <Resource Include="Icons\appbar.edit.png" />
     <Resource Include="Icons\appbar.page.check.png" />
+    <Resource Include="Icons\appbar.user.add.png" />
     <Resource Include="Icons\appbar.user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath32)\Microsoft.CSharp.targets" />

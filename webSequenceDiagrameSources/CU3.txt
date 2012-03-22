@@ -1,0 +1,18 @@
+title CU3 Suivi de l'action commerciale
+Chef d'Agence->IHM : listerAgents() 
+IHM->SM : getAllAgent(idAgence)
+activate SM
+SM->Agences : getAllAgent(idAgence)
+activate Agences
+Agences-->SM: agents
+deactivate Agences
+SM-->IHM: agents
+deactivate SM
+Chef d'Agence->IHM : selectionnerAgent(idAgent)
+Chef d'Agence->IHM : listerContacts(idAgent)
+IHM->SM : getContactsAgent(idAgent)
+activate SM
+SM->Contacts :getContactsAgent(idAgent)
+activate Contacts
+Contacts-->SM : contacts
+SM-->IHM : contacts

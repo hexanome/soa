@@ -13,14 +13,19 @@ using System.Windows.Shapes;
 
 namespace Mockups
 {
-	/// <summary>
-	/// Interaction logic for DetailsRdv.xaml
-	/// </summary>
-	public partial class DetailsRdv : UserControl
-	{
-		public DetailsRdv()
-		{
-			this.InitializeComponent();
-		}
-	}
+    /// <summary>
+    /// Interaction logic for DetailsRdv.xaml
+    /// </summary>
+    public partial class DetailsRdv : UserControl
+    {
+        public DetailsRdv()
+        {
+            this.InitializeComponent();
+        }
+
+        private void RdvChoixClient_Click(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            (new SelectionAgent()).ShowDialog();
+        }
+    }
 }

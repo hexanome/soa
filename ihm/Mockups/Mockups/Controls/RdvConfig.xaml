@@ -25,7 +25,6 @@
 				<ColumnDefinition/>
 			</Grid.ColumnDefinitions>
 			<TextBlock Margin="0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Center"/>
-			<TextBox Margin="0,0,20,0" Grid.Row="1" TextWrapping="Wrap" Text="03/05/2012" VerticalAlignment="Center"/>
 			<TextBlock Margin="0" TextWrapping="Wrap" Text="Début" VerticalAlignment="Center" Grid.Column="1"/>
 			<ComboBox Grid.Column="1" Margin="0,0,20,0" Grid.Row="1" VerticalAlignment="Center" SelectedIndex="0">
 				<ComboBoxItem Content="08:00"/>
@@ -34,6 +33,7 @@
 			<ComboBox Grid.Column="2" Margin="0,0,20,0" Grid.Row="1" VerticalAlignment="Center" SelectedIndex="0">
 				<ComboBoxItem Content="09:00"/>
 			</ComboBox>
+			<DatePicker Margin="0,0,20,0" Grid.Row="1" FirstDayOfWeek="Monday"/>
 		</Grid>
 		<ScrollViewer Margin="20" Grid.Row="2" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Visible">
 			<local:CalendarHorizontal Height="Auto" Width="1400"/>

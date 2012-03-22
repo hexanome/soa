@@ -118,7 +118,7 @@ TODO @xsauvagnat
 
 TODO @xsauvagnat
 
-SOM 1 : getAllContacts
+OM Client SOMC1 : getAllContacts
 \begin{itemize}
 \item Entrées : idAgence
 \item Sorties : liste de (contact, nom du client, adresse client)
@@ -126,10 +126,26 @@ SOM 1 : getAllContacts
 \item Permet de recuperer tous les contacts non assignés à un agent. Pour cela, la fonction récupère tous les clients de l'agence et verifie si un contact est prévu. 
 \end{itemize}
 
-SOM 2 : genererContactPrevu
+OM Client SOMC2 : genererContactPrevu
 \begin{itemize}
 \item Entrées : evenement
 \item Sorties : idClient
 \item Entités/Classes : Evenement - Client
 \item La fonction permet de récupérer l'id du client qui est à l'origine de l'évenement.
+\end{itemize}
+
+OM Client SOMC3 : getInfo
+\begin{itemize}
+\item Entrées : idClient
+\item Sorties : NomClient, Adresse, Comptes,...
+\item Entités/Classes : Client, Personne, Adresse, Compte
+\item Permet de récupérer tous les informations d'un client
+\end{itemize}
+
+OM Client SOMC4 : updateInfo
+\begin{itemize}
+\item Entrées : idClient, info
+\item Sorties : null
+\item Entités/Classes : Client, Personne, Adresse, Compte
+\item Permet de mettre à jour des informations sur un client.
 \end{itemize}
