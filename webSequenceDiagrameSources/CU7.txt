@@ -1,17 +1,17 @@
 ﻿title CU7 Consultation des agendas
 
 Agent->IHM:changerVue(vue)
-alt si vue agence
-    IHM->SM: getAllAgents(agence)
+alt si vue agent
+    IHM->SM: getAllAgents(idAgence)
     activate SM
-    SM->Agences: getAll(agence)
+    SM->Agences: getAll(idAgence)
     activate Agences
     Agences-->SM: Agents
     deactivate Agences
     SM-->IHM: Agents
     deactivate SM
     Agent->IHM:choisirAgent(idAgent)
-    Agent->IHM:choisirSemaine(date)
+    Agent->IHM:choisirSemaine(semaine)
     IHM->SM: getSemaineParAgent(semaine,idAgent)
     activate SM
     SM->Agenda: getSemaineParAgent(semaine,idAgent)
@@ -20,11 +20,11 @@ alt si vue agence
     deactivate Agenda
     SM-->IHM: semaine
     deactivate SM
-else si vue agent
+else si vue agence
     Agent->IHM:choisirJour(date)
-    IHM->SM: getJourAgence(date)
+    IHM->SM: getJourAgence(date,idAgence)
     activate SM
-    SM->Agenda: getJourAgence(date)
+    SM->Agenda: getJourAgence(date,idAgence)
     activate Agenda
     Agenda-->SM: jour
     deactivate Agenda
@@ -48,34 +48,40 @@ Agent->IHM:choisirAction()
 alt action = creer RDV
     note over IHM,SM:Planification des contacts commerciaux CU6
 else action = modifier RDV
-    IHM->SM: updateContact(idContact)
+    IHM->SM: updatePlage(plage)
     activate SM
-    SM->Agenda: updateContact(idContact)
-    SM-->IHM: code erreur
+    SM->Agenda: updatePlage(plage)
     deactivate SM
 else action = annuler RDV
    
-IHM->SM:annulerContact(idContact,raison)
+IHM->SM:annulerRDV(plage,raison)
 activate SM
-SM->Contact:updateContact(etat,raison)
+SM->Agenda:setEtat(plage,etat,raison)
+SM->Agenda:updatePlage(plage)
+alt si plage est de type contact commercial
+SM->Contact:getContact(idContact)
+activate Contact
+Contact-->SM:contact
+deactivate Contact
+SM->Contact:setEtat(contact,etat,raison)
+SM->Contact:updateContact(contact)
 
 SM->Contact:deleteTacheElementaire(idContact)
-SM-->IHM:code retour
+end alt
+
 deactivate SM
 else action = reaffecter RDV
-    IHM->SM: getAllAgents(agence)
+    IHM->SM: getAllAgents(idAgence)
     activate SM
-    SM->Agences: getAll(agence)
+    SM->Agences: getAll(idAgence)
     activate Agences
-    Agences-->SM: Agents
+    Agences-->SM: agents
     deactivate Agences
     SM-->IHM: agents
     deactivate SM
-    IHM->SM: transfererContact(idContact,idAgent)
+    IHM->SM: transfererPlage(plage,idAgent)
     activate SM
-    SM->Agenda: setAgent(idAgent)
-   SM->Agenda:updateContact(idContact)
-    SM-->IHM: code erreur
+    SM->Agenda: setAgent(plage,idAgent)
+   SM->Agenda:updatePlage(plage)
     deactivate SM
 end
-
