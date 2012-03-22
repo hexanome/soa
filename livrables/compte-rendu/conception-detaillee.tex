@@ -112,11 +112,33 @@ Cette IHM utilise différents services métiers. En voici la liste :
 
 \subsection{Spécification des Services Métier}
 
-TODO @xsauvagnat
+On ne détaillera que la liste des Services Métier invoqué par l'IHM dossier Client:
+
+SM1: afficherInfo
+\begin{itemize}
+	\item SOM invoqués : SOMC3 : Consultation informations client
+	\item Entrées : idClient
+	\item Sorties : NomClient, Adresse, Comptes,....
+	\item Procédure :
+	\begin{itemize}
+		\item Rechercher les informations le client (personne,compte): SOMC5.
+	\end{itemize}
+\end{itemize}
+
+SM2 : updateClient
+\begin{itemize}
+	\item SOM invoqués : SOMC4 : Mise à jour des informations client
+	\item Entrées : NomClient/Adresse/Compte/... (uniquement ceux modifiées)
+	\item Sorties : null
+	\item Procédure :
+	\begin{itemize}
+		\item Mettre à jour les informations sur le client (personne,compte): SOMC4.
+	\end{itemize}
+\end{itemize}
 
 \subsection{Spécification des Services Objets Métier}
 
-TODO @xsauvagnat
+On ne détaillera que les Services Objets Métier concernant le bloc Client:
 
 OM Client SOMC1 : getAllContacts
 \begin{itemize}
@@ -139,7 +161,7 @@ OM Client SOMC3 : getInfo
 \item Entrées : idClient
 \item Sorties : NomClient, Adresse, Comptes,...
 \item Entités/Classes : Client, Personne, Adresse, Compte
-\item Permet de récupérer tous les informations d'un client
+\item Permet de consulter toutes les informations d'un client.
 \end{itemize}
 
 OM Client SOMC4 : updateInfo
@@ -148,4 +170,12 @@ OM Client SOMC4 : updateInfo
 \item Sorties : null
 \item Entités/Classes : Client, Personne, Adresse, Compte
 \item Permet de mettre à jour des informations sur un client.
+\end{itemize}
+
+OM Client SOMC5 : getAll
+\begin{itemize}
+\item Entrées : null
+\item Sorties : liste Client: NomClient, Adresse,...
+\item Entités/Classes : Client, Personne, Adresse, Compte
+\item Permet de consulter la liste de tous les clients.
 \end{itemize}
