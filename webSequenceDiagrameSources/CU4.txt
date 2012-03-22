@@ -1,7 +1,7 @@
 ﻿title CU4
 
 note over Agent,IHM,SM: Consultation de l'agenda CU7
-Agent->IHM: choixVue()
+Agent->IHM: choisirVue()
 note left of SM
     Voir DSCU7
 end note
