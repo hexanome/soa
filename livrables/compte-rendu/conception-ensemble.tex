@@ -4,6 +4,12 @@
 
 \section{Conception d'ensemble de l'architecture applicative}
 
+\subsection{Analyse des modèles conceptuels proposés}
+
+\subsection{Établissement des diagrammes de séquences systèmes}
+
+\subsection{Blocs applicatifs}
+
 
 \subsection{Cycles de vie des objets métiers}
 
@@ -13,6 +19,25 @@ Voici le diagramme d'état de l'objet ``Contact'' :
 \includegraphics[width=\textwidth]{diagramme-etat-objet-contact.png}
 \end {center}
 Comme prévu, il n'est pas possible de réaffecter un contact à un autre agent. En effet un agent sera toujours responsable du groupe de contacts qu'on lui a affectés. Néanmoins, les rendez-vous pris, eux, pourront être réaffectés à un autre agent que celui en charge du contact. Cela permettra entre autre de palier à l'absence d'un agent le jour du rendez-vous client.
+
+
+\subsection{Détermination des flux de l'architecture}
+
+\subsubsection{Diagramme de séquence}
+
+\subsubsection{Diagramme de collaboration}
+
+Voici le diagramme de collaboration représentatif de la dynamique de
+l'architecture:
+
+\begin {center}
+\includegraphics[width=\textwidth]{diagramme-collaboration.png}
+\end {center}
+
+Ce diagramme souligne l'existence de flux conséquents entre des groupes de blocs
+majeurs, qui permettent d'appuyer le choix de l'architecture retenue, dont nous
+discuterons maintenant.
+
 
 \subsection{Choix de l'environnement technique}
 L'environnement technique sera une architecture C/S 3-tiers : l'architecture du système sera donc séparée en trois couches distinctes, à savoir :
