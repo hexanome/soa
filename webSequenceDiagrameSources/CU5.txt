@@ -1,4 +1,4 @@
-title CU5
+title CU5 Planification de l'activité de l'agence du mois suivant
 note over ChefAgence,IHM: Consultation Agenda CU7
 note left of ChefAgence:Pour tout le mois
 ChefAgence->IHM:selectionnerPlageAgenda(date)
