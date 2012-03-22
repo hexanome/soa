@@ -1,7 +1,7 @@
-﻿title CU10
+﻿title CU10 Consultation du dossier client
 
 opt si aucun client selectionné
- Agent->IHM:listerClient()
+ Agent->IHM:listerClients()
  IHM->SM: getAllClients()
  activate SM
  SM->Client: getAll()
@@ -10,7 +10,7 @@ opt si aucun client selectionné
  deactivate Client
  SM-->IHM:clients
  deactivate SM
- Agent->IHM:choixClient(client)
+ Agent->IHM:choisirClient(client)
 end
  IHM->SM:afficherInfos(idClient)
  activate SM
@@ -21,7 +21,7 @@ end
  SM-->IHM: client
  deactivate SM
 loop tant que l'utilisateur veut continuer
- Agent->IHM:choixTheme(theme)
+ Agent->IHM:choisirTheme(theme)
 end 
 
 opt Si modification
@@ -29,6 +29,5 @@ opt Si modification
     IHM->SM:updateClient(idClient)
     activate SM
     SM->Client:update(client)
-    SM-->IHM: code erreur
     deactivate SM
 end
