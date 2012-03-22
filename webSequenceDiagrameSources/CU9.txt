@@ -4,7 +4,7 @@ Agent->IHM: consulterAgenda (CU7)
 activate IHM
 deactivate IHM
 
-alt [Contact staus = prepare]
+alt Contact etat = prepare
     Agent->IHM: consulterPreparation(idContact)
 activate IHM
 IHM->SM: consulterPreparation(idContact)
