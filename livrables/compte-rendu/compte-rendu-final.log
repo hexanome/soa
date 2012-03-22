@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.5)  21 MAR 2012 19:58
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.16)  22 MAR 2012 13:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -579,49 +579,1450 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \openout3 = `compte-rendu-final.toc'.
 
  [1] (./conception-ensemble.tex
-<diagramme-etat-objet-contact.png, id=15, 777.90625pt x 218.8175pt>
+! Undefined control sequence.
+<argument> .\..\diagrammeActivite 
+                                  \DACU 1.png
+l.14 ...twidth]{..\..\diagrammeActivite\DACU1.png}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\diagrammeActivite \DACU 
+                                        1.png
+l.14 ...twidth]{..\..\diagrammeActivite\DACU1.png}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...Warning: File `..\..\diagrammeActivite 
+                                                  \DACU 1.png' not found\on@...
+l.14 ...twidth]{..\..\diagrammeActivite\DACU1.png}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...g: File `..\..\diagrammeActivite \DACU 
+                                                  1.png' not found\on@line .
+l.14 ...twidth]{..\..\diagrammeActivite\DACU1.png}
+                                                  
+? 
+
+LaTeX Warning: File `..\..1.png' not found on input line 14.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.14 ...twidth]{..\..\diagrammeActivite\DACU1.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.14 ...twidth]{..\..\diagrammeActivite\DACU1.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.14 ...twidth]{..\..\diagrammeActivite\DACU1.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ... eps\else #1\fi \endcsname 
+                                                  {\Gin@base #2}\else \Gin@n...
+l.14 ...twidth]{..\..\diagrammeActivite\DACU1.png}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.14 ...twidth]{..\..\diagrammeActivite\DACU1.png}
+                                                  
+? 
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 ...twidth]{..\..\diagrammeActivite\DACU1.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.14 ...twidth]{..\..\diagrammeActivite\DACU1.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...name Ginclude@#1\endcsname 
+                                                  \relax \Gin@drafttrue \exp...
+l.14 ...twidth]{..\..\diagrammeActivite\DACU1.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.14 ...twidth]{..\..\diagrammeActivite\DACU1.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \relax \@latex@error {Can ...
+l.14 ...twidth]{..\..\diagrammeActivite\DACU1.png}
+                                                  
+? 
+
+! LaTeX Error: Can not include graphics of type: \Gin@rule@.. .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 ...twidth]{..\..\diagrammeActivite\DACU1.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.14 ...twidth]{..\..\diagrammeActivite\DACU1.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \@empty \fi \fi \leavevmod...
+l.14 ...twidth]{..\..\diagrammeActivite\DACU1.png}
+                                                  
+? 
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 14.
+(/usr/local/texlive/2011/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+! Extra \endcsname.
+<argument> ...csname Gin@rule@\Gin@ext \endcsname 
+                                                  {\Gin@base \Gin@ext }
+l.14 ...twidth]{..\..\diagrammeActivite\DACU1.png}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\diagrammeActivite 
+                                  \DACU 2.png
+l.15 ...twidth]{..\..\diagrammeActivite\DACU2.png}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\diagrammeActivite \DACU 
+                                        2.png
+l.15 ...twidth]{..\..\diagrammeActivite\DACU2.png}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...Warning: File `..\..\diagrammeActivite 
+                                                  \DACU 2.png' not found\on@...
+l.15 ...twidth]{..\..\diagrammeActivite\DACU2.png}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...g: File `..\..\diagrammeActivite \DACU 
+                                                  2.png' not found\on@line .
+l.15 ...twidth]{..\..\diagrammeActivite\DACU2.png}
+                                                  
+? 
+
+LaTeX Warning: File `..\..2.png' not found on input line 15.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.15 ...twidth]{..\..\diagrammeActivite\DACU2.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.15 ...twidth]{..\..\diagrammeActivite\DACU2.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.15 ...twidth]{..\..\diagrammeActivite\DACU2.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ... eps\else #1\fi \endcsname 
+                                                  {\Gin@base #2}\else \Gin@n...
+l.15 ...twidth]{..\..\diagrammeActivite\DACU2.png}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.15 ...twidth]{..\..\diagrammeActivite\DACU2.png}
+                                                  
+? 
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...twidth]{..\..\diagrammeActivite\DACU2.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.15 ...twidth]{..\..\diagrammeActivite\DACU2.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...name Ginclude@#1\endcsname 
+                                                  \relax \Gin@drafttrue \exp...
+l.15 ...twidth]{..\..\diagrammeActivite\DACU2.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.15 ...twidth]{..\..\diagrammeActivite\DACU2.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \relax \@latex@error {Can ...
+l.15 ...twidth]{..\..\diagrammeActivite\DACU2.png}
+                                                  
+? 
+
+! LaTeX Error: Can not include graphics of type: \Gin@rule@.. .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...twidth]{..\..\diagrammeActivite\DACU2.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.15 ...twidth]{..\..\diagrammeActivite\DACU2.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \@empty \fi \fi \leavevmod...
+l.15 ...twidth]{..\..\diagrammeActivite\DACU2.png}
+                                                  
+? 
+! Extra \endcsname.
+<argument> ...csname Gin@rule@\Gin@ext \endcsname 
+                                                  {\Gin@base \Gin@ext }
+l.15 ...twidth]{..\..\diagrammeActivite\DACU2.png}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\diagrammeActivite 
+                                  \DACU 3.png
+l.16 ...twidth]{..\..\diagrammeActivite\DACU3.png}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\diagrammeActivite \DACU 
+                                        3.png
+l.16 ...twidth]{..\..\diagrammeActivite\DACU3.png}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...Warning: File `..\..\diagrammeActivite 
+                                                  \DACU 3.png' not found\on@...
+l.16 ...twidth]{..\..\diagrammeActivite\DACU3.png}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...g: File `..\..\diagrammeActivite \DACU 
+                                                  3.png' not found\on@line .
+l.16 ...twidth]{..\..\diagrammeActivite\DACU3.png}
+                                                  
+? 
+
+LaTeX Warning: File `..\..3.png' not found on input line 16.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.16 ...twidth]{..\..\diagrammeActivite\DACU3.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.16 ...twidth]{..\..\diagrammeActivite\DACU3.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.16 ...twidth]{..\..\diagrammeActivite\DACU3.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ... eps\else #1\fi \endcsname 
+                                                  {\Gin@base #2}\else \Gin@n...
+l.16 ...twidth]{..\..\diagrammeActivite\DACU3.png}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.16 ...twidth]{..\..\diagrammeActivite\DACU3.png}
+                                                  
+? 
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...twidth]{..\..\diagrammeActivite\DACU3.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.16 ...twidth]{..\..\diagrammeActivite\DACU3.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...name Ginclude@#1\endcsname 
+                                                  \relax \Gin@drafttrue \exp...
+l.16 ...twidth]{..\..\diagrammeActivite\DACU3.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.16 ...twidth]{..\..\diagrammeActivite\DACU3.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \relax \@latex@error {Can ...
+l.16 ...twidth]{..\..\diagrammeActivite\DACU3.png}
+                                                  
+? 
+
+! LaTeX Error: Can not include graphics of type: \Gin@rule@.. .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...twidth]{..\..\diagrammeActivite\DACU3.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.16 ...twidth]{..\..\diagrammeActivite\DACU3.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \@empty \fi \fi \leavevmod...
+l.16 ...twidth]{..\..\diagrammeActivite\DACU3.png}
+                                                  
+? 
+! Extra \endcsname.
+<argument> ...csname Gin@rule@\Gin@ext \endcsname 
+                                                  {\Gin@base \Gin@ext }
+l.16 ...twidth]{..\..\diagrammeActivite\DACU3.png}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\diagrammeActivite 
+                                  \DACU 4.png
+l.17 ...twidth]{..\..\diagrammeActivite\DACU4.png}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\diagrammeActivite \DACU 
+                                        4.png
+l.17 ...twidth]{..\..\diagrammeActivite\DACU4.png}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...Warning: File `..\..\diagrammeActivite 
+                                                  \DACU 4.png' not found\on@...
+l.17 ...twidth]{..\..\diagrammeActivite\DACU4.png}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...g: File `..\..\diagrammeActivite \DACU 
+                                                  4.png' not found\on@line .
+l.17 ...twidth]{..\..\diagrammeActivite\DACU4.png}
+                                                  
+? 
+
+LaTeX Warning: File `..\..4.png' not found on input line 17.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.17 ...twidth]{..\..\diagrammeActivite\DACU4.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.17 ...twidth]{..\..\diagrammeActivite\DACU4.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.17 ...twidth]{..\..\diagrammeActivite\DACU4.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ... eps\else #1\fi \endcsname 
+                                                  {\Gin@base #2}\else \Gin@n...
+l.17 ...twidth]{..\..\diagrammeActivite\DACU4.png}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.17 ...twidth]{..\..\diagrammeActivite\DACU4.png}
+                                                  
+? 
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...twidth]{..\..\diagrammeActivite\DACU4.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.17 ...twidth]{..\..\diagrammeActivite\DACU4.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...name Ginclude@#1\endcsname 
+                                                  \relax \Gin@drafttrue \exp...
+l.17 ...twidth]{..\..\diagrammeActivite\DACU4.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.17 ...twidth]{..\..\diagrammeActivite\DACU4.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \relax \@latex@error {Can ...
+l.17 ...twidth]{..\..\diagrammeActivite\DACU4.png}
+                                                  
+? 
+
+! LaTeX Error: Can not include graphics of type: \Gin@rule@.. .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...twidth]{..\..\diagrammeActivite\DACU4.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.17 ...twidth]{..\..\diagrammeActivite\DACU4.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \@empty \fi \fi \leavevmod...
+l.17 ...twidth]{..\..\diagrammeActivite\DACU4.png}
+                                                  
+? 
+! Extra \endcsname.
+<argument> ...csname Gin@rule@\Gin@ext \endcsname 
+                                                  {\Gin@base \Gin@ext }
+l.17 ...twidth]{..\..\diagrammeActivite\DACU4.png}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\diagrammeActivite 
+                                  \DACU 5.png
+l.18 ...twidth]{..\..\diagrammeActivite\DACU5.png}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\diagrammeActivite \DACU 
+                                        5.png
+l.18 ...twidth]{..\..\diagrammeActivite\DACU5.png}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...Warning: File `..\..\diagrammeActivite 
+                                                  \DACU 5.png' not found\on@...
+l.18 ...twidth]{..\..\diagrammeActivite\DACU5.png}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...g: File `..\..\diagrammeActivite \DACU 
+                                                  5.png' not found\on@line .
+l.18 ...twidth]{..\..\diagrammeActivite\DACU5.png}
+                                                  
+? 
+
+LaTeX Warning: File `..\..5.png' not found on input line 18.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.18 ...twidth]{..\..\diagrammeActivite\DACU5.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.18 ...twidth]{..\..\diagrammeActivite\DACU5.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.18 ...twidth]{..\..\diagrammeActivite\DACU5.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ... eps\else #1\fi \endcsname 
+                                                  {\Gin@base #2}\else \Gin@n...
+l.18 ...twidth]{..\..\diagrammeActivite\DACU5.png}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.18 ...twidth]{..\..\diagrammeActivite\DACU5.png}
+                                                  
+? 
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...twidth]{..\..\diagrammeActivite\DACU5.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.18 ...twidth]{..\..\diagrammeActivite\DACU5.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...name Ginclude@#1\endcsname 
+                                                  \relax \Gin@drafttrue \exp...
+l.18 ...twidth]{..\..\diagrammeActivite\DACU5.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.18 ...twidth]{..\..\diagrammeActivite\DACU5.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \relax \@latex@error {Can ...
+l.18 ...twidth]{..\..\diagrammeActivite\DACU5.png}
+                                                  
+? 
+
+! LaTeX Error: Can not include graphics of type: \Gin@rule@.. .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...twidth]{..\..\diagrammeActivite\DACU5.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.18 ...twidth]{..\..\diagrammeActivite\DACU5.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \@empty \fi \fi \leavevmod...
+l.18 ...twidth]{..\..\diagrammeActivite\DACU5.png}
+                                                  
+? 
+! Extra \endcsname.
+<argument> ...csname Gin@rule@\Gin@ext \endcsname 
+                                                  {\Gin@base \Gin@ext }
+l.18 ...twidth]{..\..\diagrammeActivite\DACU5.png}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\diagrammeActivite 
+                                  \DACU 6.png
+l.19 ...twidth]{..\..\diagrammeActivite\DACU6.png}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\diagrammeActivite \DACU 
+                                        6.png
+l.19 ...twidth]{..\..\diagrammeActivite\DACU6.png}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...Warning: File `..\..\diagrammeActivite 
+                                                  \DACU 6.png' not found\on@...
+l.19 ...twidth]{..\..\diagrammeActivite\DACU6.png}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...g: File `..\..\diagrammeActivite \DACU 
+                                                  6.png' not found\on@line .
+l.19 ...twidth]{..\..\diagrammeActivite\DACU6.png}
+                                                  
+? 
+
+LaTeX Warning: File `..\..6.png' not found on input line 19.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.19 ...twidth]{..\..\diagrammeActivite\DACU6.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.19 ...twidth]{..\..\diagrammeActivite\DACU6.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.19 ...twidth]{..\..\diagrammeActivite\DACU6.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ... eps\else #1\fi \endcsname 
+                                                  {\Gin@base #2}\else \Gin@n...
+l.19 ...twidth]{..\..\diagrammeActivite\DACU6.png}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.19 ...twidth]{..\..\diagrammeActivite\DACU6.png}
+                                                  
+? 
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...twidth]{..\..\diagrammeActivite\DACU6.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.19 ...twidth]{..\..\diagrammeActivite\DACU6.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...name Ginclude@#1\endcsname 
+                                                  \relax \Gin@drafttrue \exp...
+l.19 ...twidth]{..\..\diagrammeActivite\DACU6.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.19 ...twidth]{..\..\diagrammeActivite\DACU6.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \relax \@latex@error {Can ...
+l.19 ...twidth]{..\..\diagrammeActivite\DACU6.png}
+                                                  
+? 
+
+! LaTeX Error: Can not include graphics of type: \Gin@rule@.. .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...twidth]{..\..\diagrammeActivite\DACU6.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.19 ...twidth]{..\..\diagrammeActivite\DACU6.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \@empty \fi \fi \leavevmod...
+l.19 ...twidth]{..\..\diagrammeActivite\DACU6.png}
+                                                  
+? 
+! Extra \endcsname.
+<argument> ...csname Gin@rule@\Gin@ext \endcsname 
+                                                  {\Gin@base \Gin@ext }
+l.19 ...twidth]{..\..\diagrammeActivite\DACU6.png}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\diagrammeActivite 
+                                  \DACU 7.png
+l.20 ...twidth]{..\..\diagrammeActivite\DACU7.png}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\diagrammeActivite \DACU 
+                                        7.png
+l.20 ...twidth]{..\..\diagrammeActivite\DACU7.png}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...Warning: File `..\..\diagrammeActivite 
+                                                  \DACU 7.png' not found\on@...
+l.20 ...twidth]{..\..\diagrammeActivite\DACU7.png}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...g: File `..\..\diagrammeActivite \DACU 
+                                                  7.png' not found\on@line .
+l.20 ...twidth]{..\..\diagrammeActivite\DACU7.png}
+                                                  
+? 
+
+LaTeX Warning: File `..\..7.png' not found on input line 20.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.20 ...twidth]{..\..\diagrammeActivite\DACU7.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.20 ...twidth]{..\..\diagrammeActivite\DACU7.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.20 ...twidth]{..\..\diagrammeActivite\DACU7.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ... eps\else #1\fi \endcsname 
+                                                  {\Gin@base #2}\else \Gin@n...
+l.20 ...twidth]{..\..\diagrammeActivite\DACU7.png}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.20 ...twidth]{..\..\diagrammeActivite\DACU7.png}
+                                                  
+? 
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...twidth]{..\..\diagrammeActivite\DACU7.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.20 ...twidth]{..\..\diagrammeActivite\DACU7.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...name Ginclude@#1\endcsname 
+                                                  \relax \Gin@drafttrue \exp...
+l.20 ...twidth]{..\..\diagrammeActivite\DACU7.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.20 ...twidth]{..\..\diagrammeActivite\DACU7.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \relax \@latex@error {Can ...
+l.20 ...twidth]{..\..\diagrammeActivite\DACU7.png}
+                                                  
+? 
+
+! LaTeX Error: Can not include graphics of type: \Gin@rule@.. .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...twidth]{..\..\diagrammeActivite\DACU7.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.20 ...twidth]{..\..\diagrammeActivite\DACU7.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \@empty \fi \fi \leavevmod...
+l.20 ...twidth]{..\..\diagrammeActivite\DACU7.png}
+                                                  
+? 
+! Extra \endcsname.
+<argument> ...csname Gin@rule@\Gin@ext \endcsname 
+                                                  {\Gin@base \Gin@ext }
+l.20 ...twidth]{..\..\diagrammeActivite\DACU7.png}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\diagrammeActivite 
+                                  \DACU 8.jpg
+l.21 ...twidth]{..\..\diagrammeActivite\DACU8.jpg}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\diagrammeActivite \DACU 
+                                        8.jpg
+l.21 ...twidth]{..\..\diagrammeActivite\DACU8.jpg}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...Warning: File `..\..\diagrammeActivite 
+                                                  \DACU 8.jpg' not found\on@...
+l.21 ...twidth]{..\..\diagrammeActivite\DACU8.jpg}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...g: File `..\..\diagrammeActivite \DACU 
+                                                  8.jpg' not found\on@line .
+l.21 ...twidth]{..\..\diagrammeActivite\DACU8.jpg}
+                                                  
+? 
+
+LaTeX Warning: File `..\..8.jpg' not found on input line 21.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.21 ...twidth]{..\..\diagrammeActivite\DACU8.jpg}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.21 ...twidth]{..\..\diagrammeActivite\DACU8.jpg}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.21 ...twidth]{..\..\diagrammeActivite\DACU8.jpg}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ... eps\else #1\fi \endcsname 
+                                                  {\Gin@base #2}\else \Gin@n...
+l.21 ...twidth]{..\..\diagrammeActivite\DACU8.jpg}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.21 ...twidth]{..\..\diagrammeActivite\DACU8.jpg}
+                                                  
+? 
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ...twidth]{..\..\diagrammeActivite\DACU8.jpg}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.21 ...twidth]{..\..\diagrammeActivite\DACU8.jpg}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...name Ginclude@#1\endcsname 
+                                                  \relax \Gin@drafttrue \exp...
+l.21 ...twidth]{..\..\diagrammeActivite\DACU8.jpg}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.21 ...twidth]{..\..\diagrammeActivite\DACU8.jpg}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \relax \@latex@error {Can ...
+l.21 ...twidth]{..\..\diagrammeActivite\DACU8.jpg}
+                                                  
+? 
+
+! LaTeX Error: Can not include graphics of type: \Gin@rule@.. .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ...twidth]{..\..\diagrammeActivite\DACU8.jpg}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.21 ...twidth]{..\..\diagrammeActivite\DACU8.jpg}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \@empty \fi \fi \leavevmod...
+l.21 ...twidth]{..\..\diagrammeActivite\DACU8.jpg}
+                                                  
+? 
+! Extra \endcsname.
+<argument> ...csname Gin@rule@\Gin@ext \endcsname 
+                                                  {\Gin@base \Gin@ext }
+l.21 ...twidth]{..\..\diagrammeActivite\DACU8.jpg}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\diagrammeActivite 
+                                  \DACU 9.jpg
+l.22 ...twidth]{..\..\diagrammeActivite\DACU9.jpg}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\diagrammeActivite \DACU 
+                                        9.jpg
+l.22 ...twidth]{..\..\diagrammeActivite\DACU9.jpg}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...Warning: File `..\..\diagrammeActivite 
+                                                  \DACU 9.jpg' not found\on@...
+l.22 ...twidth]{..\..\diagrammeActivite\DACU9.jpg}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...g: File `..\..\diagrammeActivite \DACU 
+                                                  9.jpg' not found\on@line .
+l.22 ...twidth]{..\..\diagrammeActivite\DACU9.jpg}
+                                                  
+? 
+
+LaTeX Warning: File `..\..9.jpg' not found on input line 22.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.22 ...twidth]{..\..\diagrammeActivite\DACU9.jpg}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.22 ...twidth]{..\..\diagrammeActivite\DACU9.jpg}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.22 ...twidth]{..\..\diagrammeActivite\DACU9.jpg}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ... eps\else #1\fi \endcsname 
+                                                  {\Gin@base #2}\else \Gin@n...
+l.22 ...twidth]{..\..\diagrammeActivite\DACU9.jpg}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.22 ...twidth]{..\..\diagrammeActivite\DACU9.jpg}
+                                                  
+? 
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 ...twidth]{..\..\diagrammeActivite\DACU9.jpg}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.22 ...twidth]{..\..\diagrammeActivite\DACU9.jpg}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...name Ginclude@#1\endcsname 
+                                                  \relax \Gin@drafttrue \exp...
+l.22 ...twidth]{..\..\diagrammeActivite\DACU9.jpg}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.22 ...twidth]{..\..\diagrammeActivite\DACU9.jpg}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \relax \@latex@error {Can ...
+l.22 ...twidth]{..\..\diagrammeActivite\DACU9.jpg}
+                                                  
+? 
+
+! LaTeX Error: Can not include graphics of type: \Gin@rule@.. .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 ...twidth]{..\..\diagrammeActivite\DACU9.jpg}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.22 ...twidth]{..\..\diagrammeActivite\DACU9.jpg}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \@empty \fi \fi \leavevmod...
+l.22 ...twidth]{..\..\diagrammeActivite\DACU9.jpg}
+                                                  
+? 
+! Extra \endcsname.
+<argument> ...csname Gin@rule@\Gin@ext \endcsname 
+                                                  {\Gin@base \Gin@ext }
+l.22 ...twidth]{..\..\diagrammeActivite\DACU9.jpg}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\diagrammeActivite 
+                                  \DACU 10.png
+l.23 ...width]{..\..\diagrammeActivite\DACU10.png}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\diagrammeActivite \DACU 
+                                        10.png
+l.23 ...width]{..\..\diagrammeActivite\DACU10.png}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...Warning: File `..\..\diagrammeActivite 
+                                                  \DACU 10.png' not found\on...
+l.23 ...width]{..\..\diagrammeActivite\DACU10.png}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...g: File `..\..\diagrammeActivite \DACU 
+                                                  10.png' not found\on@line .
+l.23 ...width]{..\..\diagrammeActivite\DACU10.png}
+                                                  
+? 
+
+LaTeX Warning: File `..\..10.png' not found on input line 23.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.23 ...width]{..\..\diagrammeActivite\DACU10.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.23 ...width]{..\..\diagrammeActivite\DACU10.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.23 ...width]{..\..\diagrammeActivite\DACU10.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ... eps\else #1\fi \endcsname 
+                                                  {\Gin@base #2}\else \Gin@n...
+l.23 ...width]{..\..\diagrammeActivite\DACU10.png}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.23 ...width]{..\..\diagrammeActivite\DACU10.png}
+                                                  
+? 
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...width]{..\..\diagrammeActivite\DACU10.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.23 ...width]{..\..\diagrammeActivite\DACU10.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...name Ginclude@#1\endcsname 
+                                                  \relax \Gin@drafttrue \exp...
+l.23 ...width]{..\..\diagrammeActivite\DACU10.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.23 ...width]{..\..\diagrammeActivite\DACU10.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \relax \@latex@error {Can ...
+l.23 ...width]{..\..\diagrammeActivite\DACU10.png}
+                                                  
+? 
+
+! LaTeX Error: Can not include graphics of type: \Gin@rule@.. .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...width]{..\..\diagrammeActivite\DACU10.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.23 ...width]{..\..\diagrammeActivite\DACU10.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \@empty \fi \fi \leavevmod...
+l.23 ...width]{..\..\diagrammeActivite\DACU10.png}
+                                                  
+? 
+! Extra \endcsname.
+<argument> ...csname Gin@rule@\Gin@ext \endcsname 
+                                                  {\Gin@base \Gin@ext }
+l.23 ...width]{..\..\diagrammeActivite\DACU10.png}
+                                                  
+? 
+
+Overfull \hbox (72.83301pt too wide) in paragraph at lines 14--24
+ \T1/lmr/m/n/10 eps[][].1.png..[].1.png 
+ []
+
+
+Overfull \hbox (72.83301pt too wide) in paragraph at lines 14--24
+ \T1/lmr/m/n/10 eps[][].2.png..[].2.png 
+ []
+
+
+Overfull \hbox (72.83301pt too wide) in paragraph at lines 14--24
+ \T1/lmr/m/n/10 eps[][].3.png..[].3.png 
+ []
+
+
+Overfull \hbox (72.83301pt too wide) in paragraph at lines 14--24
+ \T1/lmr/m/n/10 eps[][].4.png..[].4.png 
+ []
+
+
+Overfull \hbox (72.83301pt too wide) in paragraph at lines 14--24
+ \T1/lmr/m/n/10 eps[][].5.png..[].5.png 
+ []
+
+
+Overfull \hbox (72.83301pt too wide) in paragraph at lines 14--24
+ \T1/lmr/m/n/10 eps[][].6.png..[].6.png 
+ []
+
+
+Overfull \hbox (72.83301pt too wide) in paragraph at lines 14--24
+ \T1/lmr/m/n/10 eps[][].7.png..[].7.png 
+ []
+
+
+Overfull \hbox (67.83301pt too wide) in paragraph at lines 14--24
+ \T1/lmr/m/n/10 eps[][].8.jpg..[].8.jpg 
+ []
+
+
+Overfull \hbox (67.83301pt too wide) in paragraph at lines 14--24
+ \T1/lmr/m/n/10 eps[][].9.jpg..[].9.jpg 
+ []
+
+
+Overfull \hbox (82.83301pt too wide) in paragraph at lines 14--24
+ \T1/lmr/m/n/10 eps[][].10.png..[].10.png 
+ []
+
+
+LaTeX Warning: File `Decoupage MCD 1.png' not found on input line 29.
+
+<Decoupage MCD 1.png, id=15, 1003.75pt x 1105.12875pt>
+File: Decoupage MCD 1.png Graphic file (type png)
+
+<use Decoupage MCD 1.png>
+Package pdftex.def Info: Decoupage MCD 1.png used on input line 29.
+(pdftex.def)             Requested size: 483.69687pt x 532.56364pt.
+
+
+LaTeX Warning: File `Decoupage MCD 2.png' not found on input line 30.
+
+<Decoupage MCD 2.png, id=16, 1003.75pt x 1278.7775pt>
+File: Decoupage MCD 2.png Graphic file (type png)
+
+<use Decoupage MCD 2.png>
+Package pdftex.def Info: Decoupage MCD 2.png used on input line 30.
+(pdftex.def)             Requested size: 483.69687pt x 616.2453pt.
+ [2] [3 <./Decoupage MCD 1.png>]
+<diagramme-etat-objet-contact.png, id=24, 777.90625pt x 218.8175pt>
 File: diagramme-etat-objet-contact.png Graphic file (type png)
 
 <use diagramme-etat-objet-contact.png>
-Package pdftex.def Info: diagramme-etat-objet-contact.png used on input line 19
+Package pdftex.def Info: diagramme-etat-objet-contact.png used on input line 38
 .
 (pdftex.def)             Requested size: 483.69687pt x 136.06276pt.
+ [4 <./Decoupage MCD 2.png>]
+! Undefined control sequence.
+<argument> .\..\webSequenceDiagrameSources 
+                                           \cu 1.png
+l.49 ...{..\..\webSequenceDiagrameSources\cu1.png}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\webSequenceDiagrameSources \cu 
+                                               1.png
+l.49 ...{..\..\webSequenceDiagrameSources\cu1.png}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...File `..\..\webSequenceDiagrameSources 
+                                                  \cu 1.png' not found\on@li...
+l.49 ...{..\..\webSequenceDiagrameSources\cu1.png}
+                                                  
+? 
+! Undefined control sequence.
+<write> ... `..\..\webSequenceDiagrameSources \cu 
+                                                  1.png' not found\on@line .
+l.49 ...{..\..\webSequenceDiagrameSources\cu1.png}
+                                                  
+? 
 
-<diagramme-collaboration.png, id=17, 948.54375pt x 609.27625pt>
-File: diagramme-collaboration.png Graphic file (type png)
+LaTeX Warning: File `..\..1.png' not found on input line 49.
 
-<use diagramme-collaboration.png>
-Package pdftex.def Info: diagramme-collaboration.png used on input line 33.
-(pdftex.def)             Requested size: 483.69687pt x 310.68958pt.
- [2 <./diagramme-etat-objet-contact.png> <./diagramme-collaboration.png>]) (./c
-onception-detaillee.tex
-<diagramme-edf.png, id=23, 731.73375pt x 558.085pt>
-File: diagramme-edf.png Graphic file (type png)
- <use diagramme-edf.png>
-Package pdftex.def Info: diagramme-edf.png used on input line 15.
-(pdftex.def)             Requested size: 483.69687pt x 368.9163pt.
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.49 ...{..\..\webSequenceDiagrameSources\cu1.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.49 ...{..\..\webSequenceDiagrameSources\cu1.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.49 ...{..\..\webSequenceDiagrameSources\cu1.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ... eps\else #1\fi \endcsname 
+                                                  {\Gin@base #2}\else \Gin@n...
+l.49 ...{..\..\webSequenceDiagrameSources\cu1.png}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.49 ...{..\..\webSequenceDiagrameSources\cu1.png}
+                                                  
+? 
 
-[3 <./diagramme-edf.png>]) (./architecture.tex) [4] (./compte-rendu-final.aux) 
-) 
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 ...{..\..\webSequenceDiagrameSources\cu1.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.49 ...{..\..\webSequenceDiagrameSources\cu1.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...name Ginclude@#1\endcsname 
+                                                  \relax \Gin@drafttrue \exp...
+l.49 ...{..\..\webSequenceDiagrameSources\cu1.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.49 ...{..\..\webSequenceDiagrameSources\cu1.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \relax \@latex@error {Can ...
+l.49 ...{..\..\webSequenceDiagrameSources\cu1.png}
+                                                  
+? 
+
+! LaTeX Error: Can not include graphics of type: \Gin@rule@.. .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 ...{..\..\webSequenceDiagrameSources\cu1.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \Gin@rule@.. 
+l.49 ...{..\..\webSequenceDiagrameSources\cu1.png}
+                                                  
+? 
+! Extra \endcsname.
+\ETE@OrgGin@setfile ...\csname Gread@#1\endcsname 
+                                                  \@empty \fi \fi \leavevmod...
+l.49 ...{..\..\webSequenceDiagrameSources\cu1.png}
+                                                  
+? 
+! Extra \endcsname.
+<argument> ...csname Gin@rule@\Gin@ext \endcsname 
+                                                  {\Gin@base \Gin@ext }
+l.49 ...{..\..\webSequenceDiagrameSources\cu1.png}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\webSequenceDiagrameSources 
+                                           \cu 2.png
+l.50 ...{..\..\webSequenceDiagrameSources\cu2.png}
+                                                  
+? 
+! Undefined control sequence.
+<argument> .\..\webSequenceDiagrameSources \cu 
+                                               2.png
+l.50 ...{..\..\webSequenceDiagrameSources\cu2.png}
+                                                  
+? 
+! Undefined control sequence.
+<write> ...File `..\..\webSequenceDiagrameSources 
+                                                  \cu 2.png' not found\on@li...
+l.50 ...{..\..\webSequenceDiagrameSources\cu2.png}
+                                                  
+? 
+! Undefined control sequence.
+<write> ... `..\..\webSequenceDiagrameSources \cu 
+                                                  2.png' not found\on@line .
+l.50 ...{..\..\webSequenceDiagrameSources\cu2.png}
+                                                  
+? 
+
+LaTeX Warning: File `..\..2.png' not found on input line 50.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.50 ...{..\..\webSequenceDiagrameSources\cu2.png}
+                                                  
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \unhbox 
+l.50 ...{..\..\webSequenceDiagrameSources\cu2.png}
+                                                  
+? 
+! Emergency stop.
+<to be read again> 
+                   \unhbox 
+l.50 ...{..\..\webSequenceDiagrameSources\cu2.png}
+                                                  
+End of file on the terminal!
+
+ 
 Here is how much of TeX's memory you used:
- 4073 strings out of 493633
- 56187 string characters out of 3143378
- 123977 words of memory out of 3000000
- 7272 multiletter control sequences out of 15000+200000
- 39202 words of font info for 33 fonts, out of 3000000 for 9000
+ 4111 strings out of 493633
+ 56686 string characters out of 3143377
+ 121977 words of memory out of 3000000
+ 7314 multiletter control sequences out of 15000+200000
+ 39521 words of font info for 34 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  37i,10n,43p,460b,589s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/t
-exlive/2011/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/201
-1/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2011/texmf-di
-st/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2011/texmf-dist/fonts/
-type1/public/lm/lmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/publi
-c/lm/lmr12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/lm/lmr17.
-pfb>
-Output written on compte-rendu-final.pdf (5 pages, 276494 bytes).
-PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+!  ==> Fatal error occurred, no output PDF file produced!
