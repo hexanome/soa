@@ -61,9 +61,11 @@
 				</Grid>
 			</TabItem>
 			<TabItem Header="Produits">
-				<Grid Background="#FFE5E5E5"/>
+				<Grid Background="White">
+					<ScrollViewer Margin="0"/>
+				</Grid>
 			</TabItem>
-			<TabItem Header="Historique">
+			<TabItem Header="Relation Banque/Client">
 				<Grid Background="White"/>
 			</TabItem>
 		</TabControl>

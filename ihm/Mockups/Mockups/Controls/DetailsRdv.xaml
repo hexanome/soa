@@ -62,9 +62,9 @@
 					<ColumnDefinition/>
 				</Grid.ColumnDefinitions>
 				<TextBlock HorizontalAlignment="Right" Margin="0,3,0,0" TextWrapping="Wrap" Text="Date :" Foreground="#FF545454" VerticalAlignment="Top"/>
-				<TextBox Margin="5,0,20,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="03/05/2012" d:LayoutOverrides="VerticalAlignment" Grid.Column="1"/>
+				<DatePicker Margin="3,0,0,0" FirstDayOfWeek="Monday" Grid.Column="1" BorderBrush="{x:Null}"/>
 				<TextBlock HorizontalAlignment="Right" Margin="0,3,0,0" TextWrapping="Wrap" Text="Assigné à :" Foreground="#FF545454" VerticalAlignment="Top" Grid.Row="1"/>
-				<TextBlock Margin="5,3,0,0" TextWrapping="Wrap" Text="Moi" VerticalAlignment="Top" d:LayoutOverrides="Width" Grid.Column="1" Grid.Row="1" TextDecorations="Underline" HorizontalAlignment="Left" Foreground="#FF0081B8" Cursor="Hand"/>
+				<TextBlock Margin="5,3,0,0" TextWrapping="Wrap" Text="Moi" VerticalAlignment="Top" d:LayoutOverrides="Width" Grid.Column="1" Grid.Row="1" TextDecorations="Underline" HorizontalAlignment="Left" Foreground="#FF0081B8" Cursor="Hand" MouseLeftButtonUp="RdvChoixClient_Click"/>
 				<TextBlock HorizontalAlignment="Right" Margin="0,3,0,0" TextWrapping="Wrap" Text="Début :" Foreground="#FF545454" Grid.Column="2"/>
 				<ComboBox Grid.Column="3" Margin="5,0,20,10" VerticalAlignment="Center" SelectedIndex="0">
 					<ComboBoxItem Content="08:00"/>

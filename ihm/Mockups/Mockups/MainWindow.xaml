@@ -62,37 +62,59 @@
 							<local:DetailsRdv/>
 						</Border>
 					</Grid>
-					<Border Margin="8" CornerRadius="1" BorderThickness="1" BorderBrush="#FF828790">
-						<Grid>
-							<Grid.RowDefinitions>
-								<RowDefinition Height="Auto"/>
-								<RowDefinition/>
-							</Grid.RowDefinitions>
-							<TextBlock Margin="10,10,10,0" TextWrapping="Wrap" Text="Calendrier" FontSize="21.333" VerticalAlignment="Top"/>
-							<Grid Margin="10,10,18,0" Grid.Row="1">
-								<Grid.RowDefinitions>
-									<RowDefinition Height="Auto"/>
-									<RowDefinition/>
-								</Grid.RowDefinitions>
-								<Grid.ColumnDefinitions>
-									<ColumnDefinition Width="40"/>
-									<ColumnDefinition/>
-									<ColumnDefinition/>
-									<ColumnDefinition/>
-									<ColumnDefinition/>
-									<ColumnDefinition/>
-								</Grid.ColumnDefinitions>
-								<TextBlock Grid.Column="1" Margin="0" TextWrapping="Wrap" Text="Lundi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-								<TextBlock Grid.Column="2" Margin="0" TextWrapping="Wrap" Text="Mardi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-								<TextBlock Grid.Column="3" Margin="0" TextWrapping="Wrap" Text="Mercredi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-								<TextBlock Grid.Column="4" Margin="0" TextWrapping="Wrap" Text="Jeudi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-								<TextBlock Grid.Column="5" Margin="0" TextWrapping="Wrap" Text="Vendredi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-								<ScrollViewer Grid.ColumnSpan="6" Margin="0,0,-18,0" Grid.Row="1">
-									<local:Calendar Height="1400" Width="Auto" VerticalAlignment="Top"/>
-								</ScrollViewer>
-							</Grid>
-						</Grid>
-					</Border>
+					<Grid Margin="8">
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto"/>
+							<RowDefinition/>
+						</Grid.RowDefinitions>
+						<TextBlock Margin="0,0,12,10" TextWrapping="Wrap" Text="Calendrier" FontSize="21.333" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+						<TabControl Grid.Row="1">
+							<TabItem Header="Hebdomadaire">
+								<Grid Margin="-4,10,-4,-4">
+									<Grid.RowDefinitions>
+										<RowDefinition Height="Auto"/>
+										<RowDefinition/>
+									</Grid.RowDefinitions>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="40"/>
+										<ColumnDefinition/>
+										<ColumnDefinition/>
+										<ColumnDefinition/>
+										<ColumnDefinition/>
+										<ColumnDefinition/>
+									</Grid.ColumnDefinitions>
+									<TextBlock Grid.Column="1" Margin="0" TextWrapping="Wrap" Text="Lundi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+									<TextBlock Grid.Column="2" Margin="0" TextWrapping="Wrap" Text="Mardi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+									<TextBlock Grid.Column="3" Margin="0" TextWrapping="Wrap" Text="Mercredi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+									<TextBlock Grid.Column="4" Margin="0" TextWrapping="Wrap" Text="Jeudi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+									<TextBlock Grid.Column="5" Margin="0" TextWrapping="Wrap" Text="Vendredi" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+									<ScrollViewer Grid.ColumnSpan="6" Margin="0" Grid.Row="1">
+										<local:Calendar Height="1400" Width="Auto" VerticalAlignment="Top"/>
+									</ScrollViewer>
+								</Grid>
+							</TabItem>
+							<TabItem Header="Quotidien">
+								<Grid Margin="-4,10,-4,-4">
+									<Grid.RowDefinitions>
+										<RowDefinition Height="Auto"/>
+										<RowDefinition/>
+									</Grid.RowDefinitions>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="40"/>
+										<ColumnDefinition/>
+										<ColumnDefinition/>
+										<ColumnDefinition/>
+									</Grid.ColumnDefinitions>
+									<TextBlock Grid.Column="1" Margin="0" TextWrapping="Wrap" Text="Agent 1" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+									<TextBlock Grid.Column="2" Margin="0" TextWrapping="Wrap" Text="Agent 2" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+									<TextBlock Grid.Column="3" Margin="0" TextWrapping="Wrap" Text="Agent 3" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+									<ScrollViewer Grid.ColumnSpan="4" Margin="0" Grid.Row="1">
+										<local:CalendarDay Height="1400" Width="Auto"/>
+									</ScrollViewer>
+								</Grid>
+							</TabItem>
+						</TabControl>
+					</Grid>
 				</Grid>
 			</TabItem>
 			<TabItem Header="Clients">
