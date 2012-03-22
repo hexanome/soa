@@ -1,4 +1,4 @@
-title CU8 - Preparation de l'entretien par un agent - Diagramme de séquence
+title CU8 Preparation de l'entretien par un agent
 
 
 Agent->IHM: consulterAgenda (CU7)
@@ -39,7 +39,7 @@ Agent->IHM: preparerContact(idContact)
 activate IHM
 IHM->SM: preparerContact(idContact)
 activate SM
-SM->Contact: setContactStatus(idContact, "prepare")
+SM->Contact: setContactStatus(idContact, status=prepare)
 activate Contact
 deactivate Contact
 deactivate SM

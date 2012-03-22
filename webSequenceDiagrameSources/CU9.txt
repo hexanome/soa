@@ -1,5 +1,4 @@
-title CU9 - Conduite de l'entretien par l'agent - Diagramme de séquence
-
+title CU9 Conduite de l'entretien par l'agent
 
 Agent->IHM: consulterAgenda (CU7)
 activate IHM
@@ -41,7 +40,7 @@ Agent->IHM: realiserContact(idContact)
 activate IHM
 IHM->SM: realiserContact(idContact)
 activate SM
-SM->Contact: setContactStatus(idContact, "realise")
+SM->Contact: setContactStatus(idContact, status=realise)
 activate Contact
 deactivate Contact
 deactivate SM

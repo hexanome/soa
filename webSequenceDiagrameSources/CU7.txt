@@ -1,4 +1,4 @@
-﻿title CU7
+﻿title CU7 Consultation des agendas
 
 Agent->IHM:changerVue(vue)
 alt si vue agence
@@ -10,8 +10,8 @@ alt si vue agence
     deactivate Agences
     SM-->IHM: Agents
     deactivate SM
-    Agent->IHM:choixAgent(idAgent)
-    Agent->IHM:choixSemaine(date)
+    Agent->IHM:choisirAgent(idAgent)
+    Agent->IHM:choisirSemaine(date)
     IHM->SM: getSemaineParAgent(semaine,idAgent)
     activate SM
     SM->Agenda: getSemaineParAgent(semaine,idAgent)
@@ -21,7 +21,7 @@ alt si vue agence
     SM-->IHM: semaine
     deactivate SM
 else si vue agent
-    Agent->IHM:choixJour(date)
+    Agent->IHM:choisirJour(date)
     IHM->SM: getJourAgence(date)
     activate SM
     SM->Agenda: getJourAgence(date)
@@ -31,7 +31,8 @@ else si vue agent
     SM-->IHM: jour
     deactivate SM
 end
-Agent->IHM:selectionCellule()
+
+Agent->IHM:selectionnerCellule()
 activate IHM
 IHM->SM:getPlageHoraire(idAgent,Date)
 activate SM
@@ -42,8 +43,9 @@ deactivate Agenda
 SM->IHM:plageHoraire
 deactivate SM
 deactivate IHM
-Agent->IHM:choix Action
-alt action = créer RDV
+Agent->IHM:choisirAction()
+
+alt action = creer RDV
     note over IHM,SM:Planification des contacts commerciaux CU6
 else action = modifier RDV
     IHM->SM: updateContact(idContact)
@@ -60,7 +62,7 @@ SM->Contact:updateContact(etat,raison)
 SM->Contact:deleteTacheElementaire(idContact)
 SM-->IHM:code retour
 deactivate SM
-else action = réaffecter RDV
+else action = reaffecter RDV
     IHM->SM: getAllAgents(agence)
     activate SM
     SM->Agences: getAll(agence)
