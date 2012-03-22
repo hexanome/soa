@@ -1,6 +1,6 @@
-﻿title CU6
+﻿title CU6 Planification des contacts commerciaux
 
-Agent->IHM:planificationContact
+Agent->IHM:planifierContact()
 activate IHM
 IHM->SM:getAgenda(type=contactCommercial)
 activate SM
@@ -35,7 +35,6 @@ activate IHM
 IHM->SM:confirmerContact(lettre)
 activate SM
 SM->Contact:updateContact(idContact,lettre)
-SM-->IHM:code retour
 deactivate SM
 deactivate IHM
 
@@ -47,9 +46,8 @@ Agent->IHM:creerContactSpontane(date=now,idClient)
 activate IHM
 IHM->SM:creerContactSpontane(date=now,idClient)
 activate SM
-SM->Agenda:creerPlageAgenda(date,type='Contact Spontané',idAgent)
-SM->Contact:créer Contact(date,etat=Réalisé,idAgent)
-SM-->IHM:code retour
+SM->Agenda:creerPlageAgenda(date,type=Contact Spontane,idAgent)
+SM->Contact:creerContact(date,etat=Realise,idAgent)
 deactivate SM
 IHM->IHM:updateVue()
 deactivate IHM
