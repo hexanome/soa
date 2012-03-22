@@ -12,16 +12,25 @@ using System.Windows.Shapes;
 
 namespace Mockups
 {
-	/// <summary>
-	/// Interaction logic for SelectionAgent.xaml
-	/// </summary>
-	public partial class SelectionAgent : Window
-	{
-		public SelectionAgent()
-		{
-			this.InitializeComponent();
-			
-			// Insert code required on object creation below this point.
-		}
-	}
+    /// <summary>
+    /// Interaction logic for SelectionAgent.xaml
+    /// </summary>
+    public partial class SelectionAgent : Window
+    {
+        public SelectionAgent()
+        {
+            this.InitializeComponent();
+            
+            // Insert code required on object creation below this point.
+            ListAgents.Items.Add(new
+            {
+                Name = "Matthieu Coquet"
+            });
+
+            ListAgents.Items.Add(new
+            {
+                Name = "Xavier Sauvagnat"
+            });
+        }
+    }
 }

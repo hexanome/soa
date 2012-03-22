@@ -60,6 +60,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Controls\AgentListItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Controls\Calendar.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -118,6 +122,9 @@
     </Compile>
     <Compile Include="Controls\ActionButton.xaml.cs">
       <DependentUpon>ActionButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AgentListItem.xaml.cs">
+      <DependentUpon>AgentListItem.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\Calendar.xaml.cs">
       <DependentUpon>Calendar.xaml</DependentUpon>
@@ -183,6 +190,7 @@
     <Resource Include="Icons\appbar.page.check.png" />
     <Resource Include="Icons\appbar.user.add.png" />
     <Resource Include="Icons\appbar.user.png" />
+    <Resource Include="Icons\Windows 7 %28128%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath32)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

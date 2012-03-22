@@ -1,7 +1,7 @@
 ﻿<Window
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:Mockups" mc:Ignorable="d"
 	x:Class="Mockups.SelectionAgent"
 	x:Name="Window"
 	Title="Sélectionner un Agent"
@@ -31,7 +31,13 @@
 				<TextBox Margin="0" TextWrapping="Wrap"/>
 				<Button Content="Rechercher" Margin="10,0,0,0" Grid.Column="1"/>
 			</Grid>
-			<ListBox Margin="10" Grid.Row="1" ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+			<ListBox x:Name="ListAgents" Margin="10" Grid.Row="1" ScrollViewer.VerticalScrollBarVisibility="Visible">
+				<ListBox.ItemTemplate>
+					<DataTemplate>
+						<local:AgentListItem AgentName="{Binding Name}" HorizontalAlignment="Left"/>
+					</DataTemplate>
+				</ListBox.ItemTemplate>
+			</ListBox>
 		</Grid>
 	</Grid>
 </Window>

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.4.27)  22 MAR 2012 17:24
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.4.27)  22 MAR 2012 17:28
 entering extended mode
 **compte-rendu-final.tex
 
@@ -388,8 +388,30 @@ File: pdftex.def 2011/01/28 v0.05d Graphics/color for pdfTeX
 ) (D:\Soft2\Latex\USBTeX-1.6\programs\MiKTeX_2.9\tex\latex\eurosym\eurosym.sty
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box26
+) (D:\Soft2\Latex\USBTeX-1.6\programs\MiKTeX_2.9\tex\latex\float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count95
+\float@exts=\toks21
+\float@box=\box27
+\@float@everytoks=\toks22
+\@floatcapt=\box28
 )
-(D:\Soft2\Latex\USBTeX-1.6\programs\MiKTeX_2.9\tex\latex\fancyhdr\fancyhdr.sty
+(D:\Soft2\Latex\USBTeX-1.6\programs\MiKTeX_2.9\tex\latex\caption\caption.sty
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+
+(D:\Soft2\Latex\USBTeX-1.6\programs\MiKTeX_2.9\tex\latex\caption\caption3.sty
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen116
+\captionmargin@=\dimen117
+\captionwidth=\dimen118
+\caption@indent=\dimen119
+\caption@parindent=\dimen120
+\caption@hangindent=\dimen121
+)
+\c@ContinuedFloat=\count96
+Package caption Info: float package is loaded.
+) (D:\Soft2\Latex\USBTeX-1.6\programs\MiKTeX_2.9\tex\latex\fancyhdr\fancyhdr.st
+y
 \fancy@headwidth=\skip43
 \f@ncyO@elh=\skip44
 \f@ncyO@erh=\skip45
@@ -402,19 +424,19 @@ Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 )
 ("D:\Visual Studio 2010\Insa\H4111\SOA\livrables\compte-rendu\compte-rendu-fina
 l.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 42.
  (D:\Soft2\Latex\USBTeX-1.6\programs\MiKTeX_2.9\tex\latex\lm\t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -471,59 +493,62 @@ Package ucs Warning: ***************************
 (ucs)                ***************************
 (ucs)                Activating compatibility mode.
 (ucs)                ***************************
-(ucs)                 on input line 38.
+(ucs)                 on input line 42.
 
 (D:\Soft2\Latex\USBTeX-1.6\programs\MiKTeX_2.9\tex\latex\unicode\utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
-LaTeX Info: Redefining \degres on input line 38.
-LaTeX Info: Redefining \dots on input line 38.
-LaTeX Info: Redefining \up on input line 38.
+LaTeX Info: Redefining \degres on input line 42.
+LaTeX Info: Redefining \dots on input line 42.
+LaTeX Info: Redefining \up on input line 42.
 
 (D:\Soft2\Latex\USBTeX-1.6\programs\MiKTeX_2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count95
-\scratchdimen=\dimen116
-\scratchbox=\box27
-\nofMPsegments=\count96
-\nofMParguments=\count97
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count98
-\MPscratchDim=\dimen117
-\MPnumerator=\count99
-\makeMPintoPDFobject=\count100
-\everyMPtoPDFconversion=\toks22
+\scratchcounter=\count97
+\scratchdimen=\dimen122
+\scratchbox=\box29
+\nofMPsegments=\count98
+\nofMParguments=\count99
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count100
+\MPscratchDim=\dimen123
+\MPnumerator=\count101
+\makeMPintoPDFobject=\count102
+\everyMPtoPDFconversion=\toks24
 )
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
 (D:\Soft2\Latex\USBTeX-1.6\programs\MiKTeX_2.9\tex\latex\unicode\data\uni-0.def
 File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
 )
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 59.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 63.
  (D:\Soft2\Latex\USBTeX-1.6\programs\MiKTeX_2.9\tex\latex\lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 59.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 63.
 
 (D:\Soft2\Latex\USBTeX-1.6\programs\MiKTeX_2.9\tex\latex\lm\omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 59.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 63.
 
 
 (D:\Soft2\Latex\USBTeX-1.6\programs\MiKTeX_2.9\tex\latex\lm\omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 59.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 63.
 
 
 (D:\Soft2\Latex\USBTeX-1.6\programs\MiKTeX_2.9\tex\latex\lm\omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 59.
+(Font)              <10> on input line 63.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 59.
+(Font)              <7> on input line 63.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 59.
+(Font)              <5> on input line 63.
 
 [1
 
@@ -1456,12 +1481,12 @@ l.14 ...twidth]{..\..\diagrammeActivite\DACU6.png}
                                                   
 (That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 3639 strings out of 494019
- 50199 string characters out of 3128541
- 109262 words of memory out of 3000000
- 6859 multiletter control sequences out of 15000+200000
+ 4679 strings out of 494019
+ 68955 string characters out of 3128541
+ 130050 words of memory out of 3000000
+ 7889 multiletter control sequences out of 15000+200000
  39521 words of font info for 34 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 25i,10n,43p,342b,589s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,10n,43p,342b,589s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 !  ==> Fatal error occurred, no output PDF file produced!
