@@ -19,10 +19,62 @@ Les blocs \textbf{Agenda} et \textbf{Contact} seront répartis. Aucune informati
 
 \subsection{Principaux flux applicatifs échangés}
 
-\begin{itemize}
-\item Ajout de nouvelles données
-\item Consultation des données
-\item Mise à jour des données
-\item Sauvegarde des données
-\item Réplication des données
-\end{itemize}
+\subsubsection{Consultation des données}
+
+Lorsqu'une donnée est requise par l'une des agences, elle tente si possible de la récupérer sur ses
+propres serveurs, ou émet une requète à l'agence principale à laquelle elle est affectée. Celle-ci
+peut soit posséder cette donnée, soit la demander au site central, et la mettre en cache. Les systèmes
+de cache sont très régulièrement rafraichis afin d'éviter de travailler sur des données trop anciennes
+de minimiser le plus possible le risque de conflits (voir les mécanismes de réplication ci-après).
+
+\subsubsection{Mise à jour des données}
+
+\paragraph{Mise à jour active}
+
+Lorsqu'une donnée est mise à jour sur les serveurs d'une agence, et que ces derniers connaissaient les
+agences sur lesquelles la donnée est répliquée, ils émettent directement une notification pour les
+prévenir du changement.
+
+\paragraph{Mise à jour passive}
+
+Lorsqu'un serveur ne sait pas où se trouvent toutes les copies de ses données, un mécanisme de mise à
+jour passive des données intervient. Toutes les données répliquées sont brassées régulièrement,
+et transférées de manière routinière entre les agences pour que le système maintienne sa cohérence au
+mieux possible tout en veillant à ne pas surcharger le réseau inter-agences.
+
+\subsubsection{Réplication des données}
+
+Pour une plus grande rapidité d'accès, les données considérées comme globales sont répliquées entre les
+agences. Elles sont mises à jour le plus régulièrement possible pour garantir la fraîcheur des données
+et limiter les risques de conflits.
+
+\paragraph{Réplication descendante}
+
+Comme indiqué précédemment, les données des blocs \textbf{Produits}, \textbf{Client} et \textbf{Agence}
+sont répliquées depuis le site central vers les serveurs des agences principales.
+
+\paragraph{Réplication montante}
+
+Il existe également un mécanisme de réplication des données des agences principales vers le site central,
+afin que celui-ci puisse conserver des sauvegardes globales (voir paragraphe suivant). De la même façon,
+les sous-agences répliquent leurs données vers les agences principales auxquelles elles sont affectées.
+Cette réplication montante ne concerne pas les blocs applicatifs \textbf{Agenda} et \textbf{Contact}, car
+ils relèvent de la responsabilité des sous-agences seules.
+
+\subsubsection{Sauvegarde des données}
+
+Les données sont systématiquement et régulièrement sauvegardées.
+
+\paragraph{Restauration intégrale à froid}
+
+Celles qui sont présentes ou répliquées
+sur le site central sont enregistrées sous forme de clichés instantanés, qui peuvent être restaurés
+intégralement à froid en cas de problème majeur (cas extrêmes comme la perte d'un ou plusieur serveurs).
+
+\paragraph{Restauration partielle localisée à chaud}
+
+Un mécanisme de restauration partielle à chaud est également prévu pour
+les problèmes de pertes de données localisées, comme la perte d'un dossier ou la corruption d'une entrée
+au sein d'une base de données. Ce mécanisme est géré automatiquement par notre système de Base de Données.
+
+Il existe des systèmes de sauvegardes similaires au sein de chaque agence.
