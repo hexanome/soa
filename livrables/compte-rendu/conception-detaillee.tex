@@ -38,14 +38,33 @@ TODO @quentez
 
 \subsection{Services Métiers invoqués par l'IHM}
 
-Cette IHM offre différents services métiers. En voici la liste :
+Cette IHM utilise différents services métiers. En voici la liste :
 
 \begin{itemize}
-\item Ajout d'un nouveau Contact
-\item Affectation / Réaffectation d'un Contact
-\item Prise / Modification d'un Rendez-Vous de Contact
-\item Préparation d'un Rendez-Vous de Contact
-\item Edition d'un Rapport d'Activité Commerciale suite à un Contact 
+\item getAllClients()
+\item afficherInfos(idClient)
+\item updateClient(client)
+\item getAllContacts(idAgence)
+\item getAllAgents(idAgence)
+\item affecterContactAgent(idAgent,idContact)
+\item getContactsAgent(idAgent)
+\item annulerContact(idContact,raison)
+\item regrouperContacts(liste<Contact>)
+\item planifierPlageAgenda(idAgent,typeActivite,date)
+\item terminerPlanification()
+\item getAgenda(type)
+\item changerEtatContact(date,idContact,etat)
+\item confirmerContact(lettre)
+\item créerContactSpontané(date,idClient)
+\item consulterCatalogue(idSegment,idProduit)
+\item soumettreProposition(idContact,idOffre)
+\item préparerContact(idContact)
+\item consulterPréparation(idContact)
+\item réaliserContact(idContact)
+\item getSemaineParAgent(semaine,idAgent)
+\item getJourAgence(date)
+\item getPlageHoraire(idAgent,date)
+\item transférerContact(idContact,idAgent)
 \end{itemize}
 
 \subsection{Spécification des Services Métier}
