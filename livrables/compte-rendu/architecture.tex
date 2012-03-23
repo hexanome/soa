@@ -5,10 +5,16 @@
 
 \subsection{Organisation de l'architecture technique}
 
-En plus des serveurs applicatifs et des serveurs de données, nous mettons en place un serveur de sauvegarde, situé sur un site à part des autres sièges. Une sauvegarde des données sera mise en place toutes les nuits. Cette sauvegarde contiendra les données de tous les serveurs de données, en regroupant les informations de toutes les agences.
+En plus des serveurs applicatifs et des serveurs de données, nous mettons en place un serveur de sauvegarde, situé sur le site central. Une sauvegarde des données sera mise en place toutes les nuits. Cette sauvegarde contiendra les données de tous les serveurs de données, en regroupant les informations de toutes les agences.
 
 Chaques agences (site centrale et agences principales) sont équipées d'un serveur applicatif et d'un serveur de données. L'accès au serveur de données se fait obligatoirement à partir du serveur applicatif. Toutes les agences, même les agences secondaires, seront implentées derière un part-feu. Les connections entre chaques sites sont sécurisées et criptées grâce à des communications SSL. 
-  
+
+Voici le schéma représentant l'architecture :
+
+\begin {center}
+\includegraphics[width=\textwidth]{Arch2Heberge.png}
+\end {center}
+
 \subsection{Répartition des blocs applicatifs}
 
 Les blocs \textbf{Produits}, \textbf{Client} et \textbf{Agence} seront implémentés sur le serveur du site central, mais également répliqués sur les serveurs des agences principales. L'architecture de ces données sera en \textbf{multi-maître}. Ainsi, chaque site pourra modifier les données. La gestion des conflits se fera si possible automatiquement, puis au besoin par l'intervention d'un responsable sur le site central.
