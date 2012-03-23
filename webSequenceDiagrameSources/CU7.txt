@@ -1,10 +1,11 @@
-﻿title CU7 Consultation des agendas
+﻿
+title CU7 Consultation des agendas
 
 Agent->IHM:changerVue(vue)
 alt si vue agent
     IHM->SM: getAllAgents(idAgence)
     activate SM
-    SM->Agences: getAll(idAgence)
+    SM->Agences: getAllAgents(idAgence)
     activate Agences
     Agences-->SM: Agents
     deactivate Agences
