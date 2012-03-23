@@ -1,12 +1,17 @@
-﻿title CU4 Gestion de la liste des contacts clients
+title CU4 Gestion de la liste des contacts clients
 
 note over Agent,IHM,SM: Consultation de l'agenda CU7
+
 Agent->IHM:listerContacts(idAgent)
 activate IHM
 IHM->SM:listerContacts(idAgent)
 activate SM
 SM->Contact:getContacts(idAgent)
 activate Contact
+Contact->Client: getInfo(idClient)
+activate Client
+Client-->Contact:info
+deactivate Client
 Contact-->SM:contacts
 deactivate Contact
 SM-->IHM:contacts
@@ -23,26 +28,26 @@ Agent->IHM:annulerContact(idContact,raison)
 activate IHM
 IHM->SM:annulerContact(idContact,raison)
 activate SM
-SM->Contact:getContact(idContact)
+
+SM->Contact:setEtat(contact,etat)
 activate Contact
-Contact-->SM:contact
+SM->Contact:updateContact(contact,raison)
 deactivate Contact
-SM->Contact:setEtat(contact,etat,raison)
-SM->Contact:updateContact(contact,etat,raison)
 deactivate SM
 deactivate IHM
+
 else action=regrouper contacts
 Agent->IHM:regroupeContact(list<idContact>)
 activate IHM
 IHM->SM:regrouperContact(list<idContact>)
 activate SM
-SM->Contact: updateContact(idPremierContact,modifContact)
-loop pour chaque contact sauf premier
-SM->Contact:getContact(idContact)
+
+SM->Contact: updateContact(idPremierContact,raison)
 activate Contact
-Contact-->SM:contact
+
+loop pour chaque contact sauf premier
+SM->Contact: updateContact(contact,raison=regroupement)
 deactivate Contact
-SM->Contact: updateContact(contact,etat=Annule,raison=regroupement)
 deactivate SM
 deactivate IHM
 end alt
