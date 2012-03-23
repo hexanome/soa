@@ -59,7 +59,7 @@ alt action = creer RDV
 else action = modifier RDV
     IHM->SM: updatePlage(plage)
     activate SM
-    SM->Agenda: updatePlage(plage)
+    SM->Agenda: updatePlage(plage,etat,raison=vide)
     deactivate SM
 else action = annuler RDV
    
@@ -85,6 +85,6 @@ else action = reaffecter RDV
     IHM->SM: transfererPlage(plage,idAgent)
     activate SM
     SM->Agenda: setAgent(plage,idAgent)
-   SM->Agenda:updatePlage(plage)
+   SM->Agenda:updatePlage(plage,etat,raison=vide)
     deactivate SM
 end
