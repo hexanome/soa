@@ -6,7 +6,7 @@ ChefAgence->IHM:planifierPlageAgenda(idAgent,typeActivite,date)
 activateIHM
 IHM->SM:planifierPlageAgenda(idAgent,typeActivite,date)
 activateSM
-SM->Agenda:creerplageAgenda(idAgent,typeActivite,date)
+SM->Agenda:creerPlageAgenda(idAgent,typeActivite,date)
 deactivate SM
 IHM->IHM:udpateVue()
 deactivate IHM
