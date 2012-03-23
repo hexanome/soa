@@ -4,9 +4,9 @@ note over Agent,IHM,SM: Consultation de l'agenda CU7
 
 Agent->IHM:listerContacts(idAgent)
 activate IHM
-IHM->SM:listerContacts(idAgent)
+IHM->SM:getContactsAgent(idAgent)
 activate SM
-SM->Contact:getContacts(idAgent)
+SM->Contact:getContactsAgent(idAgent)
 activate Contact
 Contact->Client: getInfo(idClient)
 activate Client
