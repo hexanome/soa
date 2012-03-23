@@ -1,0 +1,40 @@
+\select@language {french}
+\contentsline {section}{\numberline {1}Conception d'ensemble de l'architecture applicative}{2}
+\contentsline {subsection}{\numberline {1.1}Diagrammes d'activit\IeC {\'e}}{2}
+\contentsline {subsection}{\numberline {1.2}Blocs applicatifs}{12}
+\contentsline {subsection}{\numberline {1.3}Cycles de vie des objets m\IeC {\'e}tiers}{13}
+\contentsline {subsection}{\numberline {1.4}D\IeC {\'e}termination des flux de l'architecture}{14}
+\contentsline {subsubsection}{\numberline {1.4.1}Diagramme de s\IeC {\'e}quence}{14}
+\contentsline {subsubsection}{\numberline {1.4.2}Diagramme de collaboration}{21}
+\contentsline {subsection}{\numberline {1.5}Choix de l'environnement technique}{23}
+\contentsline {section}{\numberline {2}Conception d\IeC {\'e}taill\IeC {\'e}e}{23}
+\contentsline {subsection}{\numberline {2.1}Diagramme d'encha\IeC {\^\i }nement des fen\IeC {\^e}tres}{23}
+\contentsline {paragraph}{Description}{24}
+\contentsline {subsection}{\numberline {2.2}Dessin des fen\IeC {\^e}tres de l'IHM}{24}
+\contentsline {subsection}{\numberline {2.3}Services M\IeC {\'e}tiers invoqu\IeC {\'e}s par l'IHM}{24}
+\contentsline {subsubsection}{\numberline {2.3.1}Services M\IeC {\'e}tier Client}{24}
+\contentsline {paragraph}{Recherche de Clients}{24}
+\contentsline {paragraph}{Dossier Client}{24}
+\contentsline {subsubsection}{\numberline {2.3.2}Services M\IeC {\'e}tier Agenda}{24}
+\contentsline {subsubsection}{\numberline {2.3.3}Services M\IeC {\'e}tier Contact}{24}
+\contentsline {paragraph}{Recherche de Contacts}{24}
+\contentsline {paragraph}{Affectation des Contacts}{24}
+\contentsline {paragraph}{Gestion d'un Contact}{24}
+\contentsline {paragraph}{Pr\IeC {\'e}paration de l'entretien}{24}
+\contentsline {paragraph}{Rapport d'activit\IeC {\'e} commerciale}{25}
+\contentsline {subsection}{\numberline {2.4}Sp\IeC {\'e}cification des Services M\IeC {\'e}tier}{25}
+\contentsline {subsection}{\numberline {2.5}Sp\IeC {\'e}cification des Services Objets M\IeC {\'e}tier}{25}
+\contentsline {section}{\numberline {3}R\IeC {\'e}partition des composants sur l'architecture n-tiers}{25}
+\contentsline {subsection}{\numberline {3.1}Organisation de l'architecture technique}{25}
+\contentsline {subsection}{\numberline {3.2}R\IeC {\'e}partition des blocs applicatifs}{26}
+\contentsline {subsection}{\numberline {3.3}Principaux flux applicatifs \IeC {\'e}chang\IeC {\'e}s}{26}
+\contentsline {subsubsection}{\numberline {3.3.1}Consultation des donn\IeC {\'e}es}{26}
+\contentsline {subsubsection}{\numberline {3.3.2}Mise \IeC {\`a} jour des donn\IeC {\'e}es}{26}
+\contentsline {paragraph}{Mise \IeC {\`a} jour active}{26}
+\contentsline {paragraph}{Mise \IeC {\`a} jour passive}{26}
+\contentsline {subsubsection}{\numberline {3.3.3}R\IeC {\'e}plication des donn\IeC {\'e}es}{26}
+\contentsline {paragraph}{R\IeC {\'e}plication descendante}{26}
+\contentsline {paragraph}{R\IeC {\'e}plication montante}{27}
+\contentsline {subsubsection}{\numberline {3.3.4}Sauvegarde des donn\IeC {\'e}es}{27}
+\contentsline {paragraph}{Restauration int\IeC {\'e}grale \IeC {\`a} froid}{27}
+\contentsline {paragraph}{Restauration partielle localis\IeC {\'e}e \IeC {\`a} chaud}{27}
