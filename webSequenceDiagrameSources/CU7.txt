@@ -26,6 +26,10 @@ else si vue agence
     activate SM
     SM->Agenda: getJourAgence(date,idAgence)
     activate Agenda
+    Agenda->Agences:getAllAgents(idAgence)
+    activate Agences
+    Agences-->Agenda:idAgents
+    deactivate Agences
     Agenda-->SM: jour
     deactivate Agenda
     SM-->IHM: jour
@@ -38,6 +42,10 @@ IHM->SM:getPlageHoraire(idAgent,Date)
 activate SM
 SM->Agenda:getPlageHoraire(idAgent,Date)
 activate Agenda
+Agenda->Contact:getContact(idContact)
+activate Contact
+Contact-->Agenda:contact
+deactivate Contact
 Agenda-->SM:plageHoraire
 deactivate Agenda
 SM->IHM:plageHoraire
@@ -56,15 +64,9 @@ else action = annuler RDV
    
 IHM->SM:annulerRDV(plage,raison)
 activate SM
-SM->Agenda:setEtat(plage,etat,raison)
-SM->Agenda:updatePlage(plage)
+SM->Agenda:updatePlage(plage,etat,raison)
 alt si plage est de type contact commercial
-SM->Contact:getContact(idContact)
-activate Contact
-Contact-->SM:contact
-deactivate Contact
-SM->Contact:setEtat(contact,etat,raison)
-SM->Contact:updateContact(contact)
+SM->Contact:updateContact(contactetat,raison)
 
 SM->Contact:deleteTacheElementaire(idContact)
 end alt
