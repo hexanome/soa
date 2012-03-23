@@ -76,7 +76,7 @@ deactivate SM
 else action = reaffecter RDV
     IHM->SM: getAllAgents(idAgence)
     activate SM
-    SM->Agences: getAll(idAgence)
+    SM->Agences: getAllAgents(idAgence)
     activate Agences
     Agences-->SM: agents
     deactivate Agences
