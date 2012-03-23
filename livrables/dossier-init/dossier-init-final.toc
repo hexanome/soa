@@ -15,4 +15,4 @@
 \contentsline {subsection}{\numberline {3.1}R\IeC {\'e}partition des t\IeC {\^a}ches}{3}
 \contentsline {subsection}{\numberline {3.2}Evaluation des charges}{3}
 \contentsline {paragraph}{Estimation totale}{4}
-\contentsline {section}{\numberline {4}Diagramme de Gantt}{4}
+\contentsline {section}{\numberline {4}Diagramme de Gantt}{5}
