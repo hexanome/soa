@@ -1,10 +1,11 @@
-﻿title CU7 Consultation des agendas
+﻿
+title CU7 Consultation des agendas
 
 Agent->IHM:changerVue(vue)
 alt si vue agent
     IHM->SM: getAllAgents(idAgence)
     activate SM
-    SM->Agences: getAll(idAgence)
+    SM->Agences: getAllAgents(idAgence)
     activate Agences
     Agences-->SM: Agents
     deactivate Agences
@@ -58,7 +59,7 @@ alt action = creer RDV
 else action = modifier RDV
     IHM->SM: updatePlage(plage)
     activate SM
-    SM->Agenda: updatePlage(plage)
+    SM->Agenda: updatePlage(plage,etat,raison=vide)
     deactivate SM
 else action = annuler RDV
    
@@ -75,7 +76,7 @@ deactivate SM
 else action = reaffecter RDV
     IHM->SM: getAllAgents(idAgence)
     activate SM
-    SM->Agences: getAll(idAgence)
+    SM->Agences: getAllAgents(idAgence)
     activate Agences
     Agences-->SM: agents
     deactivate Agences
@@ -84,6 +85,6 @@ else action = reaffecter RDV
     IHM->SM: transfererPlage(plage,idAgent)
     activate SM
     SM->Agenda: setAgent(plage,idAgent)
-   SM->Agenda:updatePlage(plage)
+   SM->Agenda:updatePlage(plage,etat,raison=vide)
     deactivate SM
 end
