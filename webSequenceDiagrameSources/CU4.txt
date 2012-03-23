@@ -28,11 +28,7 @@ Agent->IHM:annulerContact(idContact,raison)
 activate IHM
 IHM->SM:annulerContact(idContact,raison)
 activate SM
-
-SM->Contact:setEtat(contact,etat)
-activate Contact
 SM->Contact:updateContact(contact,raison)
-deactivate Contact
 deactivate SM
 deactivate IHM
 
