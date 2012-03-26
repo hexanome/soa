@@ -10,10 +10,11 @@ partie des outils à utiliser dans le cadre des cas d'utilisation identifiés.
 Commençant par spécifier l'enchaînement des fenêtres grâce à un diagramme.
 
 \subsection{Diagramme d'enchaînement des fenêtres}
-
+\medskip
 \begin {center}
 \includegraphics[width=\textwidth]{diagramme-edf.png}
 \end {center}
+\medskip
 
 \paragraph{Description}
 
@@ -30,11 +31,81 @@ On observera également le volet \textbf{Détails du Contact}. Il permet d'effec
 opérations nécessaires sur un Contact (une liste de ces services métiers se trouve plus loin
 dans ce compte rendu).
 
-\subsection{Dessin des fenêtres de l'IHM}
 
+\subsection{Spécification des IHM}
 Voici une première représentation graphique de l'IHM que nous contruirons :
+La connexion se faire de manière authentifier, en choisissant son rôle et en indiquant le mot de passe correspondant.
+\medskip
+\begin {center}
+\includegraphics[width=\textwidth]{../../ihm/pngIHM/login.png}
+\end {center}
+\medskip
 
-TODO @quentez
+L'onglet \textit{Contacts } permet d'afficher par défaut tous les contacts de l'agent actuellement connecté, avec la possibilité d'afficher également les contacts d'un autre agent si besoin. Le panneau de droite présente de manière concise les informations sur ce contact, avec la possibilité d'accéder aux informations clients en un clic.
+Comme on l'a vu lors de la revue, le sélecteur d'état sur le contact ne sera utilisé que comme un filtre et non comme un moyen de changer l'état d'un contact. Le changement d'état sera considéré comme le résultat d'une action passée sur le contact, il ne sera pas possible de le changer manu militari.
+\medskip
+\begin {center}
+\includegraphics[width=\textwidth]{../../ihm/pngIHM/ListeContacts.png}
+\end {center}
+\medskip
+
+
+Dans la partie gauche, l'onglet \textit{Entretiens} permet de visualiser sur un calendrier la date du rendez-vous et également de préparer l'entretien. C'est le même affichage pour la préparation que lors de l'entretien.
+\medskip
+\begin {center}
+\includegraphics[width=\textwidth]{../../ihm/pngIHM/ContactEntretiens1.png}
+\end {center}
+\medskip
+
+Toujours dans l'onglet \textit{Entretiens}, en scrollant vers le bas, on dispose des champs nécessaires pour marquer les produits auxquels le client a souscrit lors de l'entretien ainsi qu'un champ pour rédiger le rapport qui clotûre l'entretien.
+\medskip
+\begin {center}
+\includegraphics[width=\textwidth]{../../ihm/pngIHM/ContactEntretiens2.png}
+\end {center}
+\medskip
+
+
+Il s'agit, ci-dessous de la fenêtre qui s'ouvre lorsqu'on souhaite affecter un agent à un contact. Il s'agit simplement de sélectionner l'agent pour lequel on souhaite affecter ces contacts.
+\medskip
+\begin {center}
+\includegraphics[width=\textwidth]{../../ihm/pngIHM/ChoixAgent.png}
+\end {center}
+\medskip
+
+
+L'onglet \textit{Agenda} offre 2 types de visualisation, ici nous avons la vue hebdomadaire, qui permet de voir sur la partie gauche le calendrier et sur la partie droite les informations sur la plage horaire selectionnée.
+On notera la présence d'un bouton en haut au centre permettant de réaliser un contact spontané.
+\medskip
+\begin {center}
+\includegraphics[width=\textwidth]{../../ihm/pngIHM/CalendrierHebdomadaire.png}
+\end {center}
+\medskip
+
+
+
+La vue de l'agenda quotidenne se présente sous la même forme que la vue hebdomadaire, sauf du point de vue du calendrier bien entendu.
+\medskip
+\begin {center}
+\includegraphics[width=\textwidth]{../../ihm/pngIHM/CalendrierQuotidien.png}
+\end {center}
+\medskip
+
+
+L'onglet \textit{Clients} permet de visualiser la liste des clients à gauche et de voir toutes les informations sur le client selectionné à droite, avec 3 onglets suivant les données que l'on souhaite consulter.
+\medskip
+\begin {center}
+\includegraphics[width=\textwidth]{../../ihm/pngIHM/ListeClients.png}
+\end {center}
+\medskip
+
+
+Cette fenêtre permet de répondre au cas d'utilisation 6, où un agent obtient un entretien de manière spontanée, elle permet donc de renseigner le nom du client, la date et le motif ainsi que le type d'activité.
+\medskip
+\begin {center}
+\includegraphics[width=\textwidth]{../../ihm/pngIHM/NouveauContactSpontanne.png}
+\end {center}
+\medskip
+
 
 \subsection{Services Métiers invoqués par l'IHM}
 
@@ -165,34 +236,7 @@ OM Client SOMC3 : getAll
 \item Permet de consulter la liste de tous les clients.
 \end{itemize}
 
-\subsection{Spécification des IHM}
-La connexion se faire de manière authentifier, en choisissant son rôle et en indiquant le mot de passe correspondant.
-\includegraphics[width=\textwidth]{../../ihm/pngIHM/login.png}
 
-L'onglet \textit{Contacts } permet d'afficher par défaut tous les contacts de l'agent actuellement connecté, avec la possibilité d'afficher également les contacts d'un autre agent si besoin. Le panneau de droite présente de manière concise les informations sur ce contact, avec la possibilité d'accéder aux informations clients en un clic.
-Comme on l'a vu lors de la revue, le sélecteur d'état sur le contact ne sera utilisé que comme un filtre et non comme un moyen de changer l'état d'un contact. Le changement d'état se fera de manière automatique avec les actions correspondantes.
-\includegraphics[width=\textwidth]{../../ihm/pngIHM/ListeContacts.png}
 
-Dans la partie gauche, l'onglet \textit{Entretiens} permet visualiser sur un calendrier la date du rendez-vous et également de préparer l'entretien. C'est le même affichage pour la préparation que lors de l'entretien.
-\includegraphics[width=\textwidth]{../../ihm/pngIHM/ContactEntretiens1.png}
-
-Toujours dans l'onglet \textif{Entretiens}, en scrollant vers le bas, on dispose des champs nécessaires pour marquer les produits auxquel le contact à souscrit lors de l'entretien ainsi que pour rédiger le rapport qui clotûre l'entretien.
-\includegraphics[width=\textwidth]{../../ihm/pngIHM/ContactEntretiens2.png}
-
-Il s'agit de la fenêtre qui s'ouvre lorsqu'on souhaite afficher des contacts qui n'appartiennent pas à l'agent connecté, il s'agit simplement de sélectionner l'agent pour lequel on souhaite voir ces contacts.
-\includegraphics[width=\textwidth]{../../ihm\pngIHM/ChoixAgent.png}
-
-L'onglet \textit{Agenda} offre 2 types de visualisation, ici nous avons la vue hebdomadaire, qui permet de voir sur la partie gauche le calendrier et sur la partie droite les informations sur la plage horaire selectionnée.
-On notera la présence d'un bouton permettant de réaliser un contact spontanée.
-\includegraphics[width=\textwidth]{../../ihm/pngIHM/Calendrier Hebdomadaire.png}
-
-La vue de l'agenda quotidenne se présente sous la même forme que la vue hebdomaire, sauf du point de vue du calendrier bien entendu.
-\includegraphics[width=\textwidth]{../../ihm/pngIHM/CalendrierQuotidien.png}
-
-L'onglet \textit{Clients} permet de visualiser la liste des clients à gauche et de voir toutes les informations sur le client selectionné à droite, avec 3 onglets suivant les données que l'on souhaite consulter.
-\includegraphics[width=\textwidth]{../../ihm/pngIHM/ListeClients.png}
-
-Cette fenêtre permet de répondre au cas d'utilisation 6, où un agent obtient un entretien de manière spontanée, elle permet donc de renseigner le nom du client, la date et le motif ainsi que le type d'activité.
-\includegraphics[width=\textwidth]{../../ihm/pngIHM/NouveauContactSpontanne.png}
 
 
