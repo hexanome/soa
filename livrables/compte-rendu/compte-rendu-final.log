@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.16)  23 MAR 2012 11:44
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.5)  26 MAR 2012 17:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -775,4 +775,175 @@ File: ../../webSequenceDiagrameSources/cu6.png Graphic file (type png)
 <use ../../webSequenceDiagrameSources/cu6.png>
 Package pdftex.def Info: ../../webSequenceDiagrameSources/cu6.png used on input
  line 50.
-(pdftex.def)             Requested 
+(pdftex.def)             Requested size: 483.69687pt x 420.59895pt.
+
+<../../webSequenceDiagrameSources/cu7.png, id=76, 1111.15125pt x 1558.82375pt>
+File: ../../webSequenceDiagrameSources/cu7.png Graphic file (type png)
+
+<use ../../webSequenceDiagrameSources/cu7.png>
+Package pdftex.def Info: ../../webSequenceDiagrameSources/cu7.png used on input
+ line 51.
+(pdftex.def)             Requested size: 483.69687pt x 678.58237pt.
+
+<../../webSequenceDiagrameSources/cu8.png, id=77, 1033.8625pt x 531.9875pt>
+File: ../../webSequenceDiagrameSources/cu8.png Graphic file (type png)
+
+<use ../../webSequenceDiagrameSources/cu8.png>
+Package pdftex.def Info: ../../webSequenceDiagrameSources/cu8.png used on input
+ line 52.
+(pdftex.def)             Requested size: 483.69687pt x 248.8896pt.
+
+<../../webSequenceDiagrameSources/cu9.png, id=78, 1077.02374pt x 637.38126pt>
+File: ../../webSequenceDiagrameSources/cu9.png Graphic file (type png)
+
+<use ../../webSequenceDiagrameSources/cu9.png>
+Package pdftex.def Info: ../../webSequenceDiagrameSources/cu9.png used on input
+ line 53.
+(pdftex.def)             Requested size: 483.69687pt x 286.25482pt.
+
+<../../webSequenceDiagrameSources/cu10.png, id=79, 572.1375pt x 712.6625pt>
+File: ../../webSequenceDiagrameSources/cu10.png Graphic file (type png)
+
+<use ../../webSequenceDiagrameSources/cu10.png>
+Package pdftex.def Info: ../../webSequenceDiagrameSources/cu10.png used on inpu
+t line 54.
+(pdftex.def)             Requested size: 483.69687pt x 602.5037pt.
+ [13 <./diagramme-etat-objet-contact.png>] [14 <../../webSequenceDiagrameSource
+s/cu1.png> <../../webSequenceDiagrameSources/cu2.png>] [15 <../../webSequenceDi
+agrameSources/cu3.png> <../../webSequenceDiagrameSources/cu4.png>] [16 <../../w
+ebSequenceDiagrameSources/cu5.png> <../../webSequenceDiagrameSources/cu6.png>] 
+[17 <../../webSequenceDiagrameSources/cu7.png>] [18 <../../webSequenceDiagrameS
+ources/cu8.png> <../../webSequenceDiagrameSources/cu9.png>]
+<diagramme-collaboration.png, id=101, 954.56625pt x 662.475pt>
+File: diagramme-collaboration.png Graphic file (type png)
+
+<use diagramme-collaboration.png>
+Package pdftex.def Info: diagramme-collaboration.png used on input line 64.
+(pdftex.def)             Requested size: 668.19183pt x 463.72934pt.
+ [19 <../../webSequenceDiagrameSources/cu10.png>] [20 <./diagramme-collaboratio
+n.png>]) (./conception-detaillee.tex
+<diagramme-edf.png, id=109, 731.73375pt x 558.085pt>
+File: diagramme-edf.png Graphic file (type png)
+ <use diagramme-edf.png>
+Package pdftex.def Info: diagramme-edf.png used on input line 15.
+(pdftex.def)             Requested size: 483.69687pt x 368.9163pt.
+
+[21 <./diagramme-edf.png>]
+<../../ihm/pngIHM/login.png, id=114, 691.08188pt x 549.55313pt>
+File: ../../ihm/pngIHM/login.png Graphic file (type png)
+
+<use ../../ihm/pngIHM/login.png>
+Package pdftex.def Info: ../../ihm/pngIHM/login.png used on input line 40.
+(pdftex.def)             Requested size: 483.69687pt x 384.64264pt.
+
+<../../ihm/pngIHM/ListeContacts.png, id=115, 1169.87062pt x 718.93594pt>
+File: ../../ihm/pngIHM/ListeContacts.png Graphic file (type png)
+
+<use ../../ihm/pngIHM/ListeContacts.png>
+Package pdftex.def Info: ../../ihm/pngIHM/ListeContacts.png used on input line 
+48.
+(pdftex.def)             Requested size: 483.69687pt x 297.25584pt.
+ [22 <../../ihm/pngIHM/login.png>]
+<../../ihm/pngIHM/ContactEntretiens1.png, id=120, 1169.87062pt x 718.93594pt>
+File: ../../ihm/pngIHM/ContactEntretiens1.png Graphic file (type png)
+
+<use ../../ihm/pngIHM/ContactEntretiens1.png>
+Package pdftex.def Info: ../../ihm/pngIHM/ContactEntretiens1.png used on input 
+line 56.
+(pdftex.def)             Requested size: 483.69687pt x 297.25584pt.
+
+<../../ihm/pngIHM/ContactEntretiens2.png, id=121, 1169.87062pt x 718.93594pt>
+File: ../../ihm/pngIHM/ContactEntretiens2.png Graphic file (type png)
+
+<use ../../ihm/pngIHM/ContactEntretiens2.png>
+Package pdftex.def Info: ../../ihm/pngIHM/ContactEntretiens2.png used on input 
+line 63.
+(pdftex.def)             Requested size: 483.69687pt x 297.25584pt.
+ [23 <../../ihm/pngIHM/ListeContacts.png> <../../ihm/pngIHM/ContactEntretiens1.
+png>]
+<../../ihm/pngIHM/ChoixAgent.png, id=125, 388.45125pt x 313.17pt>
+File: ../../ihm/pngIHM/ChoixAgent.png Graphic file (type png)
+
+<use ../../ihm/pngIHM/ChoixAgent.png>
+Package pdftex.def Info: ../../ihm/pngIHM/ChoixAgent.png used on input line 71.
+
+(pdftex.def)             Requested size: 483.69687pt x 389.96582pt.
+ [24 <../../ihm/pngIHM/ContactEntretiens2.png> <../../ihm/pngIHM/ChoixAgent.png
+>]
+<../../ihm/pngIHM/CalendrierHebdomadaire.png, id=130, 1169.87062pt x 718.93594p
+t>
+File: ../../ihm/pngIHM/CalendrierHebdomadaire.png Graphic file (type png)
+ <use ../../ihm/pngIHM/CalendrierHebdomadaire.png>
+Package pdftex.def Info: ../../ihm/pngIHM/CalendrierHebdomadaire.png used on in
+put line 80.
+(pdftex.def)             Requested size: 483.69687pt x 297.25584pt.
+
+<../../ihm/pngIHM/CalendrierQuotidien.png, id=131, 1169.87062pt x 718.93594pt>
+File: ../../ihm/pngIHM/CalendrierQuotidien.png Graphic file (type png)
+
+<use ../../ihm/pngIHM/CalendrierQuotidien.png>
+Package pdftex.def Info: ../../ihm/pngIHM/CalendrierQuotidien.png used on input
+ line 89.
+(pdftex.def)             Requested size: 483.69687pt x 297.25584pt.
+
+<../../ihm/pngIHM/ListeClients.png, id=132, 867.24pt x 587.19376pt>
+File: ../../ihm/pngIHM/ListeClients.png Graphic file (type png)
+
+<use ../../ihm/pngIHM/ListeClients.png>
+Package pdftex.def Info: ../../ihm/pngIHM/ListeClients.png used on input line 9
+7.
+(pdftex.def)             Requested size: 483.69687pt x 327.50916pt.
+ [25 <../../ihm/pngIHM/CalendrierHebdomadaire.png> <../../ihm/pngIHM/Calendrier
+Quotidien.png>]
+<../../ihm/pngIHM/NouveauContactSpontanne.png, id=136, 388.45125pt x 343.2825pt
+>
+File: ../../ihm/pngIHM/NouveauContactSpontanne.png Graphic file (type png)
+ <use ../../ihm/pngIHM/NouveauContactSpontanne.png>
+Package pdftex.def Info: ../../ihm/pngIHM/NouveauContactSpontanne.png used on i
+nput line 105.
+(pdftex.def)             Requested size: 483.69687pt x 427.46254pt.
+ [26 <../../ihm/pngIHM/ListeClients.png>] [27 <../../ihm/pngIHM/NouveauContactS
+pontanne.png>] [28])
+(./architecture.tex <Arch2Heberge.png, id=147, 821.469pt x 579.3645pt>
+File: Arch2Heberge.png Graphic file (type png)
+
+<use Arch2Heberge.png>
+Package pdftex.def Info: Arch2Heberge.png used on input line 15.
+(pdftex.def)             Requested size: 483.69687pt x 341.15022pt.
+ <repartition_bloc.png, id=148, 458.9145pt x 181.8795pt>
+File: repartition_bloc.png Graphic file (type png)
+
+<use repartition_bloc.png>
+Package pdftex.def Info: repartition_bloc.png used on input line 29.
+(pdftex.def)             Requested size: 483.69687pt x 191.70343pt.
+ [29 <./Arch2Heberge.png>]
+Overfull \hbox (3.52037pt too wide) in paragraph at lines 65--67
+ \T1/lmr/bx/n/10 Ré-pli-ca-tion des-cen-dante[] \T1/lmr/m/n/10 Comme in-di-qué 
+pré-cé-dem-ment, les don-nées des blocs \T1/lmr/bx/n/10 Pro-duits\T1/lmr/m/n/10
+ , \T1/lmr/bx/n/10 Client \T1/lmr/m/n/10 et \T1/lmr/bx/n/10 Agence
+ []
+
+[30 <./repartition_bloc.png>]) [31] (./compte-rendu-final.aux) ) 
+Here is how much of TeX's memory you used:
+ 5226 strings out of 493633
+ 79307 string characters out of 3143378
+ 148960 words of memory out of 3000000
+ 8378 multiletter control sequences out of 15000+200000
+ 43465 words of font info for 34 fonts, out of 3000000 for 9000
+ 831 hyphenation exceptions out of 8191
+ 38i,10n,43p,506b,591s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/tex
+live/2011/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2011/texm
+f-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2011/texmf-dist/fon
+ts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/p
+ublic/lm/lmcsc10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/lm/
+lmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/lm/lmr12.pfb><
+/usr/local/texlive/2011/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/
+texlive/2011/texmf-dist/fonts/type1/public/lm/lmri10.pfb>
+Output written on compte-rendu-final.pdf (32 pages, 3337592 bytes).
+PDF statistics:
+ 184 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+

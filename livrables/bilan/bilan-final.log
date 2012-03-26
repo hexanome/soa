@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.16)  23 MAR 2012 09:31
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.1.5)  26 MAR 2012 17:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -578,26 +578,33 @@ n-final.toc)
 \openout3 = `bilan-final.toc'.
 
 
-[1] (./bilan.tex) [2] (./bilan-final.aux) ) 
+[1] (./bilan.tex <charges-effectives.png, id=15, 602.25pt x 372.39125pt>
+File: charges-effectives.png Graphic file (type png)
+
+<use charges-effectives.png>
+Package pdftex.def Info: charges-effectives.png used on input line 11.
+(pdftex.def)             Requested size: 483.69687pt x 299.0953pt.
+ [2 <./charges-effectives.png (PNG copy)>])
+[3] (./bilan-final.aux) ) 
 Here is how much of TeX's memory you used:
- 4051 strings out of 493633
- 55503 string characters out of 3143377
- 123981 words of memory out of 3000000
- 7260 multiletter control sequences out of 15000+200000
+ 4057 strings out of 493633
+ 55636 string characters out of 3143378
+ 122981 words of memory out of 3000000
+ 7264 multiletter control sequences out of 15000+200000
  33205 words of font info for 31 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  37i,10n,43p,690b,589s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2011/texmf-dist/
-fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2011/texmf-dist/fonts/type1/pu
-blic/lm/lmbx10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/lm/lm
-bx12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb>
-</usr/local/texlive/2011/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local
-/texlive/2011/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/20
-11/texmf-dist/fonts/type1/public/lm/lmr17.pfb>
-Output written on bilan-final.pdf (3 pages, 157579 bytes).
+{/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/lm
+/lm-ec.enc}</usr/local/texlive/2011/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
+></usr/local/texlive/2011/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/loc
+al/texlive/2011/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texliv
+e/2011/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2011/texm
+f-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2011/texmf-dist/font
+s/type1/public/lm/lmr17.pfb>
+Output written on bilan-final.pdf (4 pages, 168974 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
+ 43 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
